@@ -1,4 +1,0 @@
-~/.config/{nvim,polybar,ranger,bspwm,sxhkd,kitty,picom} with exception of ~/.config/nvim/cpptools
-~/.conky/conf/{conky-altcoin-monitor,conky-calendar}
-~/.conky/conky-configure.sh
-~/{.zshrc,.xinitrc,.p10k.zsh}

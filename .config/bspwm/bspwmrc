@@ -1,0 +1,33 @@
+#! /bin/sh
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+$HOME/.config/polybar/launch.sh  &
+# nm-applet &
+# brightnessctl set 15%
+
+bspc monitor -d    IV V  
+
+bspc config border_width         2
+bspc config window_gap          12
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config single_monocle       false
+
+
+bspc rule -a kitty desktop='^1' state=tiled follow=true
+bspc rule -a neovide desktop='^1' state tiled follow=true
+
+bspc rule -a firefox desktop='^2' state=tiled
+
+bspc rule -a TelegramDesktop desktop='^3'
+bspc rule -a discord desktop='^3' tiled=off
+
+bspc rule -a steam desktop='^6' state=tiled
+bspc rule -a lutris desktop='^6' state=tiled
+bspc rule -a pyrogenesis desktop='^6' state=tiled # 0ad
+bspc rule -a heroic desktop='^6' state=tiled # heroic
+
+bspc rule -a vlc desktop='^7' state=tiled

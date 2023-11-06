@@ -1,0 +1,11 @@
+" Sets
+":set number
+":set relativenumber
+":set mouse=a
+":set encoding=utf-8
+":set arabicshape
+
+" Maps
+"vnoremap <C-c> "+y
+"vnoremap <C-v> "+p
+

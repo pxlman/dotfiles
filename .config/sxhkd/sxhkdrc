@@ -13,7 +13,7 @@ super + shift + d
 	rofi -show run
 # neovide
 super + backslash
-  neovide
+  neovide $HOME/Programing/
 
 # make sxhkd reload its configuration files:
 super + Escape

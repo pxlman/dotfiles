@@ -30,7 +30,6 @@ map("i", "<A-]>", "<ESC>A")
 map("n", "<Leader>sl", c.vsp)
 map("n", "<Leader>sj", c.sp)
 map("n", "<Leader>sm", c.MaximizerToggle)
-
 -- Escape
 map("i", "jk", "<ESC>")
 map("t", "jk", "<C-\\><C-n>")
@@ -111,4 +110,5 @@ vim.cmd(
 )
 -- RunCode
 vim.cmd("autocmd filetype cpp nnoremap <silent> <F7> :w <bar> :TermExec cmd='g++ % -o %< && %:p:r && rm %:p:r' <CR>")
-vim.cmd("autocmd filetype sh nnoremap <silent> <F7> :w <bar> :TermExec cmd='chmod +x % && %' <CR>")
+vim.cmd("autocmd filetype python nnoremap <silent> <F7> :TermExec cmd='python %' <CR>")
+vim.cmd("autocmd filetype sh nnoremap <silent> <F7> :w <bar> :TermExec cmd='chmod +x % && ./%' <CR>")

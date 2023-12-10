@@ -112,11 +112,11 @@ source $ZSH/oh-my-zsh.sh
 ##############################3
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias i='sudo pacman -S'
-alias r='sudo pacman -R'
 alias ra='ranger'
 alias rc='ranger $HOME/.config'
-alias s='pacman -Ss'
+alias yi='yay -S'
+alias ys='yay -Ss'
+alias yr='yay -R'
 alias ll='ls -l'
 alias nv='nvim'
 alias httpsmirrors='rate-mirrors --allow-root --protocol https arch | sudo tee /etc/pacman.d/mirrorlist '
@@ -134,5 +134,6 @@ alias ptrscrs='maim --select | tee $HOME/Pictures/Screenshots/"$(date +%d\ %m\ %
 alias simulide='~/apps/simulide/SimulIDE_1.0.0-SR1_Lin64/simulide'
 export PATH=/home/pxlman/.local/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
+export PATH=$HOME/.mycmds:$PATH
 export BEEP=$HOME/.sounds/beep.ogg
 #paplay $BEEP

@@ -15,9 +15,9 @@ ls.add_snippets("cpp", {
 		t({ "#define steadY ios_base::sync_with_stdio(false); cin.tie(NULL);cout.tie(NULL);", "" }),
 		t({ "using namespace std;", "", "" }),
 		t({ "int main(){", "" }),
-		t({ "\tsteadY", "" }),
+		t({ "\tsteadY", "\t" }),
 		i(0),
-		t({ "", "", "\treturn 0;", "", "}" }),
+		t({ "", "\treturn 0;", "}" }),
 	}),
 	s("for", {
 		t({ "for(int i = 0; i < n ;i++){", "", "\t" }),

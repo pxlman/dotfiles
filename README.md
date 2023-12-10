@@ -1,6 +1,6 @@
 # My dotfiles
 
-WM: [bspwm](https://github.com/baskerville/bspwm)
+WM: [bspwm](https://github.com/baskerville/bspwm) \n
 Bar: [polybar](https://github.com/polybar/polybar)
 Keybinding utility: [sxhkd](https://github.com/baskerville/sxhkd)
 Quick file manager: [ranger](https://github.com/ranger/ranger)

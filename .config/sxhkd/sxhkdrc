@@ -4,20 +4,20 @@
 
 # terminal emulator
 super + Return
-	kitty
+	alacritty
 
 # program launcher
 super + d
-	rofi -show drun
+	dmenu_run
 super + shift + d
 	rofi -show run
 # neovide
 super + backslash
-  neovide $HOME/Programing/
+  kitty nvim $HOME/Programing/
 
 # make sxhkd reload its configuration files:
 super + Escape
-	pkill -USR1 -x sxhkd
+	pkill -USR1 -x sxhkd && bspwm wm -r
 
 XF86Search
   brightnessctl set +5%
@@ -30,22 +30,24 @@ XF86MonBrightnessUp
   brightnessctl set +5%
 
 XF86AudioRaiseVolume
-  amixer set Master 5%+
+  pamixer --increase 10 --allow-boost --set-limit 175
 XF86AudioLowerVolume
-  amixer set Master 5%-
+  pamixer --decrease 10 --allow-boost --set-limit 150
 XF86AudioMute
-  amixer set Master toggle
+  pamixer --toggle-mute
 
 super + F1
-  kitty ranger
+  nemo
 super + F2
   firefox
 
 Print
-  maim | tee $HOME/Pictures/Screenshots/"$(date +%d\ %m\ %y\ %I:%M:%S)".png | xclip -selection clipboard -t image/png
+  flameshot gui --clipboard --path ~/Pictures/Screenshots/
+#   maim | tee $HOME/Pictures/Screenshots/"$(date +%y\ %m\ %d\ %H:%M:%S)".png | xclip -selection clipboard -t image/png
 
 shift + Print
-  maim --select | tee $HOME/Pictures/Screenshots/"$(date +%d\ %m\ %y\ %I:%M:%S).png" | xclip -selection clipboard -t image/png
+  flameshot full --clipboard --path ~/Pictures/Screenshots/
+#   maim --select | tee $HOME/Pictures/Screenshots/"$(date +%y\ %m\ %d\ %H:%M:%S).png" | xclip -selection clipboard -t image/png
 
 
 #
@@ -78,7 +80,12 @@ super + g
 
 # set the window state
 super + {t,shift + t,s,f}
-	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+	bspc node -t {\
+  \~tiled         ,\
+  \~pseudo\_tiled ,\
+  \~floating      ,\
+  \~fullscreen    \
+  }
 
 # set the node flags
 super + ctrl + {m,x,y,z}
@@ -99,12 +106,12 @@ super + {p,b,comma,period}
 # focus the next/previous window in the current desktop
 super + {_,shift + }c
 	bspc node -f {next,prev}.local.!hidden.window
+alt + {_,shift + }Tab
+	bspc node -f {next,prev}.local.!hidden.window
 
-# alt + {_,shift + }tab
-#   bspc node -f {next prev}.local.!hidden.window
 # Focus the next/previous node in the current desktop:
-alt + {_,shift +}Tab
-	bspc node -f {next,prev}.local
+#alt + {_,shift +}Tab
+#	bspc node -f {next,prev}.local
 
 # focus the next/previous desktop in the current monitor
 super + bracket{left,right}
@@ -125,6 +132,9 @@ super + {o,i}
 # focus or send to the given desktop
 super + {_,shift + }{1-3,7-9,0}
 	bspc {desktop -f,node -d} '^{1-3,4-6,7}'
+
+super + {_,shift + }{4-5}
+	bspc {desktop -f,node -d} '^{4-5}'
 
 super + {_,shift + }grave
 	bspc {desktop -f,node -d} '^7'

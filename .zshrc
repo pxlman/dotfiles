@@ -1,10 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -15,9 +8,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#ZSH_THEME="robbyrussell"
-ZSH_THEME="powerlevel10k/powerlevel10k"
-#ZSH_THEME="darkblood"
+ZSH_THEME="dst" # set by `omz`
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -78,9 +70,9 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
-
+plugins=(git fzf)
 source $ZSH/oh-my-zsh.sh
+
 
 # User configuration
 
@@ -107,33 +99,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-##############################3
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
-alias ra='ranger'
-alias rc='ranger $HOME/.config'
-alias yi='yay -S'
-alias ys='yay -Ss'
-alias yr='yay -R'
-alias ll='ls -l'
-alias nv='nvim'
-alias httpsmirrors='rate-mirrors --allow-root --protocol https arch | sudo tee /etc/pacman.d/mirrorlist '
-alias class='xprop | grep CLASS'
-alias note='nv $HOME/notes/linux.md'
-alias zrc='nv $HOME/.zshrc'
-alias tt='ttyper'
-alias yt='yt-dlp -P /home/pxlman/Downloads '
-alias so='source $HOME/.zshrc'
-alias key='xev | grep keysym '
-plugins=(golang autocd)
-alias 0ad='flatpak run com.play0ad.zeroad'
-alias prtscr='maim | tee $HOME/Pictures/Screenshots/"$(date +%d\ %m\ %y\ %I:%M:%S).png" | xclip -selection clipboard -t image/png'
-alias ptrscrs='maim --select | tee $HOME/Pictures/Screenshots/"$(date +%d\ %m\ %y\ %I:%M:%S).png" | xclip -selection clipboard -t image/png'
-alias simulide='~/apps/simulide/SimulIDE_1.0.0-SR1_Lin64/simulide'
-export PATH=/home/pxlman/.local/bin:$PATH
-export PATH=$HOME/.cargo/bin:$PATH
-export PATH=$HOME/.mycmds:$PATH
-export BEEP=$HOME/.sounds/beep.ogg
-#paplay $BEEP
+#alias fd="fzf"
+# Plugins conf
+export FZF_BASE=/home/pxlman/.config/fzf
+export FZF_DEFAULT_COMMAND='fd'
+#DISABLE_FZF_AUTO_COMPLETION="false"
+DISABLE_FZF_KEY_BINDINGS="true" # CTRL-T,CTRL-R,CTRL,ALT-C
+export _JAVA_AWT_WM_NONREPARENTING=1

@@ -100,6 +100,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #alias fd="fzf"
+cpp(){
+g++ $1 -o /tmp/m.cpp && /tmp/m.cpp
+}
 # Plugins conf
 export FZF_BASE=/home/pxlman/.config/fzf
 export FZF_DEFAULT_COMMAND='fd'

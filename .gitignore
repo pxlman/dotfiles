@@ -20,6 +20,7 @@
 #!/.gitignore
 .git/
 .mycmds/.git/
+.config/sublime-text/
 .mozilla/
 
 # --- FAQ:

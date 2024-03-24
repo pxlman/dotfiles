@@ -1,0 +1,894 @@
+{
+	"file_history":
+	[
+		"/mnt/Files/Resources/University/Structured Programming/Classwork/contest/Q2/F.cpp",
+		"/mnt/Files/Resources/University/Structured Programming/Classwork/contest/Q2/E.cpp",
+		"/mnt/Files/Resources/University/Structured Programming/Classwork/contest/Q2/D.cpp",
+		"/mnt/Files/Resources/University/Structured Programming/Classwork/contest/Q2/B.cpp",
+		"/mnt/Files/Resources/University/Structured Programming/Classwork/contest/Q2/C.cpp",
+		"/mnt/Files/Resources/University/Structured Programming/Classwork/contest/Q2/A.cpp",
+		"/home/pxlman/Documents/SP_A2/XOR.cpp",
+		"/home/pxlman/Documents/SP_A2/T3/calc.cpp",
+		"/home/pxlman/Documents/SP_A2/vignere.cpp",
+		"/home/pxlman/.config/sublime-text/Packages/Default/Preferences.sublime-settings",
+		"/home/pxlman/.config/sublime-text/Packages/User/Preferences.sublime-settings",
+		"/mnt/Files/Resources/University/Structured Programming/Classwork/randtime.cpp",
+		"/mnt/Files/Resources/University/Structured Programming/Classwork/ceaserCipher.cpp",
+		"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/contest/F.cpp",
+		"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/contest/E.cpp",
+		"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/Pyramid.cpp",
+		"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/encrypt5.cpp",
+		"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/A.cpp",
+		"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/contest/A.cpp",
+		"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/contest/B.cpp",
+		"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/contest/C.cpp",
+		"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/contest/D.cpp",
+		"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/C2.cpp",
+		"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/C1.cpp",
+		"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/B.cpp",
+		"/home/pxlman/Programming/Uni/CS112/Task2/m.py",
+		"/home/pxlman/Programming/Uni/CS112/Task2/CS112_A1_T5_20230005.cpp",
+		"/home/pxlman/Programming/Uni/CS112/Task2/CS112_A1_T2_1_20230005.py",
+		"/mnt/windows/Resources/University/Curriculum/Structured Programming/SP pypdf/m.py",
+		"/home/pxlman/Programming/Uni/CS112/Task2/CS112_A1_T2_1_20230005.cpp",
+		"/home/pxlman/.config/sublime-text/Packages/User/Default (Linux).sublime-keymap",
+		"/home/pxlman/.config/sublime-text/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/pxlman/Documents/Next-Salah/main.py",
+		"/home/pxlman/.config/sublime-text/Packages/User/Anaconda.sublime-settings",
+		"/home/pxlman/.config/sublime-text/Packages/User/ActualVim.sublime-settings",
+		"/mnt/windows/Resources/University/Curriculum/Structured Programming/SP pypdf/n.py",
+		"/mnt/windows/Resources/University/Curriculum/Structured Programming/SP pypdf/file1.pdf",
+		"/mnt/windows/Resources/University/Curriculum/Structured Programming/SP pypdf/file2.pdf",
+		"/home/pxlman/Documents/SP_A1_T3/game1.py",
+		"/home/pxlman/.config/sublime-text/Packages/Theme - Default/Default Dark.sublime-theme",
+		"/home/pxlman/.config/sublime-text/Packages/User/Default Dark.sublime-theme"
+	],
+	"folder_history":
+	[
+		"/mnt/Files/Resources/University/Structured Programming/Classwork/Contests/Q2",
+		"/mnt/Files/Resources/University/Structured Programming/Classwork/contest",
+		"/mnt/Files/Resources/University/Structured Programming/Classwork/contest/Q2",
+		"/home/pxlman/Documents/SP_A2",
+		"/mnt/Files/Resources/University/Structured Programming/Classwork",
+		"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork",
+		"/home/pxlman/Programming/Uni/CS112/Task2",
+		"/mnt/windows/Resources/University/Curriculum/Structured Programming/SP pypdf",
+		"/home/pxlman/Documents/SP_A1_T3"
+	],
+	"last_version": 4169,
+	"last_window_id": 25,
+	"log_indexing": false,
+	"next_update_check": 1711308801,
+	"settings":
+	{
+		"new_window_full_screen": false,
+		"new_window_height": 735.0,
+		"new_window_maximized": false,
+		"new_window_position":
+		[
+			0.0,
+			61.0
+		],
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"inc",
+						"Inc\t#include <…>"
+					],
+					[
+						"to",
+						"toVignere"
+					],
+					[
+						"from",
+						"fromVignere"
+					],
+					[
+						"valid",
+						"validPlainVig"
+					],
+					[
+						"vali",
+						"validPlain"
+					],
+					[
+						"cip",
+						"cipherHex"
+					],
+					[
+						"hex",
+						"hexToCipher"
+					],
+					[
+						"rege",
+						"regex_match"
+					],
+					[
+						"ma",
+						"mainOperation"
+					],
+					[
+						"mat",
+						"matchingRationals"
+					],
+					[
+						"reg",
+						"regex_search"
+					],
+					[
+						"min",
+						"minop"
+					],
+					[
+						"match",
+						"matchingNumbers"
+					],
+					[
+						"re",
+						"relation"
+					],
+					[
+						"ke",
+						"keysize"
+					],
+					[
+						"ctyp",
+						"ctype.h"
+					],
+					[
+						"ve",
+						"vector\tstd::vector"
+					],
+					[
+						"simple",
+						"simplePage"
+					],
+					[
+						"filesN",
+						"filesName"
+					],
+					[
+						"Con",
+						"Console"
+					],
+					[
+						"ti",
+						"time"
+					],
+					[
+						"pa",
+						"pages"
+					],
+					[
+						"get",
+						"get_page_number"
+					],
+					[
+						"page",
+						"nPages"
+					],
+					[
+						"pdf",
+						"PdfReader"
+					],
+					[
+						"sim",
+						"simpleSplit"
+					],
+					[
+						"Pf",
+						"PdfFileReader"
+					]
+				]
+			},
+			"build_system_choices":
+			[
+				[
+					[
+						[
+							"Anaconda Python Builder",
+							""
+						],
+						[
+							"Packages/Python/Python.sublime-build",
+							""
+						],
+						[
+							"Packages/Python/Python.sublime-build",
+							"Syntax Check"
+						]
+					],
+					[
+						"Anaconda Python Builder",
+						""
+					]
+				],
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/C++/C++ Single File.sublime-build",
+						"Run"
+					]
+				]
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						":w",
+						":w - Save"
+					],
+					[
+						":",
+						":$ - EOF"
+					],
+					[
+						":W",
+						":w - Save"
+					],
+					[
+						":sv",
+						":w - Save"
+					],
+					[
+						":vs",
+						"Anaconda: Vagrant Status"
+					],
+					[
+						"remo",
+						"Package Control: Remove Package"
+					],
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"preference",
+						"Preferences: Settings"
+					],
+					[
+						"pref",
+						"Preferences: Settings"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"schem",
+						"UI: Select Color Scheme"
+					],
+					[
+						"scheme",
+						"UI: Select Color Scheme"
+					],
+					[
+						"Package Control: remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"theme",
+						"UI: Select Theme"
+					],
+					[
+						"instal",
+						"Package Control: Install Package"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 202.0,
+				"history":
+				[
+					"exit()",
+					"print(\"hello\")",
+					"cout << 0;",
+					"g++",
+					"12 : 00",
+					"fd"
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/mnt/Files/Resources/University/Structured Programming/Classwork/contest/Q2/F.cpp",
+				"/mnt/Files/Resources/University/Structured Programming/Classwork/contest/Q2/E.cpp",
+				"/mnt/Files/Resources/University/Structured Programming/Classwork/contest/Q2/D.cpp",
+				"/mnt/Files/Resources/University/Structured Programming/Classwork/contest/Q2/B.cpp",
+				"/mnt/Files/Resources/University/Structured Programming/Classwork/contest/Q2/C.cpp",
+				"/mnt/Files/Resources/University/Structured Programming/Classwork/contest/Q2/A.cpp",
+				"/home/pxlman/Documents/SP_A2/XOR.cpp",
+				"/home/pxlman/Documents/SP_A2/vignere.cpp",
+				"/home/pxlman/Documents/SP_A2/T3/calc.cpp",
+				"/mnt/Files/Resources/University/Structured Programming/Classwork/ceaserCipher.cpp",
+				"/mnt/Files/Resources/University/Structured Programming/Classwork/randtime.cpp",
+				"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/contest/F.cpp",
+				"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/contest/E.cpp",
+				"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/Pyramid.cpp",
+				"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/encrypt5.cpp",
+				"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/A.cpp",
+				"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/contest/A.cpp",
+				"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/contest/B.cpp",
+				"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/contest/C.cpp",
+				"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/contest/D.cpp",
+				"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/C2.cpp",
+				"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/C1.cpp",
+				"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/B.cpp",
+				"/home/pxlman/Programming/Uni/CS112/Task2/m.py",
+				"/home/pxlman/Programming/Uni/CS112/Task2/CS112_A1_T5_20230005.cpp",
+				"/home/pxlman/Programming/Uni/CS112/Task2/CS112_A1_T2_1_20230005.py",
+				"/mnt/windows/Resources/University/Curriculum/Structured Programming/SP pypdf/m.py",
+				"/home/pxlman/Programming/Uni/CS112/Task2/CS112_A1_T2_1_20230005.cpp",
+				"/home/pxlman/Documents/Next-Salah/main.py",
+				"/home/pxlman/.config/sublime-text/Packages/User/Anaconda.sublime-settings",
+				"/mnt/windows/Resources/University/Curriculum/Structured Programming/SP pypdf/n.py",
+				"/mnt/windows/Resources/University/Curriculum/Structured Programming/SP pypdf/file1.pdf",
+				"/mnt/windows/Resources/University/Curriculum/Structured Programming/SP pypdf/file2.pdf",
+				"/home/pxlman/Documents/SP_A1_T3/game1.py"
+			],
+			"find":
+			{
+				"height": 38.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"scrollbar_highlights": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"use_gitignore": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 38.0
+			},
+			"input":
+			{
+				"height": 60.0
+			},
+			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 192.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 72.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 199.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 1366.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"inc",
+						"Inc\t#include <…>"
+					],
+					[
+						"to",
+						"toVignere"
+					],
+					[
+						"from",
+						"fromVignere"
+					],
+					[
+						"valid",
+						"validPlainVig"
+					],
+					[
+						"vali",
+						"validPlain"
+					],
+					[
+						"cip",
+						"cipherHex"
+					],
+					[
+						"hex",
+						"hexToCipher"
+					],
+					[
+						"rege",
+						"regex_match"
+					],
+					[
+						"ma",
+						"mainOperation"
+					],
+					[
+						"mat",
+						"matchingRationals"
+					],
+					[
+						"reg",
+						"regex_search"
+					],
+					[
+						"min",
+						"minop"
+					],
+					[
+						"match",
+						"matchingNumbers"
+					],
+					[
+						"re",
+						"relation"
+					],
+					[
+						"ke",
+						"keysize"
+					],
+					[
+						"ctyp",
+						"ctype.h"
+					],
+					[
+						"ve",
+						"vector\tstd::vector"
+					],
+					[
+						"simple",
+						"simplePage"
+					],
+					[
+						"filesN",
+						"filesName"
+					],
+					[
+						"Con",
+						"Console"
+					],
+					[
+						"ti",
+						"time"
+					],
+					[
+						"pa",
+						"pages"
+					],
+					[
+						"get",
+						"get_page_number"
+					],
+					[
+						"page",
+						"nPages"
+					],
+					[
+						"pdf",
+						"PdfReader"
+					],
+					[
+						"sim",
+						"simpleSplit"
+					],
+					[
+						"Pf",
+						"PdfFileReader"
+					]
+				]
+			},
+			"buffers":
+			[
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+				[
+					[
+						[
+							"Anaconda Python Builder",
+							""
+						],
+						[
+							"Packages/Python/Python.sublime-build",
+							""
+						],
+						[
+							"Packages/Python/Python.sublime-build",
+							"Syntax Check"
+						]
+					],
+					[
+						"Anaconda Python Builder",
+						""
+					]
+				],
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/C++/C++ Single File.sublime-build",
+						"Run"
+					]
+				]
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						":w",
+						":w - Save"
+					],
+					[
+						":",
+						":$ - EOF"
+					],
+					[
+						":W",
+						":w - Save"
+					],
+					[
+						":sv",
+						":w - Save"
+					],
+					[
+						":vs",
+						"Anaconda: Vagrant Status"
+					],
+					[
+						"remo",
+						"Package Control: Remove Package"
+					],
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"preference",
+						"Preferences: Settings"
+					],
+					[
+						"pref",
+						"Preferences: Settings"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"schem",
+						"UI: Select Color Scheme"
+					],
+					[
+						"scheme",
+						"UI: Select Color Scheme"
+					],
+					[
+						"Package Control: remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"theme",
+						"UI: Select Theme"
+					],
+					[
+						"instal",
+						"Package Control: Install Package"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 202.0,
+				"history":
+				[
+					"exit()",
+					"print(\"hello\")",
+					"cout << 0;",
+					"g++",
+					"12 : 00",
+					"fd"
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"expanded_folders":
+			[
+				"/mnt/Files/Resources/University/Structured Programming/Classwork/contest"
+			],
+			"file_history":
+			[
+				"/mnt/Files/Resources/University/Structured Programming/Classwork/contest/Q2/F.cpp",
+				"/mnt/Files/Resources/University/Structured Programming/Classwork/contest/Q2/E.cpp",
+				"/mnt/Files/Resources/University/Structured Programming/Classwork/contest/Q2/D.cpp",
+				"/mnt/Files/Resources/University/Structured Programming/Classwork/contest/Q2/B.cpp",
+				"/mnt/Files/Resources/University/Structured Programming/Classwork/contest/Q2/C.cpp",
+				"/mnt/Files/Resources/University/Structured Programming/Classwork/contest/Q2/A.cpp",
+				"/home/pxlman/Documents/SP_A2/XOR.cpp",
+				"/home/pxlman/Documents/SP_A2/vignere.cpp",
+				"/home/pxlman/Documents/SP_A2/T3/calc.cpp",
+				"/mnt/Files/Resources/University/Structured Programming/Classwork/ceaserCipher.cpp",
+				"/mnt/Files/Resources/University/Structured Programming/Classwork/randtime.cpp",
+				"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/contest/F.cpp",
+				"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/contest/E.cpp",
+				"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/Pyramid.cpp",
+				"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/encrypt5.cpp",
+				"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/A.cpp",
+				"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/contest/A.cpp",
+				"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/contest/B.cpp",
+				"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/contest/C.cpp",
+				"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/contest/D.cpp",
+				"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/C2.cpp",
+				"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/C1.cpp",
+				"/mnt/Files/Resources/University/Curriculum/Structured Programming/Classwork/B.cpp",
+				"/home/pxlman/Programming/Uni/CS112/Task2/m.py",
+				"/home/pxlman/Programming/Uni/CS112/Task2/CS112_A1_T5_20230005.cpp",
+				"/home/pxlman/Programming/Uni/CS112/Task2/CS112_A1_T2_1_20230005.py",
+				"/mnt/windows/Resources/University/Curriculum/Structured Programming/SP pypdf/m.py",
+				"/home/pxlman/Programming/Uni/CS112/Task2/CS112_A1_T2_1_20230005.cpp",
+				"/home/pxlman/Documents/Next-Salah/main.py",
+				"/home/pxlman/.config/sublime-text/Packages/User/Anaconda.sublime-settings",
+				"/mnt/windows/Resources/University/Curriculum/Structured Programming/SP pypdf/n.py",
+				"/mnt/windows/Resources/University/Curriculum/Structured Programming/SP pypdf/file1.pdf",
+				"/mnt/windows/Resources/University/Curriculum/Structured Programming/SP pypdf/file2.pdf",
+				"/home/pxlman/Documents/SP_A1_T3/game1.py"
+			],
+			"find":
+			{
+				"height": 38.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"scrollbar_highlights": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"use_gitignore": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"folders":
+			[
+				{
+					"path": "/mnt/Files/Resources/University/Structured Programming/Classwork/contest"
+				}
+			],
+			"groups":
+			[
+				{
+					"sheets":
+					[
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 38.0
+			},
+			"input":
+			{
+				"height": 60.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 192.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,0,0,0,0,0,33,1366,768,1366,768,0",
+			"project": "",
+			"replace":
+			{
+				"height": 72.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 199.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 24,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}

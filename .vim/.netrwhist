@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/pxlman/Documents/Next-Salah'
+let g:netrw_dirhist_7='/home/pxlman/.mycmds'
+let g:netrw_dirhist_6='/home/pxlman/.config/polybar'
+let g:netrw_dirhist_5='/usr/share/icons/default'
+let g:netrw_dirhist_4='/usr/share/icons'
+let g:netrw_dirhist_3='/usr/share/icons/Bibata-Original-Classic'
+let g:netrw_dirhist_2='/usr/share/icons'
+let g:netrw_dirhist_1='/usr/share/icons/default'
+let g:netrw_dirhist_0='/usr/share/icons'
+let g:netrw_dirhist_9='/home/pxlman/Documents/Next-Salah'

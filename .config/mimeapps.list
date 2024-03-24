@@ -1,0 +1,17 @@
+[Default Applications]
+text/plain=org.gnome.gedit.desktop;
+image/jpeg=org.gnome.Loupe.desktop
+application/pdf=org.pwmt.zathura-pdf-poppler.desktop
+text/x-python=sublime_text.desktop
+application/x-extension-burp=install4j_1uoj5bj-BurpSuiteCommunity.desktop
+image/png=org.gnome.Loupe.desktop
+
+[Added Associations]
+text/plain=org.gnome.gedit.desktop;
+image/jpeg=org.gnome.Loupe.desktop;
+application/pdf=org.pwmt.zathura-pdf-poppler.desktop;
+text/x-python=electron27.desktop;sublime_text.desktop;
+application/xml=org.gnome.gedit.desktop;
+image/png=org.gnome.Loupe.desktop;
+x-scheme-handler/sms=org.gnome.Shell.Extensions.GSConnect.desktop;
+x-scheme-handler/tel=org.gnome.Shell.Extensions.GSConnect.desktop;

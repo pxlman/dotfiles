@@ -1,0 +1,11 @@
+%YAML 1.2
+---
+name: YAML (clang-format)
+scope: source.yaml.clang-format
+hidden: true
+file_extensions:
+  - .clang-format
+contexts:
+  main:
+    - include: scope:source.yaml
+      apply_prototype: true

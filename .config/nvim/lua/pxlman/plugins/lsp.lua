@@ -34,13 +34,18 @@ return {
     -- To config each lsp server individually
     {
         "neovim/nvim-lspconfig",
-	config = function()
-	   require("lspconfig").clangd.setup{}
-	   require("lspconfig").pyright.setup{}
-
-	end,
-    },
-    {
+        config = function()
+          -- The nvim-cmp almost supports LSP's capabilities so You should advertise it to LSP servers..
+          local capabilities = require('cmp_nvim_lsp').default_capabilities()
+          require("lspconfig").clangd.setup{
+            capabilities = capabilities
+          }
+          require("lspconfig").pyright.setup{
+            capabilities = capabilities
+          }
+        end,
+      },
+      {
         "jose-elias-alvarez/null-ls.nvim",
-    },
-}
+      },
+    }

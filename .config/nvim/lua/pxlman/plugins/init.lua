@@ -1,3 +1,6 @@
+function map(mode,key,cmd,desc)
+    vim.keymap.set(mode,key,cmd,{desc = desc,silent = true})
+end
 plugins = {
     -- Colorscheme
     {

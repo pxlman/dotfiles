@@ -8,13 +8,14 @@ style = "Regular"
 
 [window]
 opacity = 0.8
+dynamic_padding = true
 #[colors.primary]
 #background = "#000000"
 #foreground = "#FFFFFF"
 
 [window.padding]
-x = 15
-y = 15
+x = 8
+y = 3
 # Colors section of "Alacritty - TOML configuration file format"
 # https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd#colors
 

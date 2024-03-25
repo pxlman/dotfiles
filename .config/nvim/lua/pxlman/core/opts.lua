@@ -1,22 +1,14 @@
 local o = vim.o
 local g = vim.g
-
-
-o.relativenumber = true
-
-o.autoindent = true -- auto indent when new line is there
 o.lsp = true -- automatic indeting for LSP
-
+o.ignorecase = true -- Ignore case while tabbing in the command line
+o.splitright = true -- New window will put right to the current window
+o.expandtab = true
+-- Lines Shape
+o.relativenumber = true
+o.wrap = true -- To make line breaked
+o.cursorline = true -- The dark line at the cursor line
+-- Indentings
+o.autoindent = true -- auto indent when new line is there
 o.smarttab = true -- Use shift width when <Tab>
-o.shiftwidth = 4 -- Tab width spaces
--- To make line breaked kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
-o.wrap = true
-g.smoothscroll = true 
--- Ignore case while tabbing in the command line
-g.ignorecase = true
--- The dark line at the cursor line
-o.cursorline = true
--- New window will put right to the current window
-o.splitright = true
-
-
+o.shiftwidth = 2 -- Tab width spaces

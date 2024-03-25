@@ -1,3 +1,2 @@
-
-require("pxlman.lazy")
 require("pxlman.core")
+require("pxlman.lazy")

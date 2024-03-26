@@ -2,7 +2,7 @@ local g = vim.g
 local c = vim.cmd
 -- local map = vim.keymap.set
 function map(mode,key,cmd,descr)
-    vim.keymap.set(mode,key,cmd, {desc = descr,silent = true})
+    vim.keymap.set(mode,key,cmd, {desc = descr,noremap = true,silent = true})
 end
 --[[ Hints 
 <Enter> = <CR>
@@ -14,11 +14,9 @@ end
 C-v vsplit in nvimtree
 C-] root to parent 
 ]]
---
 -- Leader Key
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
-
 -- [[ Main bindings ]]
 -- Exclusive moving (Helpful at wrapped lines)
 map('', 'j', "gj", "Moving down")
@@ -36,8 +34,9 @@ map("i","<A-j>","<Down>", "To down while typing")
 map("n","<Leader>q",":q<CR>", "[Q]uit Nvim")
 -- Start and end of line in insert and normal and visual
 map("","<CR>","$", "Line End")
+map("","<A-CR>","$", "Line End")
 map("i","<A-CR>","<ESC>$a", "Line End")
-map("","<S-CR>","^", "Line Start")
+map("","<A-S-CR>","^", "Line Start")
 map("i","<A-S-CR>","<ESC>^i", "Line Start")
 -- 
 -- [[ Plugins bindings ]]

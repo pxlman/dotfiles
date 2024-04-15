@@ -28,6 +28,9 @@ bspc config window_gap          12
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
+# Scratchpad
+# transform all windows with title "floating" into floating windows 
+bspc rule -a "*:*:floating" state=floating center=on
 
 # Bindings
 bspc rule -a loupe state=floating
@@ -42,6 +45,7 @@ bspc rule -a Gimp desktop='^4' state=pseudo_tiled follow=on
 bspc rule -a Anki desktop='^4' state=pseudo_tiled follow=on
 bspc rule -a vlc desktop='^7' state=pseudo_tiled follow=on
 bspc rule -a "VirtualBox Manager" desktop='^6' state=tiled follow=on
+bspc rule -a "steam" desktop='^6' state=tiled follow=on
 bspc rule -a "ONLYOFFICE Desktop Editors" desktop='^6' state=tiled follow=on
 bspc rule -a Zathura desktop='^7' state=tiled follow=on
 bspc rule -a Xreader desktop='^7' state=tiled follow=on

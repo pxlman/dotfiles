@@ -109,3 +109,10 @@ export FZF_DEFAULT_COMMAND='fd'
 #DISABLE_FZF_AUTO_COMPLETION="false"
 DISABLE_FZF_KEY_BINDINGS="true" # CTRL-T,CTRL-R,CTRL,ALT-C
 export _JAVA_AWT_WM_NONREPARENTING=1
+export PATH=$HOME/.local/bin:$PATH
+
+# aliases
+alias nvimrc="nvim .dotfiles/.config/nvim/lua/pxlman"
+alias t="tree -a ."
+export PATH=$PATH:$HOME/.myapps
+alias heroic=$HOME/.myapps/Heroic.AppImage

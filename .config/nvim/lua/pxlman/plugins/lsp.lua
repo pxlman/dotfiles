@@ -27,6 +27,7 @@ return {
                 "clangd",
                 "pyright",
                 "lua_ls",
+                "marksman",
             },
             automatic_installation = true,
         },

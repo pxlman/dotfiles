@@ -5,7 +5,9 @@
 # terminal emulator
 super + Return
 	alacritty
-
+# Scratchpad
+F1
+  tdrop -a kitty
 # program launcher
 super + d
 	dmenu_run

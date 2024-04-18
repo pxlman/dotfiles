@@ -37,15 +37,15 @@ bspc rule -a loupe state=floating
 bspc rule -a Alacritty desktop='^1' state=pseudo_tiled follow=on
 bspc rule -a firefox desktop='^2' follow=on
 bspc rule -a Microsoft-edge desktop='^2' follow=on
-bspc rule -a TelegramDesktop desktop='^3' follow=on
-bspc rule -a whatsdesk desktop='^3' follow=on
+bspc rule -a TelegramDesktop desktop='^3' follow=off
+bspc rule -a whatsdesk desktop='^3' follow=off
 bspc rule -a discord desktop='^3' follow=on
 bspc rule -a obsidian desktop='^4' follow=on
 bspc rule -a Gimp desktop='^4' state=pseudo_tiled follow=on
 bspc rule -a Anki desktop='^4' state=pseudo_tiled follow=on
 bspc rule -a vlc desktop='^7' state=pseudo_tiled follow=on
 bspc rule -a "VirtualBox Manager" desktop='^6' state=tiled follow=on
-bspc rule -a "steam" desktop='^6' state=tiled follow=on
+bspc rule -a "steam" desktop='^6' state=tiled follow=off
 bspc rule -a "ONLYOFFICE Desktop Editors" desktop='^6' state=tiled follow=on
 bspc rule -a Zathura desktop='^7' state=tiled follow=on
 bspc rule -a Xreader desktop='^7' state=tiled follow=on

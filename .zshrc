@@ -109,6 +109,10 @@ export FZF_DEFAULT_COMMAND='fd'
 #DISABLE_FZF_AUTO_COMPLETION="false"
 DISABLE_FZF_KEY_BINDINGS="true" # CTRL-T,CTRL-R,CTRL,ALT-C
 export _JAVA_AWT_WM_NONREPARENTING=1
+# This is to solve vulkan error in steam
+# U must make sure to install the needed vulkan drivers (these files r there)
+# packages(i think): vulkan-intel vulkan-headers vulkan-tools 
+export VK_DRIVER_FILES=/usr/share/vulkan/icd.d/intel_icd.i686.json:/usr/share/vulkan/icd.d/intel_icd.x86_64.json
 export PATH=$HOME/.local/bin:$PATH
 
 # aliases

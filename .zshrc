@@ -101,8 +101,10 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #alias fd="fzf"
 cpp(){
-g++ $1 -o /tmp/m.cpp && /tmp/m.cpp
+g++ $1 -o /tmp/m && chmod +x /tmp/m && /tmp/m
 }
+# Environment Variables-------------------->
+#
 # Plugins conf
 export FZF_BASE=/home/pxlman/.config/fzf
 export FZF_DEFAULT_COMMAND='fd'
@@ -113,10 +115,12 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 # U must make sure to install the needed vulkan drivers (these files r there)
 # packages(i think): vulkan-intel vulkan-headers vulkan-tools 
 export VK_DRIVER_FILES=/usr/share/vulkan/icd.d/intel_icd.i686.json:/usr/share/vulkan/icd.d/intel_icd.x86_64.json
+export LIBVA_DRIVERS_PATH=/usr/lib/dri/iHD_drv_video.so
 export PATH=$HOME/.local/bin:$PATH
+export PATH=$PATH:$HOME/.myapps
 
-# aliases
+# Aliases ----------------->
 alias nvimrc="nvim .dotfiles/.config/nvim/lua/pxlman"
 alias t="tree -a ."
-export PATH=$PATH:$HOME/.myapps
+alias snooze='pkill graySleep;xgamma -gamma 1'
 alias heroic=$HOME/.myapps/Heroic.AppImage

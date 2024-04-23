@@ -3,6 +3,11 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 # Auto run section
+$HOME/.mycmds/touchSettings
+# Set layouts us,ara
+setxkbmap -option grp:alt_space_toggle us,ara
+# Set cursor name as blabla to make lxapprarance change cursor
+xsetroot -cursor_name left_ptr &
 cmds="$HOME/.mycmds"
 pkill polybar
 polybar &
@@ -10,11 +15,13 @@ polybar &
 miniserve -u -p 7777 /&
 mconnect&
 $cmds/touchSettings
-killall graySleep lowBattery saw fridayMaghribDuaa
+killall graySleep lowBattery saw fridayMaghribDuaa conky
 $cmds/graySleep&
 $cmds/lowBattery&
 $cmds/saw&
 $cmds/fridayMaghribDuaa&
+conky -c $HOME/.conky/Gotham/Gotham
+conky -c $HOME/.conky/TeejeeTech/Process\ Panel
 
 
 wmname "LG3D"

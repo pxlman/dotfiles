@@ -168,7 +168,7 @@ rounded-corners-exclude = [
 #animation-clamping = false
 
 #enable or disable animations
-animations = true;
+animations = false;
 #change animation speed of windows in current tag e.g open window in current tag
 animation-stiffness-in-tag = 125;
 #change animation speed of windows when tag changes

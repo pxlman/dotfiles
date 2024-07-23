@@ -5,6 +5,12 @@ application/pdf=org.pwmt.zathura-pdf-poppler.desktop
 text/x-python=sublime_text.desktop
 application/x-extension-burp=install4j_1uoj5bj-BurpSuiteCommunity.desktop
 image/png=org.gnome.Loupe.desktop
+text/x-c++src=sublime_text.desktop
+text/markdown=sublime_text.desktop
+video/mp4=vlc.desktop
+x-scheme-handler/mailto=brave-browser.desktop
+application/vnd.microsoft.portable-executable=wine.desktop
+video/x-ms-wmv=vlc.desktop
 
 [Added Associations]
 text/plain=org.gnome.gedit.desktop;
@@ -15,3 +21,8 @@ application/xml=org.gnome.gedit.desktop;
 image/png=org.gnome.Loupe.desktop;
 x-scheme-handler/sms=org.gnome.Shell.Extensions.GSConnect.desktop;
 x-scheme-handler/tel=org.gnome.Shell.Extensions.GSConnect.desktop;
+text/x-c++src=sublime_text.desktop;
+text/markdown=sublime_text.desktop;
+video/mp4=vlc.desktop;
+application/vnd.microsoft.portable-executable=wine.desktop;
+video/x-ms-wmv=vlc.desktop;

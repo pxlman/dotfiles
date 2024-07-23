@@ -1,6 +1,8 @@
 return {
   {
     "L3MON4D3/LuaSnip",
+    dependencies = { "rafamadriz/friendly-snippets" },
+
     -- follow latest release.
     version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
     -- install jsregexp (optional!).
@@ -15,7 +17,8 @@ return {
       'hrsh7th/cmp-path',
       'hrsh7th/cmp-cmdline',
       'L3MON4D3/LuaSnip',
-      'saadparwaiz1/cmp_luasnip'
+      'saadparwaiz1/cmp_luasnip',
+      "rafamadriz/friendly-snippets"
     },
     config = function()
       -- Set up nvim-cmp.
@@ -26,6 +29,7 @@ return {
           -- REQUIRED - you must specify a snippet engine
           expand = function(args)
             require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
+            require('luasnip').filetype_extend("html", {"htmldoc"})
           end,
         },
         window = {
@@ -42,6 +46,9 @@ return {
         sources = cmp.config.sources({
           { name = 'nvim_lsp' },
           { name = 'luasnip' }, -- For luasnip users.
+          { name = 'buffer' },
+          { name = 'path' },
+          { name = 'friendly-snippets' },
         },
         {
           { name = 'buffer' },

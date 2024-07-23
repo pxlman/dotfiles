@@ -12,7 +12,7 @@ F1
 super + d
 	dmenu_run
 super + shift + d
-	rofi -show run
+	rofi -show drun
 # neovide
 super + backslash
   kitty nvim $HOME/Programing/
@@ -41,7 +41,11 @@ XF86AudioMute
 super + F1
   nemo
 super + F2
-  firefox
+  brave-nightly --password-store=basic
+super + F11
+  discord
+super + F12
+  whatsdesk
 
 Print
   flameshot gui --clipboard --path ~/Pictures/Screenshots/

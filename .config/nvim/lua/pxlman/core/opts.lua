@@ -1,6 +1,6 @@
 local o = vim.o
 local g = vim.g
-o.lsp = true -- automatic indeting for LSP
+o.lsp = 3
 o.ignorecase = true -- Ignore case while tabbing in the command line
 o.splitright = true -- New window will put right to the current window
 o.expandtab = true

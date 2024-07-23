@@ -1,5 +1,5 @@
-function map(mode,key,cmd,desc)
-    vim.keymap.set(mode,key,cmd,{desc = desc,silent = true})
+function map(mode,key,cmd,descr)
+    vim.keymap.set(mode,key,cmd,{desc = descr,silent = true})
 end
 return {
     -- Gaze deeply into unknown regions using the power of the moon.

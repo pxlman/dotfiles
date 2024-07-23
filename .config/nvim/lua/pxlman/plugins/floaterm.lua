@@ -10,6 +10,6 @@ return {
         map('t','jk',"<C-\\>","Show Floating Terminal")
         -- vim.cmd(":FloatermNew --height=0.9 --width=0.9 --wintype=float --name=scratchy --autoclose=2 --silent<CR>")
         -- map('n','<F7>',":FloatermNew --autoclose=0 g++ % -o %< && ./%<<CR>",{desc = "Compile c++ files"})
-        map('n','<F2>',":FloatermNew --autoclose=0 g++ %:p -o /tmp/m <CR>",{desc = "Build C++ files"})
+        -- map('n','<F2>',":FloatermNew --autoclose=0 g++ %:p -o /tmp/m<CR>",{desc = "Build C++ files"})
     end
 }

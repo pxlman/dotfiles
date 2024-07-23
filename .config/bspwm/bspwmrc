@@ -11,7 +11,8 @@ xsetroot -cursor_name left_ptr &
 cmds="$HOME/.mycmds"
 pkill polybar
 polybar &
-/usr/lib/notification-daemon-1.0/notification-daemon &
+# /usr/lib/notification-daemon-1.0/notification-daemon &
+dunst&
 miniserve -u -p 7777 /&
 mconnect&
 $cmds/touchSettings
@@ -20,10 +21,9 @@ $cmds/graySleep&
 $cmds/lowBattery&
 $cmds/saw&
 $cmds/fridayMaghribDuaa&
-conky -c $HOME/.conky/Gotham/Gotham
-conky -c $HOME/.conky/TeejeeTech/Process\ Panel
 
-
+conky -c $HOME/.conky/TeejeeTech/Process\ Panel&
+conky -c $HOME/.conky/Gotham/Gotham&
 wmname "LG3D"
 
 # Workspaces
@@ -32,7 +32,7 @@ bspc monitor -d " " " " "󱥂 " " " "I" " " " "
 bspc config border_width         2
 bspc config window_gap          12
 
-bspc config split_ratio          0.52
+bspc config split_ratio          0.5
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 # Scratchpad
@@ -41,8 +41,10 @@ bspc rule -a "*:*:floating" state=floating center=on
 
 # Bindings
 bspc rule -a loupe state=floating
-bspc rule -a Alacritty desktop='^1' state=pseudo_tiled follow=on
+bspc rule -a Alacritty desktop='^1' state=tiled follow=on
 bspc rule -a firefox desktop='^2' follow=on
+bspc rule -a Brave-browser desktop='^2' follow=on
+bspc rule -a Brave-browser-nightly desktop='^2' follow=on
 bspc rule -a Microsoft-edge desktop='^2' follow=on
 bspc rule -a TelegramDesktop desktop='^3' follow=off
 bspc rule -a whatsdesk desktop='^3' follow=off

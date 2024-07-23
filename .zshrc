@@ -103,24 +103,51 @@ source $ZSH/oh-my-zsh.sh
 cpp(){
 g++ $1 -o /tmp/m && chmod +x /tmp/m && /tmp/m
 }
+# v for video downloading
+# v QUALITY LINK
+v(){
+if [ $1 = "2" ]; then
+  yt-dlp -f "worst[height>=240]" --no-playlist $2
+elif [ $1 = "3" ]; then
+  yt-dlp -f "worst[height>=360]" --no-playlist $2
+elif [ $1 = "4" ]; then
+  yt-dlp -f "worst[height>=480]" --no-playlist $2
+elif [ $1 = "7" ]; then
+  yt-dlp -f "worst[height>=720]" --no-playlist $2
+else
+  echo "Invalid argument"
+fi
+}
+qemu-android(){
+qemu-kvm -soundhw es1370 -net nic -net user -cdrom \
+${@:-out/target/product/eeepc/eeepc.iso}
+}
 # Environment Variables-------------------->
 #
 # Plugins conf
 export FZF_BASE=/home/pxlman/.config/fzf
 export FZF_DEFAULT_COMMAND='fd'
 #DISABLE_FZF_AUTO_COMPLETION="false"
-DISABLE_FZF_KEY_BINDINGS="true" # CTRL-T,CTRL-R,CTRL,ALT-C
+export DISABLE_FZF_KEY_BINDINGS="true" # CTRL-T,CTRL-R,CTRL,ALT-C
 export _JAVA_AWT_WM_NONREPARENTING=1
 # This is to solve vulkan error in steam
 # U must make sure to install the needed vulkan drivers (these files r there)
 # packages(i think): vulkan-intel vulkan-headers vulkan-tools 
 export VK_DRIVER_FILES=/usr/share/vulkan/icd.d/intel_icd.i686.json:/usr/share/vulkan/icd.d/intel_icd.x86_64.json
+export LIBVA_DRIVER_NAME=x86_64 VDPAU_DRIVER=va_gl
 export LIBVA_DRIVERS_PATH=/usr/lib/dri/iHD_drv_video.so
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$PATH:$HOME/.myapps
-
+export PATH=$PATH:$HOME/.mycmds
+export EDITOR=nvim
+# After you `python -m venv $HOME/.venv`
+# source ~/.venv/bin/activate
 # Aliases ----------------->
 alias nvimrc="nvim .dotfiles/.config/nvim/lua/pxlman"
 alias t="tree -a ."
 alias snooze='pkill graySleep;xgamma -gamma 1'
-alias heroic=$HOME/.myapps/Heroic.AppImage
+# alias heroic=$HOME/.myapps/Heroic.AppImage
+alias h=helix
+# alias python=~/.venv/bin/python
+# alias pip=~/.venv/bin/pip
+alias docker="sudo docker"

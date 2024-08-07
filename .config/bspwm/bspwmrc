@@ -19,7 +19,7 @@ $cmds/touchSettings
 killall graySleep lowBattery saw fridayMaghribDuaa conky
 $cmds/graySleep&
 $cmds/lowBattery&
-$cmds/saw&
+# $cmds/saw&
 $cmds/fridayMaghribDuaa&
 
 conky -c $HOME/.conky/TeejeeTech/Process\ Panel&

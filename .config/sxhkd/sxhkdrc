@@ -32,9 +32,9 @@ XF86MonBrightnessUp
   brightnessctl set +5%
 
 XF86AudioRaiseVolume
-  pamixer --increase 10 --allow-boost --set-limit 175
+  pamixer --increase 10 --allow-boost --set-limit 200
 XF86AudioLowerVolume
-  pamixer --decrease 10 --allow-boost --set-limit 150
+  pamixer --decrease 10 --allow-boost --set-limit 200
 XF86AudioMute
   pamixer --toggle-mute
 

@@ -30,6 +30,7 @@ return {
         "marksman",
         "html",
         "gopls",
+        "eslint"
       },
       automatic_installation = true,
     },
@@ -50,6 +51,9 @@ return {
         capabilities = capabilities
       }
       require("lspconfig").gopls.setup{
+        capabilities = capabilities
+      }
+      require("lspconfig").eslint.setup{
         capabilities = capabilities
       }
     end,

@@ -158,6 +158,7 @@ programs.zsh.enable = true;
                                 vulkan-loader
 				vulkan-utility-libraries
 				xorg.xf86videointel
+                                jre22
 				## Wine and gaming
 				wine
 				winetricks

@@ -1,1 +1,4 @@
 hardware-configuration.nix
+users/pxlman/.config/sublime-text/
+users/pxlman/.mozilla/
+users/pxlman/.config/BraveSoftware/

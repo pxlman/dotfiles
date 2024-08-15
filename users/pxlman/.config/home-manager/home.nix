@@ -1,5 +1,5 @@
 { config,lib, pkgs, unstable, ... }: {
-nixpkgs.config.allowUnFree = true;
+nixpkgs.config = {allowUnFree = true;};
 home.stateVersion = "24.05";
 home.username = "pxlman";
 home.homeDirectory = "/home/pxlman";
@@ -12,6 +12,9 @@ home.packages = with pkgs; [
   copyq # Clipboard manager
   bibata-cursors # My cursor theme
   cinnamon.mint-themes # Temporary theme
+  rose-pine-gtk-theme
+  catppuccin-gtk
+  catppuccin
   libnotify # For the notify-send command
   nitrogen # Wallpapers
   flameshot # Screenshots
@@ -27,7 +30,7 @@ home.packages = with pkgs; [
   rofi
   redshift # Eye comfort
   miniserve # Sharing between local devices
-  mconnect
+  #mconnect
 ### Applications
   cinnamon.nemo
   brave
@@ -37,13 +40,13 @@ home.packages = with pkgs; [
   virtualbox
   # gimp
   # anki-bin
-  vlc-bin
+  vlc
   zathura
   obsidian
   vscode
   gparted
-  libreoffice-bin
-  xournalapp
+  libreoffice
+  #xournalapp
   weylus
   postman
   rhythmbox
@@ -77,8 +80,8 @@ gtk = {
     package = pkgs.papirus-icon-theme;
   };
   theme = {
-    name = "Catppuccin-Mocha-Standard-Lavender-Dark";
-    package = pkgs.catppuccin-gtk;
+    name = "rose-pine";
+    package = pkgs.rose-pine-gtk-theme;
   };
   font = {
     name = "Hack";
@@ -186,7 +189,8 @@ home.sessionVariables = {
   LIBVA_DRIVER_NAME = "x86_64 VDPAU_DRIVER=va_gl";
   LIBVA_DRIVERS_PATH="/usr/lib/dri/iHD_drv_video.so";
   VK_DRIVER_FILES="/usr/share/vulkan/icd.d/intel_icd.i686.json:/usr/share/vulkan/icd.d/intel_icd.x86_64.json";
-  GTK_THEME = "Catppuccin-Mocha-Standard-Lavender-Dark";
+  GTK_THEME = "rose-pine";
+  NIXPKGS_ALLOW_UNFREE=1;
 };
 services.dunst = {
   enable = true;

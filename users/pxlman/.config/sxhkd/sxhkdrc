@@ -41,7 +41,7 @@ XF86AudioMute
 super + F1
   nemo
 super + F2
-  brave-nightly --password-store=basic
+  brave --password-store=basic
 super + F11
   discord
 super + F12

@@ -21,12 +21,13 @@
 	boot.loader.grub.enable = true;
 	boot.loader.grub.efiSupport = true;
 	boot.loader.grub.device = "nodev";
+	boot.supportedFilesystems = [ "ntfs" ];
 # boot.loader.grub.efiInstallAsRemovable = true;
 # Define on which hard drive you want to install Grub.
-# boot.loader.grub.device = "/dev/sda"; # or "nodev" for efi only
-#  boot.loader.systemd-boot.enable = true;
+	#boot.loader.grub.device = "/dev/sda"; # or "nodev" for efi only
+	#boot.loader.systemd-boot.enable = true;
 	boot.loader.efi.canTouchEfiVariables = true;
-	boot.loader.efi.efiSysMountPoint = "/boot/efi";
+	#boot.loader.efi.efiSysMountPoint = "/boot";
 # Networking Hostname
 	networking.hostName = "Ahmed"; # Define your hostname.
 # Pick only one of the below networking options.
@@ -78,6 +79,7 @@
 	];
 # Enable touchpad support (enabled default in most desktopManager).
 	services.libinput.enable = true;
+	services.libinput.touchpad.naturalScrolling = false;
 # Enable CUPS to print documents.
 	services.printing.enable = true;
 # Enable ssh service
@@ -141,6 +143,7 @@ programs.zsh.enable = true;
 				dmenu
 				picom
 				networkmanagerapplet
+				catppuccin-gtk
 # Applications
 				alacritty
 				#discord
@@ -158,7 +161,7 @@ programs.zsh.enable = true;
                                 vulkan-loader
 				vulkan-utility-libraries
 				xorg.xf86videointel
-                                jre22
+                                jdk22
 				## Wine and gaming
 				wine
 				winetricks
@@ -170,6 +173,7 @@ programs.zsh.enable = true;
 				xorg.xinit
 				xorg.xinput
 				xorg.xcursorthemes
+				ntfs3g
 # Grub themes
 				#sleek-grub-theme
 				];

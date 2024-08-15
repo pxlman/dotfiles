@@ -1,8 +1,11 @@
 # Partitioning with cfdisk then mkfs.... then mount
 ```bash
-mount /dev/sdaI /mnt 
-mount /dev/sdaJ /mnt/home
-mount /dev/sdaK /mnt/boot/efi
+mount /dev/sdXI /mnt 
+mount /dev/sdXJ /mnt/home
+mkfs.fat -F 32 -n boot /dev/sdXK
+mount -o umask=077 /dev/sdXK /mnt/boot
+mkswap -L swap /dev/sdXL
+swapon /dev/sdXL
 ```
 # Clone the repo at your home  
 ```bash
@@ -32,5 +35,6 @@ stow pxlman -t ~/
 ```
 # Other things
 Install Wallpapers at ~/Pictures/Wallpapers
-`git clone https://github.com/antoniosarosi/Wallpapers`
-
+```bash
+git clone https://github.com/antoniosarosi/Wallpapers`
+```

@@ -10,9 +10,12 @@ F1
   tdrop -a kitty
 # program launcher
 super + d
-	dmenu_run
+        rofi -show drun
 super + shift + d
-	rofi -show drun
+        dmenu_run -i
+super + p
+	rofi -show p -modi p:'rofi-power-menu'  -font 'JetBrains Mono NF 16' -theme-str 'window \{width: 8em;\} listview \{lines: 6;\}'
+ #	rofi -show drun
 # neovide
 super + backslash
   kitty nvim $HOME/Programing/

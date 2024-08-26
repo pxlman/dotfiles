@@ -2,6 +2,7 @@
 # your system. Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 
+
 { config, lib, pkgs,unstable, ... }:
 #let
 # add unstable channel declaratively
@@ -12,26 +13,28 @@
 {
 	imports =
 		[ # Include the results of the hardware scan.
-			./hardware-configuration.nix
-	#		./home.nix
-			#(import "${(builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/release-24.05.tar.gz")}/nixos")
+		./hardware-configuration.nix
+#		./home.nix
+#(import "${(builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/release-24.05.tar.gz")}/nixos")
 		];
 
 # Use the GRUB 2 boot loader.
-	boot.loader.grub.enable = true;
-	boot.loader.grub.efiSupport = true;
-	boot.loader.grub.device = "nodev";
+	boot.loader.grub = {
+		enable = true;
+		efiSupport = true;
+		device = "nodev";
+		useOSProber = true;
+	};
 	boot.supportedFilesystems = [ "ntfs" ];
 # boot.loader.grub.efiInstallAsRemovable = true;
 # Define on which hard drive you want to install Grub.
-	#boot.loader.grub.device = "/dev/sda"; # or "nodev" for efi only
-	#boot.loader.systemd-boot.enable = true;
+#boot.loader.grub.device = "/dev/sda"; # or "nodev" for efi only
+#boot.loader.systemd-boot.enable = true;
 	boot.loader.efi.canTouchEfiVariables = true;
-	#boot.loader.efi.efiSysMountPoint = "/boot";
+#boot.loader.efi.efiSysMountPoint = "/boot";
 # Networking Hostname
 	networking.hostName = "Ahmed"; # Define your hostname.
-# Pick only one of the below networking options.
-# networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+# Wifi enabling
 	networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
 # Set your time zone.
 	time.timeZone = "Africa/Cairo";
@@ -51,24 +54,35 @@
 		#LC_TELEPHONE = "ar_EG.utf8";
 		#LC_TIME = "ar_EG.utf8";
 	};
-#   console = {
-#     font = "Lat2-Terminus16";
-#     keyMap = "us";
-#     useXkbConfig = true; # use xkb.options in tty.
-#   };
-
+	virtualisation={
+		docker = {
+			enable = true;
+			daemon.settings = {
+			  data-root = "/home/docker";
+			};
+		};
+		virtualbox= {
+			host.enable = true;
+			guest.enable = true;
+			guest.clipboard = true;
+			guest.draganddrop = true;
+		};
+	};
+	users.extraGroups.vboxusers.members = [ "pxlman" ];
+#virtualisation.virtualbox.host.enableExtensionPack = true;
 # Enable the X11 windowing system.
 	services.xserver.enable = true;
 	services.xserver.windowManager.bspwm.enable = true;
 
 # Configure keymap in X11
-	services.xserver.xkb.layout = "us,ara";
-	services.xserver.xkb.variant = "";
-	services.xserver.xkb.options = "grp:alt_space_toggle";
+	services.xserver.xkb = {
+		layout = "us,ara";
+		variant = "";
+		options = "grp:alt_space_toggle";
+	};
 # Enable the GDM display manager
 	services.xserver.displayManager.startx.enable = true; # Adding xinitrc to the
 	services.xserver.displayManager.lightdm.enable = true;
-	#services.xserver.displayManager.lightdm.greeters.lomiri.enable = true;
 # Add xinitrc to the sessions /usr/share/sessions
 	services.xserver.displayManager.session = [
 		{
@@ -82,8 +96,15 @@
 	services.libinput.touchpad.naturalScrolling = false;
 # Enable CUPS to print documents.
 	services.printing.enable = true;
+	services.printing.drivers = with pkgs;[
+		# samsung-unified-linux-driver
+		samsung-unified-linux-driver_1_00_37
+		# samsung-unified-linux-driver_1_00_36
+		# splix
+	];
+	programs.system-config-printer.enable = true;
 # Enable ssh service
-	#services.sshd.enable = true;
+#services.sshd.enable = true;
 # Hardware
 ## Enable sound.
 	hardware.pulseaudio.enable = true; # Enables Audio Throught pulseaudio package
@@ -92,40 +113,22 @@
 	services.blueman.enable = true;
 # Fonts
 	fonts.packages = with pkgs;[
-			#jetbrains-mono
-			nerdfonts
-			font-awesome
-			#fira-code-nerdfont
-			#terminus-nerdfont
-			#hack-font
+		#jetbrains-mono
+		nerdfonts
+		font-awesome
+		#fira-code-nerdfont
+		#terminus-nerdfont
+		#hack-font
 	];
 # Enabling ZSH as a shell
-programs.zsh.enable = true;
-#programs.zsh = {
-#	enable = true;
-#	enableCompletion = true;
-#	autosuggestions.enable = true;
-#	syntaxHighlighting.enable = true;
-#	ohMyZsh = {
-#		enable = true;
-#		theme = "tjkirch";
-#		plugins = [
-#			"eza"
-#		];
-#	};
-#	enableLsColors = true;
-#	shellAliases = {
-#		t = "tree .";
-#		docker = "sudo docker";
-#		nrc = "nvim ~/.config/nvim";
-#	};
-#};
+	programs.zsh.enable = true;
 # Define a user account. Don't forget to set a password with ‘passwd’.
+nixpkgs.config.allowUnfree = true;
 	users.users.pxlman = {
 		shell = pkgs.zsh;
 		isNormalUser = true;
 		initialPassword = "1234";
-		extraGroups = [ "wheel" "networkmanager" "video" "audio" ]; # Enable ‘sudo’ for the user.
+		extraGroups = [ "wheel" "networkmanager" "video" "audio" "vboxusers" "vboxsf" "kvm" ]; # Enable ‘sudo’ for the user.
 			packages = with pkgs; [
 # Terminal packages
 				zsh
@@ -146,24 +149,20 @@ programs.zsh.enable = true;
 				catppuccin-gtk
 # Applications
 				alacritty
-				#discord
-				#pkgs.unstable.discord
-				#brave
-				#cinnamon.nemo
 # Drivers and services
-				## CPU and GPU
+## CPU and GPU
 				intel-media-driver
 				intel-gpu-tools
 				intel-vaapi-driver
 				mesa
 				vulkan-headers
 				vulkan-tools
-                                vulkan-loader
+				vulkan-loader
 				vulkan-utility-libraries
 				xorg.xf86videointel
-                                jdk22
-				## Wine and gaming
-				wine
+				jdk22
+## Wine and gaming
+		    wineWowPackages.stable
 				winetricks
 # X11 essentials
 				xorg.libX11
@@ -173,29 +172,85 @@ programs.zsh.enable = true;
 				xorg.xinit
 				xorg.xinput
 				xorg.xcursorthemes
+				xorg.xhost
 				ntfs3g
-# Grub themes
-				#sleek-grub-theme
 				];
+	};
+# Steam
+	programs.steam.enable = true;
+# Stylix For autostyling
+	stylix = {
+		enable = true;
+		image = "/home/pxlman/Pictures/Wallpapers2/01.png";
+		base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
+		cursor = {
+			name = "Bibata-Modern-Classic";
+			package = pkgs.bibata-cursors;
+			size = 10;
+		};
+		polarity = "dark";
+		targets = {
+			gtk.enable = false; # This will make it only with others like: grub, lightdm, nixos-icons
+		};
 	};
 
 # List packages installed in system profile. To search, run:
 # $ nix search wget
 	environment.systemPackages = with pkgs; [
-		home-manager
-		file
-		neovim
-		wget
-		grub2
-		git
-		libgcc
-		python3
-		pipx
-		nodejs_22
-		gcc
-		gcc_debug
-		go
-		rustup
+			base16-schemes
+			home-manager
+			file
+			neovim
+			wget
+			grub2
+			git
+			libgcc
+			python3
+			pipx
+			nodejs_22
+			gcc
+			gdb
+			gcc_debug
+			go
+			rustup
+			syncthing
+			p7zip
+			unzip
+			exiv2
+			# SDL2_mixer SDL multichannel audio mixer library
+			# jackmix # Matrix mixer for the jack-audio-connection-kit
+ 			# aumix # audio mixer for X and the console
+	];
+# To make executable ELF files and games work
+	# "minimum" amount of libraries needed for most games to run without steam-run
+	programs.nix-ld.enable = true;
+	programs.nix-ld.libraries = with pkgs; [
+	  # common requirement for several games
+	  stdenv.cc.cc.lib
+
+	  # from https://github.com/NixOS/nixpkgs/blob/nixos-23.05/pkgs/games/steam/fhsenv.nix#L72-L79
+	  xorg.libXcomposite
+	  xorg.libXtst
+	  xorg.libXrandr
+	  xorg.libXext
+	  xorg.libX11
+	  xorg.libXfixes
+	  libGL
+	  libva
+	  # from https://github.com/NixOS/nixpkgs/blob/nixos-23.05/pkgs/games/steam/fhsenv.nix#L124-L136
+	  fontconfig
+	  freetype
+	  xorg.libXt
+	  xorg.libXmu
+	  libogg
+	  libvorbis
+	  SDL
+	  SDL2_image
+	  glew110
+	  libdrm
+	  libidn
+	  tbb
+	  zlib
 	];
 
 # Some programs need SUID wrappers, can be configured further or are
@@ -209,13 +264,45 @@ programs.zsh.enable = true;
 # List services that you want to enable:
 
 # Enable the OpenSSH daemon.
-services.openssh.enable = true;
+	services.openssh.enable = true;
 
+# Syncthing
+	services.syncthing ={
+		enable = false; # just use this till it work with me
+		#systemctl --user enable --now syncthing.service
+		user = "pxlman";
+#	settings = {
+#		folders = {
+#			"/home/pxlman/Sync/Notes" = {
+#				enable = true;
+#				id = "obsidian-notes";
+#				name = "Notes";
+#				devices = [ "phone" ];
+#			};
+#		};
+#		devices = {
+#			"phone" = {
+#				id = "YAGJ4X5-IEBXLL2-O6H6JJU-4Q7U26T-PZVQY6T-YDHJ43B-KSO45I2-MCZWBQO";
+#				name = "phone";
+#				autoAcceptFolders = true;
+#			};
+#		};
+#	};
+		#overrideFolders = false;
+		#overrideDevices = false;
+		#guiAddress = "127.0.0.1:9191";
+	};
 # Open ports in the firewall.
-# networking.firewall.allowedTCPPorts = [ ... ];
-# networking.firewall.allowedUDPPorts = [ ... ];
 # Or disable the firewall altogether.
-networking.firewall.enable = false;
+	networking.firewall.enable = false;
+	networking.firewall.allowedTCPPorts = [
+		22000
+		8384
+	];
+	networking.firewall.allowedUDPPorts = [ 
+		22000
+		21027
+	];
 
 # Copy the NixOS configuration file and link it from the resulting system
 # (/run/current-system/configuration.nix). This is useful in case you

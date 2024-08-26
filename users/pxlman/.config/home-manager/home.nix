@@ -5,7 +5,6 @@ home.username = "pxlman";
 home.homeDirectory = "/home/pxlman";
 home.packages = with pkgs; [
 ### THEMES and Styles
-  #fastfetch
   dconf # I Don't know but gtk needs it
   lxappearance # Themes and Fonts manager
   font-manager # Font Manager
@@ -20,6 +19,9 @@ home.packages = with pkgs; [
   flameshot # Screenshots
   conky # Desktop Widgets
   rofi
+  rofi-power-menu
+  rofi-emoji
+  htop
 ### Services
   xclip # Copy and Paste service
   pulseaudio # audio driver
@@ -30,14 +32,18 @@ home.packages = with pkgs; [
   rofi
   redshift # Eye comfort
   miniserve # Sharing between local devices
+  syncthing
   #mconnect
 ### Applications
-  cinnamon.nemo
+  # cinnamon.nemo
+  cinnamon.nemo-with-extensions
   brave
+  discord
+  #hexchat
+  gimp
   # pkgs.unstable.discord unstable can be put in /etc/nixos/configuration.nix at the user section
-  #pkgs.unstable.arp-scan
   loupe # image viewer
-  virtualbox
+  xorg.xf86videovboxvideo
   # gimp
   # anki-bin
   vlc
@@ -51,22 +57,39 @@ home.packages = with pkgs; [
   postman
   rhythmbox
   # onlyoffice-bin
+  obs-studio
 ### Gaming
-  # steam
-  # heroic
+  zeroad # 0ad
+  steam
+  legendary-gl
+  rare
+  heroic
   superTux
+  superTuxKart
   lutris
+  prismlauncher
 ### CLI Apps
   helix
   nettools
-  nmap
   eza
   tmux
-];
+  docker
+### Hacking
+  exiftool
+  nmap
+  # ida-free
+  # burpsuite
+  # wireshark
+  # tshark
+  # tcpdump
+  # termshark
+  # john
+  # wordlists
+  ];
 home.pointerCursor = {
   x11.enable = true;
   name = "Bibata-Modern-Ice";
-  size = 2;
+  size = 10;
   package = pkgs.bibata-cursors;
 };
 gtk = {
@@ -80,8 +103,8 @@ gtk = {
     package = pkgs.papirus-icon-theme;
   };
   theme = {
-    name = "rose-pine";
-    package = pkgs.rose-pine-gtk-theme;
+    name = "rose-pine"; # WhiteSur-dark
+    package = pkgs.rose-pine-gtk-theme; # pkgs.whitesur-gtk-theme
   };
   font = {
     name = "Hack";
@@ -114,8 +137,7 @@ qt = {
   enable = true;
   platformTheme.name = "gtk3";
 };
-home.shellAliases = {
-};
+services.syncthing.enable = true;
 services.copyq = {
   enable = true;
 };
@@ -165,6 +187,8 @@ programs.zsh = {
     s = "snooze";
     docker = "sudo docker";
     nrc = "nvim ~/.config/nvim";
+    rofi-p = "rofi -show p -modi p:'rofi-power-menu' -font 'JetBrains Mono NF 16' -theme-str 'window {width: 10em;} listview {lines: 6;}'";
+
   };
   initExtra = ''
     export _JAVA_AWT_WM_NONREPARENTING=1
@@ -180,16 +204,16 @@ home.sessionPath = [
   "$HOME/.mycmds"
   "$HOME/.local/bin"
   "$HOME/dotfiles"
-]; 
+];
 home.sessionVariables = {
   _JAVA_AWT_WM_NONREPARENTING=1;
   # this is to solve vulkan error in steam
   # U must make sure to install the needed vulkan drivers (these files r there)
   # packages(i think): vulkan-intel vulkan-headers vulkan-tools 
   LIBVA_DRIVER_NAME = "x86_64 VDPAU_DRIVER=va_gl";
-  LIBVA_DRIVERS_PATH="/usr/lib/dri/iHD_drv_video.so";
-  VK_DRIVER_FILES="/usr/share/vulkan/icd.d/intel_icd.i686.json:/usr/share/vulkan/icd.d/intel_icd.x86_64.json";
-  GTK_THEME = "rose-pine";
+  #LIBVA_DRIVERS_PATH="/usr/lib/dri/iHD_drv_video.so";
+  #VK_DRIVER_FILES="/usr/share/vulkan/icd.d/intel_icd.i686.json:/usr/share/vulkan/icd.d/intel_icd.x86_64.json";
+  GTK_THEME = "rose-pine"; # WhiteSur-dark
   NIXPKGS_ALLOW_UNFREE=1;
 };
 services.dunst = {
@@ -222,14 +246,8 @@ services.dunst = {
     };
   };
 };
-# xresources.properties = {
-#   "Xcursor.theme" = "Bibata-Modern-Classic";
-#"Xcursor.size" = "18";
-#"Xft.dpi" = "120";
-#};
 xdg.userDirs = {
   enable = true;
   createDirectories = true;
 };
 }
-

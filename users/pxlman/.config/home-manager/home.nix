@@ -29,15 +29,16 @@ home.packages = with pkgs; [
   dunst # For notifications
   pavucontrol # modifying audio in GUI
   brightnessctl # For brightness
-  rofi
   redshift # Eye comfort
   miniserve # Sharing between local devices
-  syncthing
+  syncthing # Syncing folders between phone and laptop
   #mconnect
 ### Applications
   # cinnamon.nemo
   cinnamon.nemo-with-extensions
   brave
+  zoom-us
+  audacity
   discord
   #hexchat
   gimp
@@ -52,26 +53,25 @@ home.packages = with pkgs; [
   vscode
   gparted
   libreoffice
-  #xournalapp
+  xournalpp
   weylus
   postman
   rhythmbox
-  # onlyoffice-bin
   obs-studio
 ### Gaming
   zeroad # 0ad
   steam
-  legendary-gl
-  rare
-  heroic
+  gamepad-tool # Testing gamepad
+  legendary-gl # CLI tool for epic games 
+  rare # legendary GUI client
+  heroic # Epic games launcher
   superTux
   superTuxKart
-  lutris
-  prismlauncher
-### CLI Apps
-  helix
-  nettools
-  eza
+  lutris # games launcher
+  ### CLI Apps
+  helix # Text editor command `hx`
+  nettools # ithink for ip a
+  eza # ls fork
   tmux
   docker
 ### Hacking
@@ -187,7 +187,9 @@ programs.zsh = {
     s = "snooze";
     docker = "sudo docker";
     nrc = "nvim ~/.config/nvim";
-    rofi-p = "rofi -show p -modi p:'rofi-power-menu' -font 'JetBrains Mono NF 16' -theme-str 'window {width: 10em;} listview {lines: 6;}'";
+    copy="xclip -selection clipboard";
+    rc = "hx ~/.config/home-manager/home.nix";
+    gitdone="git add .; git commit -m '[+]'; git push; echo '[*] Files Saved'"; # git done
 
   };
   initExtra = ''

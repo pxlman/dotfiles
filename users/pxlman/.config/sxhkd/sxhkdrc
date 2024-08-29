@@ -58,11 +58,9 @@ shift + Print
   flameshot full --clipboard --path ~/Pictures/Screenshots/
 #   maim --select | tee $HOME/Pictures/Screenshots/"$(date +%y\ %m\ %d\ %H:%M:%S).png" | xclip -selection clipboard -t image/png
 
-
-#
+###############################
 # bspwm hotkeys
 #
-
 # quit/restart bspwm
 super + alt + {q,r}
 	bspc {quit,wm -r}

@@ -13,10 +13,10 @@ pkill polybar
 polybar &
 # /usr/lib/notification-daemon-1.0/notification-daemon &
 dunst&
-miniserve -u -p 7777 /&
+miniserve -u -p 7777 $HOME /&
 mconnect&
 $cmds/touchSettings
-killall graySleep lowBattery saw fridayMaghribDuaa conky
+pkill graySleep lowBattery saw fridayMaghribDuaa conky
 $cmds/graySleep&
 $cmds/lowBattery&
 $cmds/saw&

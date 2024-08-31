@@ -83,6 +83,7 @@
 # Enable the GDM display manager
 	services.xserver.displayManager.startx.enable = true; # Adding xinitrc to the
 	services.xserver.displayManager.lightdm.enable = true;
+	services.xserver.displayManager.lightdm.background = lib.mkForce ./files/lightdm-wallpaper;
 # Add xinitrc to the sessions /usr/share/sessions
 	services.xserver.displayManager.session = [
 		{
@@ -106,11 +107,49 @@
 # Enable ssh service
 #services.sshd.enable = true;
 # Hardware
+######
 ## Enable sound.
 	hardware.pulseaudio.enable = true; # Enables Audio Throught pulseaudio package
-	hardware.bluetooth.enable = true; # Enables bluetooth
-	hardware.bluetooth.powerOnBoot = true; # Powers on the bluetooth on boot up
+	## Or use
+ # services.pipewire = { # u must disable pulseaudio before use pipewire
+ #    enable = false;
+ #    alsa.enable = true;
+ #    alsa.support32Bit = true;
+ #    pulse.enable = true;
+ #    jack.enable = true;
+
+ #    wireplumber = {
+ #      enable = true;
+ #      package = pkgs.wireplumber;
+ #    };
+ #  };
+######
+	hardware.bluetooth = {
+		enable = true; # Enables bluetooth
+		package = pkgs.bluez.overrideAttrs (oldAttrs: {
+	    configureFlags = oldAttrs.configureFlags ++ [ "--enable-sixaxis" ];
+	  }); # I think it will make controller work
+		input = {
+			General = {
+				UserspaceHID=true;
+				ClassicBondedOnly=false;
+				LEAutoSecurity=false;
+			};
+		};
+		powerOnBoot = true; # Powers on the bluetooth on boot up
+	};
 	services.blueman.enable = true;
+	# services.udev = {
+	# 	enable = false;
+	# 	extraRules = ''
+	# 		KERNEL=="js[0-9]", ENV{ID_BUS}=="bluetooth", 
+	# 		SUBSYSTEM=="input", MODE="0664", TAG+="uaccess",
+	# 		SYMLINK+="input/by-id/$env{ID_BUS}-controller-%n-joystick" KERNEL=="event[0-9]*",
+	# 		ENV{ID_BUS}=="bluetooth", SUBSYSTEM=="input", MODE="0664",
+	# 		TAG+="uaccess", SYMLINK+="input/by-id/$env{ID_BUS}-controller-%n-event-joystick"
+
+	# 		'';
+	# };
 # Fonts
 	fonts.packages = with pkgs;[
 		#jetbrains-mono
@@ -160,7 +199,9 @@ nixpkgs.config.allowUnfree = true;
 				vulkan-loader
 				vulkan-utility-libraries
 				xorg.xf86videointel
-				jdk22
+				xorg.xf86videosisusb # For usb audio i think
+				linuxKernel.packages.linux_6_6.v4l2loopback # make virtual camera work in obs studio
+ 				jdk22
 ## Wine and gaming
 		    wineWowPackages.stable
 				winetricks
@@ -171,13 +212,22 @@ nixpkgs.config.allowUnfree = true;
 				xorg.libXinerama
 				xorg.xinit
 				xorg.xinput
+				xorg.xev
 				xorg.xcursorthemes
 				xorg.xhost
-				ntfs3g
+				usbutils # for `lsusb`
+				woeusb # make a bootable windows usb from windows iso
+				usbrelay # Tool to control USB HID relays
+ 				ntfs3g
 				];
 	};
-# Steam
+# Gaming
 	programs.steam.enable = true;
+	programs.gamemode = {
+		enable = true;
+	};
+	hardware.xpadneo.enable = true;
+	#hardware.xone.enable = true;
 # Stylix For autostyling
 	stylix = {
 		enable = true;
@@ -227,7 +277,6 @@ nixpkgs.config.allowUnfree = true;
 	programs.nix-ld.libraries = with pkgs; [
 	  # common requirement for several games
 	  stdenv.cc.cc.lib
-
 	  # from https://github.com/NixOS/nixpkgs/blob/nixos-23.05/pkgs/games/steam/fhsenv.nix#L72-L79
 	  xorg.libXcomposite
 	  xorg.libXtst

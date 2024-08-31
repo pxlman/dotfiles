@@ -139,7 +139,7 @@ qt = {
 };
 services.syncthing.enable = true;
 services.copyq = {
-  enable = true;
+  enable = false;
 };
 # Git config
 programs.git = {
@@ -186,10 +186,13 @@ programs.zsh = {
     n = "nvim";
     s = "snooze";
     docker = "sudo docker";
-    nrc = "nvim ~/.config/nvim";
+    #nrc = "nvim ~/.config/nvim";
     copy="xclip -selection clipboard";
     rc = "hx ~/.config/home-manager/home.nix";
+    nrc = "sudo hx /etc/nixos/configuration.nix";
     gitdone="git add .; git commit -m '[+]'; git push; echo '[*] Files Saved'"; # git done
+    home = "home-manager switch -f ~/dotfiles/users/pxlman/.config/home-manager/home.nix";
+    switch = "sudo nixos-rebuild switch --verbose";
 
   };
   initExtra = ''

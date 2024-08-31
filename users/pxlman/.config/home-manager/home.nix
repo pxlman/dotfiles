@@ -172,6 +172,7 @@ programs.zsh = {
     plugins = [
       "sudo" # sudo the previous command by just double ESC
       "eza"
+      "git"
     ];
   };
   #enableLsColors = true;

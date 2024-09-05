@@ -44,6 +44,7 @@ home.packages = with pkgs; [
   gimp
   # pkgs.unstable.discord unstable can be put in /etc/nixos/configuration.nix at the user section
   loupe # image viewer
+  gnome.eog
   xorg.xf86videovboxvideo
   # gimp
   # anki-bin
@@ -60,7 +61,9 @@ home.packages = with pkgs; [
   obs-studio
 ### Gaming
   zeroad # 0ad
-  steam
+  #steam
+  #mangohud
+  #gamemode
   gamepad-tool # Testing gamepad
   legendary-gl # CLI tool for epic games 
   rare # legendary GUI client
@@ -204,6 +207,26 @@ programs.zsh = {
     export VK_DRIVER_FILES=/usr/share/vulkan/icd.d/intel_icd.i686.json:/usr/share/vulkan/icd.d/intel_icd.x86_64.json
     
   '';
+};
+xdg.mimeApps = {
+  enable = false;
+  defaultApplications = {
+    "image/png" = "org.gnome.eog.desktop";
+    "image/jpeg" = "org.gnome.eog.desktop";
+    "video/mp4" = "org.gnome.eog.desktop";
+    "video/mkv" = "org.gnome.eog.desktop";
+  };
+};
+programs.mangohud = {
+  enable = true;
+  settings = {
+    # full = true;
+    fps = true;
+    cpu_stats = true;
+    cpu_load_change = true;
+    #text_outline = true;
+    position = "top-left";
+  };
 };
 home.sessionPath = [
   "$HOME/.myapps"

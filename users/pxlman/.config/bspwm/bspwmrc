@@ -13,7 +13,8 @@ pkill polybar
 polybar &
 # /usr/lib/notification-daemon-1.0/notification-daemon &
 dunst&
-miniserve -u -p 7777 $HOME /&
+miniserve -u -p 7777 $HOME &
+miniserve -u -p 7778 /mnt/Files &
 mconnect&
 $cmds/touchSettings
 pkill graySleep lowBattery saw fridayMaghribDuaa conky
@@ -53,7 +54,8 @@ bspc rule -a Anki desktop='^4' state=pseudo_tiled follow=on
 bspc rule -a vlc desktop='^7' state=pseudo_tiled follow=on
 bspc rule -a "VirtualBox Manager" desktop='^6' state=tiled follow=on
 bspc rule -a "steam" desktop='^6' state=tiled follow=off
-bspc rule -a "ONLYOFFICE Desktop Editors" desktop='^6' state=tiled follow=on
+bspc rule -a "ONLYOFFICE Desktop Editors" desktop='^4' state=tiled follow=on
+bspc rule -a libreoffice desktop='^4' state=tiled follow=on
 bspc rule -a Zathura desktop='^7' state=tiled follow=on
 bspc rule -a Xreader desktop='^7' state=tiled follow=on
 bspc rule -a okular desktop='^7' state=floating follow=on

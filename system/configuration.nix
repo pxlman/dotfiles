@@ -19,19 +19,22 @@
 		];
 
 # Use the GRUB 2 boot loader.
-	boot.loader.grub = {
-		enable = true;
-		efiSupport = true;
-		device = "nodev";
-		useOSProber = true;
+	boot.loader = {
+		#boot.loader.systemd-boot.enable = true;
+		#boot.loader.efi.efiSysMountPoint = "/boot";
+		efi.canTouchEfiVariables = true;
+
+		grub = {
+			enable = true;
+			efiSupport = true;
+			device = "nodev";
+			useOSProber = true;
+		};
 	};
 	boot.supportedFilesystems = [ "ntfs" ];
 # boot.loader.grub.efiInstallAsRemovable = true;
 # Define on which hard drive you want to install Grub.
 #boot.loader.grub.device = "/dev/sda"; # or "nodev" for efi only
-#boot.loader.systemd-boot.enable = true;
-	boot.loader.efi.canTouchEfiVariables = true;
-#boot.loader.efi.efiSysMountPoint = "/boot";
 # Networking Hostname
 	networking.hostName = "Ahmed"; # Define your hostname.
 # Wifi enabling
@@ -57,6 +60,7 @@
 	virtualisation={
 		docker = {
 			enable = true;
+			enableOnBoot = false;
 			daemon.settings = {
 			  data-root = "/home/docker";
 			};
@@ -205,6 +209,7 @@ nixpkgs.config.allowUnfree = true;
 ## Wine and gaming
 		    wineWowPackages.stable
 				winetricks
+				vkd3d
 # X11 essentials
 				xorg.libX11
 				xorg.libX11.dev
@@ -222,11 +227,19 @@ nixpkgs.config.allowUnfree = true;
 				];
 	};
 # Gaming
-	programs.steam.enable = true;
+	programs.steam = {
+		enable = true;
+		remotePlay.openFirewall = false;
+	};
 	programs.gamemode = {
 		enable = true;
 	};
 	hardware.xpadneo.enable = true;
+	hardware.opengl = {
+		enable = true;
+		#extraPackages = [pkgs.mangohud ];
+		#extraPackages = [pkgs.mangohud ];
+	};
 	#hardware.xone.enable = true;
 # Stylix For autostyling
 	stylix = {
@@ -241,6 +254,7 @@ nixpkgs.config.allowUnfree = true;
 		polarity = "dark";
 		targets = {
 			gtk.enable = false; # This will make it only with others like: grub, lightdm, nixos-icons
+			nixos-icons.enable = false;
 		};
 	};
 
@@ -343,7 +357,7 @@ nixpkgs.config.allowUnfree = true;
 	};
 # Open ports in the firewall.
 # Or disable the firewall altogether.
-	networking.firewall.enable = false;
+	networking.firewall.enable = true;
 	networking.firewall.allowedTCPPorts = [
 		22000
 		8384

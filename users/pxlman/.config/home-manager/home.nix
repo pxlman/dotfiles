@@ -8,7 +8,7 @@ home.packages = with pkgs; [
   dconf # I Don't know but gtk needs it
   lxappearance # Themes and Fonts manager
   font-manager # Font Manager
-  copyq # Clipboard manager
+  #copyq # Clipboard manager
   bibata-cursors # My cursor theme
   cinnamon.mint-themes # Temporary theme
   rose-pine-gtk-theme
@@ -143,6 +143,13 @@ qt = {
 services.syncthing.enable = true;
 services.copyq = {
   enable = false;
+};
+services.flameshot = {
+  enable = false;
+  settings.General= {
+    disabledTrayIcon = true;
+    showStartupLaunchMessage = false;
+  };
 };
 # Git config
 programs.git = {

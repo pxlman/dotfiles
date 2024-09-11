@@ -229,7 +229,7 @@ nixpkgs.config.allowUnfree = true;
 # Gaming
 	programs.steam = {
 		enable = true;
-		remotePlay.openFirewall = false;
+		remotePlay.openFirewall = true;
 	};
 	programs.gamemode = {
 		enable = true;
@@ -261,6 +261,7 @@ nixpkgs.config.allowUnfree = true;
 # List packages installed in system profile. To search, run:
 # $ nix search wget
 	environment.systemPackages = with pkgs; [
+			tldr
 			base16-schemes
 			home-manager
 			file
@@ -281,6 +282,7 @@ nixpkgs.config.allowUnfree = true;
 			p7zip
 			unzip
 			exiv2
+			bc
 			# SDL2_mixer SDL multichannel audio mixer library
 			# jackmix # Matrix mixer for the jack-audio-connection-kit
  			# aumix # audio mixer for X and the console

@@ -51,12 +51,12 @@ super + F12
   whatsdesk
 
 Print
-  flameshot gui --clipboard --path ~/Pictures/Screenshots/
-#   maim | tee $HOME/Pictures/Screenshots/"$(date +%y\ %m\ %d\ %H:%M:%S)".png | xclip -selection clipboard -t image/png
+	flameshot gui --raw --path ~/Pictures/Screenshots | xclip -selection clipboard -t image/png 
+  	#flameshot full --clipboard --path ~/Pictures/Screenshots/
 
 shift + Print
-  flameshot full --clipboard --path ~/Pictures/Screenshots/
-#   maim --select | tee $HOME/Pictures/Screenshots/"$(date +%y\ %m\ %d\ %H:%M:%S).png" | xclip -selection clipboard -t image/png
+	flameshot full --raw --path ~/Pictures/Screenshots | xclip -selection clipboard -t image/png
+  	#flameshot full --clipboard --path ~/Pictures/Screenshots/
 
 ###############################
 # bspwm hotkeys

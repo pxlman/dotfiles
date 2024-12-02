@@ -28,6 +28,7 @@
       useOSProber = true;
     };
   };
+  boot.tmp.cleanOnBoot = true;
   boot.supportedFilesystems = [ "ntfs" ];
 # boot.loader.grub.efiInstallAsRemovable = true;
 # Define on which hard drive you want to install Grub.
@@ -85,7 +86,7 @@
   };
 # Enable the GDM display manager
   services.xserver.displayManager.startx.enable = true; # Adding xinitrc to the
-    services.xserver.displayManager.lightdm.enable = true;
+  services.xserver.displayManager.lightdm.enable = true;
   services.xserver.displayManager.lightdm.background = lib.mkForce ./files/lightdm-wallpaper;
 # Add xinitrc to the sessions /usr/share/sessions
   services.xserver.displayManager.session = [
@@ -95,6 +96,11 @@
     start = "$HOME/.xinitrc";
   }
   ];
+  # Repeating rate characters in the Terminal
+  # equivelant to: xset r rate 400 40
+  services.xserver.autoRepeatDelay = 400;
+  services.xserver.autoRepeatInterval = 30;
+
 # Xrandr
   services.xserver.xrandrHeads = [
     "eDP-1"
@@ -138,6 +144,7 @@
       enable = true; # Enables bluetooth
         package = pkgs.bluez.overrideAttrs (oldAttrs: {
             configureFlags = oldAttrs.configureFlags ++ [ "--enable-sixaxis" ];
+            linkInRoot = true; # default = false
             }); # I think it will make controller work
       input = {
         General = {
@@ -180,7 +187,7 @@
     extraGroups = [ "wheel" "networkmanager" "video" "audio" "input" "vboxusers" "vboxsf" "kvm" ];
     packages = with pkgs; [
 # Terminal packages
-      zsh
+        zsh
         neovim
         stow
         pamixer
@@ -188,7 +195,6 @@
         fribidi
         helix
         eza
-        devenv
 # Window manager and styles
         bspwm
         sxhkd
@@ -213,12 +219,15 @@
         xorg.xf86videointel
         xorg.xf86videosisusb # For usb audio i think
         linuxKernel.packages.linux_6_6.v4l2loopback # make virtual camera work in obs studio
-        jdk22
-# libGL
-# libva
-# libvdpau
-# glib
+        jdk # java
+        glib
         glibc
+        # gtk2
+        # gtk3
+        # gtkmm2
+        # gtkmm3
+        # gtk4
+        # gtkmm4
         ffmpeg
 ## Wine and gaming
         wineWowPackages.stable
@@ -240,6 +249,8 @@
         libsForQt5.qt5.qtx11extras
         usbrelay # Tool to control USB HID relays
         ntfs3g
+        libelf
+        elfutils
         # Hacking
         httpx
         ];
@@ -249,6 +260,7 @@
     enable = true;
     remotePlay.openFirewall = true;
   };
+  services.xserver.desktopManager.retroarch.enable = true;
   programs.gamemode = {
     enable = true;
   };
@@ -257,7 +269,7 @@
 # Stylix For autostyling
   stylix = {
     enable = true;
-    image = "/home/pxlman/Pictures/Wallpapers2/01.png";
+    image = "/etc/nixos/files/lightdm-wallpaper";
     base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
     cursor = {
       name = "Bibata-Modern-Classic";
@@ -272,15 +284,16 @@
   };
 
   qt = { 
-    enable = true;
-    platformTheme = "gtk2";
-    style = "gtk2";
+    enable = false;
+    platformTheme = "gtk3";
+    style = "gtk3";
   };
 
 # List packages installed in system profile. To search, run:
 # $ nix search wget
   environment.systemPackages = with pkgs; [
-    tldr # manuals
+      tldr # manuals
+      fusuma
       lsof # list open files
       base16-schemes
       home-manager
@@ -290,9 +303,10 @@
       grub2
       git
       libgcc
+      inetutils # contain the `ftp` command
 # cmake
       clang
-      python3
+      python312
       python312Packages.yt-dlp
       python312Packages.sympy
       python312Packages.requests
@@ -313,10 +327,11 @@
       ];
 # To make executable ELF files and games work
 # "minimum" amount of libraries needed for most games to run without steam-run
-  programs.nix-ld.enable = false;
+  programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
 # common requirement for several games
-    stdenv.cc.cc.lib
+      stdenv.cc.cc.lib
+      python312Packages.requests
 # from https://github.com/NixOS/nixpkgs/blob/nixos-23.05/pkgs/games/steam/fhsenv.nix#L72-L79
       xorg.libXcomposite
       xorg.libXtst
@@ -340,7 +355,11 @@
       libidn
       tbb
       zlib
+      libsForQt5.qt5.qtnetworkauth
       ];
+  environment.variables = {
+      PYTHONPATH = "${pkgs.python312}/lib/python3.12/site-packages";
+  };
 
 # Some programs need SUID wrappers, can be configured further or are
 # started in user sessions.
@@ -383,10 +402,26 @@
   };
 # Open ports in the firewall.
 # Or disable the firewall altogether.
+  services.vsftpd = {
+    enable = true;
+    localUsers = true;
+    writeEnable = true;
+    userlist = [ "pxlman" "12345" ];
+    userlistEnable = true;
+    # userDbPath = /etc/vsftpd/userDB;
+  };
   networking.firewall.enable = true;
   networking.firewall.allowedTCPPorts = [
     22000
       8384
+      7777
+      7778
+      9999
+      8888
+      8080
+      80
+      12345
+      21
   ];
   networking.firewall.allowedUDPPorts = [ 
     22000

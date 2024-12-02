@@ -29,7 +29,7 @@ return {
           -- REQUIRED - you must specify a snippet engine
           expand = function(args)
             require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
-            require('luasnip').filetype_extend("html", {"htmldoc"})
+            --require('luasnip').filetype_extend("html", {"htmldoc"})
           end,
         },
         window = {

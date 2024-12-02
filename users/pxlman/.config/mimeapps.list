@@ -1,10 +1,10 @@
 [Default Applications]
 text/plain=org.gnome.gedit.desktop;
-image/jpeg=org.gnome.Loupe.desktop
+image/jpeg=org.gnome.eog.desktop
 application/pdf=org.pwmt.zathura-pdf-poppler.desktop
 text/x-python=sublime_text.desktop
 application/x-extension-burp=install4j_1uoj5bj-BurpSuiteCommunity.desktop
-image/png=org.gnome.Loupe.desktop
+image/png=org.gnome.eog.desktop
 text/x-c++src=sublime_text.desktop
 text/markdown=sublime_text.desktop
 video/mp4=vlc.desktop
@@ -31,11 +31,11 @@ audio/mpeg=vlc.desktop
 
 [Added Associations]
 text/plain=org.gnome.gedit.desktop;
-image/jpeg=org.gnome.Loupe.desktop;
+image/jpeg=org.gnome.Loupe.desktop;org.gnome.eog.desktop;
 application/pdf=org.pwmt.zathura-pdf-poppler.desktop;
 text/x-python=electron27.desktop;sublime_text.desktop;
 application/xml=org.gnome.gedit.desktop;
-image/png=org.gnome.Loupe.desktop;
+image/png=org.gnome.Loupe.desktop;org.gnome.eog.desktop;
 x-scheme-handler/sms=org.gnome.Shell.Extensions.GSConnect.desktop;
 x-scheme-handler/tel=org.gnome.Shell.Extensions.GSConnect.desktop;
 text/x-c++src=sublime_text.desktop;

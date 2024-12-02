@@ -1,4 +1,4 @@
-{ config,lib, pkgs, unstable, ... }: {
+{ config,lib, pkgs, ... }: {
 nixpkgs.config = {allowUnFree = true;};
 home.stateVersion = "24.05";
 home.username = "pxlman";
@@ -12,6 +12,7 @@ home.packages = with pkgs; [
   bibata-cursors # My cursor theme
   cinnamon.mint-themes # Temporary theme
   rose-pine-gtk-theme
+  # ayu-theme-gtk
   catppuccin-gtk
   catppuccin
   libnotify # For the notify-send command
@@ -24,6 +25,9 @@ home.packages = with pkgs; [
   htop
 ### Services
   xclip # Copy and Paste service
+  xdotool # make me able to use shortcuts with commmands
+  bat
+  kalker
   pulseaudio # audio driver
   pamixer # Modifing audio from terminal
   dunst # For notifications
@@ -33,41 +37,56 @@ home.packages = with pkgs; [
   miniserve # Sharing between local devices
   syncthing # Syncing folders between phone and laptop
   #mconnect
+  yt-dlp
 ### Applications
   # cinnamon.nemo
   cinnamon.nemo-with-extensions
   brave
+  firefox # for burp suite
   zoom-us
   audacity
   discord
+  openboard
   #hexchat
   gimp
+  openshot-qt
+  shotcut
+  avidemux
+  kdePackages.kdenlive
+  gns3-server
+  gns3-gui
+  ciscoPacketTracer8 # you may need to download the debian package then add it's hash manually using nix-store --add-fixed sha256 <path>.deb with the same official name
+  dynamips
   # pkgs.unstable.discord unstable can be put in /etc/nixos/configuration.nix at the user section
   loupe # image viewer
   gnome.eog
   xorg.xf86videovboxvideo
-  # gimp
-  # anki-bin
+  xorg.xkill
+  anki-bin
   vlc
   zathura
   obsidian
+  cherrytree # NoteTaking app
   vscode
+  qtcreator # To make qt gui programs
+  libsForQt5.full
+  jetbrains.clion
+  jetbrains.pycharm-professional
+  jetbrains.idea-ultimate
   gparted
   libreoffice
   xournalpp
   weylus
   postman
   rhythmbox
-  obs-studio
+  dpkg
 ### Gaming
   zeroad # 0ad
-  #steam
-  #mangohud
-  #gamemode
   gamepad-tool # Testing gamepad
   legendary-gl # CLI tool for epic games 
   rare # legendary GUI client
   heroic # Epic games launcher
+  # retroarch
   superTux
   superTuxKart
   lutris # games launcher
@@ -77,17 +96,42 @@ home.packages = with pkgs; [
   eza # ls fork
   tmux
   docker
+  ascii # show ascii table
+
 ### Hacking
-  exiftool
+  ## Python interpreter and modules
+  python312
+  python312Packages.requests  # Add any required Python modules
+  ## C++ development tools and libraries
+  gcc
+  cmake
+  gnumake # for the `make` command
+  boost
+  gdb
+  ## Recon
   nmap
-  # ida-free
-  # burpsuite
-  # wireshark
+  fping
+  # katana
+  ## Web
+  burpsuite
+  zap
+  ## Crypto
+  xxd
+  ## DFIR
+  exiftool
+  nuclei
+  ## General
+  cvemap
+  wireshark
+  hash-identifier
+  ## Fuzzing
+  ffuf
+  john
+  wordlists
+  ## Packets
   # tshark
-  # tcpdump
+  tcpdump
   # termshark
-  # john
-  # wordlists
   ];
 home.pointerCursor = {
   x11.enable = true;
@@ -110,7 +154,8 @@ gtk = {
     package = pkgs.rose-pine-gtk-theme; # pkgs.whitesur-gtk-theme
   };
   font = {
-    name = "Hack";
+    # name = "Hack";
+    name = "Ubuntu Nerd Font";
     package = pkgs.hack-font;
     size = 11;
   };
@@ -139,6 +184,35 @@ gtk = {
 qt = {
   enable = true;
   platformTheme.name = "gtk3";
+};
+# Fusuma is for touchpad gestures
+services.fusuma = {
+  enable = true;
+  package = pkgs.fusuma;
+  settings = {
+    threshold = {
+      swipe = 0.1;
+    };
+    interval = {
+      swipe = 0.7;
+    };
+    swipe = {
+      "3" = {
+        left = {
+          command = "\"xdotool key super+bracketleft\"";
+        };
+        right = {
+          command = "\"xdotool key super+bracketright\"";
+        };
+        up = {
+          command = "\"xdotool key alt+Tab\"";
+        };
+        down = {
+          command = "\"xdotool key alt+Tab\"";
+        };
+      };
+    };
+  };
 };
 services.syncthing.enable = true;
 services.copyq = {
@@ -199,12 +273,14 @@ programs.zsh = {
     docker = "sudo docker";
     #nrc = "nvim ~/.config/nvim";
     copy="xclip -selection clipboard";
-    rc = "hx ~/.config/home-manager/home.nix";
-    nrc = "sudo hx /etc/nixos/configuration.nix";
+    rc = "nvim ~/.config/home-manager/home.nix";
+    nrc = "sudo nvim /etc/nixos/configuration.nix";
     gitdone="git add .; git commit -m '[+]'; git push; echo '[*] Files Saved'"; # git done
     home = "home-manager switch -f ~/dotfiles/users/pxlman/.config/home-manager/home.nix";
     switch = "sudo nixos-rebuild switch --verbose";
-
+    hdmi = "xrandr --output HDMI-1 --output eDP-1  --auto";
+    juice-shop = "docker run --rm -p 127.0.0.1:3000:3000 bkimminich/juice-shop";
+    webgoat = "docker run -it -p 127.0.0.1:8080:8080 -p 127.0.0.1:9090:9090 webgoat/webgoat";
   };
   initExtra = ''
     export _JAVA_AWT_WM_NONREPARENTING=1
@@ -242,6 +318,7 @@ home.sessionPath = [
   "$HOME/dotfiles"
 ];
 home.sessionVariables = {
+  # PS1="[\[\033[1;32m\]\u\[\033[0m\]@\[\033[1;34m\]\h\[\033[0m\] \[\033[1;36m\]\w\[\033[0m\]]\[\033[1;31m\]\$\[\033[0m\]";
   _JAVA_AWT_WM_NONREPARENTING=1;
   # this is to solve vulkan error in steam
   # U must make sure to install the needed vulkan drivers (these files r there)
@@ -251,6 +328,7 @@ home.sessionVariables = {
   #VK_DRIVER_FILES="/usr/share/vulkan/icd.d/intel_icd.i686.json:/usr/share/vulkan/icd.d/intel_icd.x86_64.json";
   GTK_THEME = "rose-pine"; # WhiteSur-dark
   NIXPKGS_ALLOW_UNFREE=1;
+  PYTHONPATH = "${pkgs.python312}/lib/python3.12/site-packages";
 };
 services.dunst = {
   enable = true;
@@ -278,7 +356,8 @@ services.dunst = {
       transparency = 5;
       background = "#282a36";
       foreground = "#cfc6fc";
-      mouse_left_click = "close_current";
+      mouse_left_click = "close_current"; # [* |  ]
+      mouse_right_click = "do_action,close_current"; # [  | *]
     };
   };
 };

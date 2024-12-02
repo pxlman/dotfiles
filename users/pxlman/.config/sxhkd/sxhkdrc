@@ -11,6 +11,8 @@ F1
 # program launcher
 super + d
         rofi -show drun
+super + shift + Escape
+        xkill
 super + shift + d
         dmenu_run -i
 super + p
@@ -62,6 +64,10 @@ shift + Print
 # bspwm hotkeys
 #
 # quit/restart bspwm
+
+### Three finger swipe (left or right) to change desktop
+
+
 super + alt + {q,r}
 	bspc {quit,wm -r}
 
@@ -72,6 +78,10 @@ super + {_,shift + }q
 # alternate between the tiled and monocle layout
 super + m
 	bspc desktop -l next
+
+# Toggle between v spliting and h splitting
+super + u
+        bspc node @parent -R 90
 
 # send the newest marked node to the newest preselected node
 super + y
@@ -115,10 +125,6 @@ super + {_,shift + }c
 	bspc node -f {next,prev}.local.!hidden.window
 alt + {_,shift + }Tab
 	bspc node -f {next,prev}.local.!hidden.window
-
-# Focus the next/previous node in the current desktop:
-#alt + {_,shift +}Tab
-#	bspc node -f {next,prev}.local
 
 # focus the next/previous desktop in the current monitor
 super + bracket{left,right}

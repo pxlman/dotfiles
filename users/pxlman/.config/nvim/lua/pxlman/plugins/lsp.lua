@@ -1,10 +1,6 @@
 return {
   {
     "williamboman/mason.nvim",
-    -- [[
-    -- install by:    i
-    -- uninstall by : <S-x>
-    -- ]]
     opts = {
       plugin = true,
       ensure_installed = {

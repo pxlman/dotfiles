@@ -23,12 +23,12 @@
     efi.canTouchEfiVariables = true;
     grub = {
       enable = true;
-      efiSupport = true;
       device = "nodev";
+      efiSupport = true;
       useOSProber = true;
     };
   };
-  boot.tmp.cleanOnBoot = true;
+  boot.tmp.cleanOnBoot = true; # clean /tmp dir on boot
   boot.supportedFilesystems = [ "ntfs" ];
 # boot.loader.grub.efiInstallAsRemovable = true;
 # Define on which hard drive you want to install Grub.

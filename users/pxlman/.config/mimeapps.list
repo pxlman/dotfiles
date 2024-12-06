@@ -28,6 +28,7 @@ x-scheme-handler/unknown=brave-browser-nightly.desktop
 x-scheme-handler/figma=figma-linux.desktop
 x-scheme-handler/postman=Postman.desktop
 audio/mpeg=vlc.desktop
+application/x-mimearchive=brave-browser.desktop
 
 [Added Associations]
 text/plain=org.gnome.gedit.desktop;
@@ -49,3 +50,4 @@ x-scheme-handler/http=firefox.desktop;
 x-scheme-handler/https=firefox.desktop;
 text/html=firefox.desktop;
 audio/mpeg=vlc.desktop;
+application/x-mimearchive=userapp-brave-RBEXV2.desktop;brave-browser.desktop;

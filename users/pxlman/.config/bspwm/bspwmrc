@@ -22,9 +22,8 @@ $cmds/graySleep&
 $cmds/lowBattery&
 $cmds/saw&
 #$cmds/fridayMaghribDuaa&
+export PATH=/bin:$PATH
 ~/.conky/conky-startup.sh&
-# conky -c $HOME/.conky/TeejeeTech/Process\ Panel&
-# conky -c $HOME/.conky/Gotham/Gotham&
 wmname "LG3D"
 
 # Workspaces

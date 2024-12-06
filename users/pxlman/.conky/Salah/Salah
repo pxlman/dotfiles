@@ -18,8 +18,8 @@ draw_graph_borders yes
 draw_outline no
 draw_shades no
 
-gap_x 10
-gap_y 10
+gap_x 50
+gap_y 30
 net_avg_samples 2
 no_buffers yes
 out_to_console no
@@ -34,8 +34,8 @@ own_window_argb_visual yes
 own_window_argb_value 0
 own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
 
-minimum_size 250 100
-maximum_width 300
+minimum_size 300 100
+maximum_width 1000
 stippled_borders 0
 update_interval 2.0
 uppercase no
@@ -46,7 +46,7 @@ show_graph_range no
 
 use_xft yes
 xftalpha 0.1
-xftfont FreeSerif :style=Bold:size=18
+xftfont FreeSerif :style=Bold:size=17
 color0 white
 color1 EAEAEA
 color2 FFA300
@@ -58,12 +58,12 @@ $alignc ${color2}ﺓﻼ﻿ﺼﻟﺍ ﺖﻗﻭ ${color0}
 ${hr}
 $alignc ${color2} ${execi 1 "nsalah"}${color1} ﻰﻘﺒﺗ   
 
-${execi 1 nsalah fajr} $alignc 		ﺮﺠﻔﻟﺍ
-${execi 1 nsalah sunrise} $alignc 		ﻕﻭﺮﺸﻟﺍ
-${execi 1 nsalah dhuhr} $alignc 		ﺮﻬﻈﻟﺍ
-${execi 1 nsalah asr} $alignc	 	ﺮﺼﻌﻟﺍ
-${execi 1 nsalah maghrib} $alignc 		ﺏﺮﻐﻤﻟﺍ
-${execi 1 nsalah isha} $alignc	 	ءﺎﺸﻌﻟﺍ
+${execi 1 nsalah fajr} $alignc  		     ﺮﺠﻔﻟﺍ
+${execi 1 nsalah sunrise} $alignc 		  ﻕﻭﺮﺸﻟﺍ
+${execi 1 nsalah dhuhr} $alignc 		     ﺮﻬﻈﻟﺍ
+${execi 1 nsalah asr} $alignc	 	   ﺮﺼﻌﻟﺍ
+${execi 1 nsalah maghrib} $alignc 		 ﺏﺮﻐﻤﻟﺍ
+${execi 1 nsalah isha} $alignc	 	   ءﺎﺸﻌﻟﺍ
 
 
 

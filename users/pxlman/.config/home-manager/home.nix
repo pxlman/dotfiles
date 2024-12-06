@@ -1,6 +1,6 @@
 { config,lib, pkgs, ... }: {
 nixpkgs.config = {allowUnFree = true;};
-home.stateVersion = "24.05";
+home.stateVersion = "24.11";
 home.username = "pxlman";
 home.homeDirectory = "/home/pxlman";
 home.packages = with pkgs; [
@@ -10,7 +10,7 @@ home.packages = with pkgs; [
   font-manager # Font Manager
   #copyq # Clipboard manager
   bibata-cursors # My cursor theme
-  cinnamon.mint-themes # Temporary theme
+  mint-themes # Temporary theme
   rose-pine-gtk-theme
   # ayu-theme-gtk
   catppuccin-gtk
@@ -39,8 +39,7 @@ home.packages = with pkgs; [
   #mconnect
   yt-dlp
 ### Applications
-  # cinnamon.nemo
-  cinnamon.nemo-with-extensions
+  nemo-with-extensions
   brave
   firefox # for burp suite
   zoom-us
@@ -53,13 +52,11 @@ home.packages = with pkgs; [
   shotcut
   avidemux
   kdePackages.kdenlive
-  gns3-server
-  gns3-gui
-  ciscoPacketTracer8 # you may need to download the debian package then add it's hash manually using nix-store --add-fixed sha256 <path>.deb with the same official name
+  # ciscoPacketTracer8 # you may need to download the debian package then add it's hash manually using nix-store --add-fixed sha256 <path>.deb with the same official name
   dynamips
   # pkgs.unstable.discord unstable can be put in /etc/nixos/configuration.nix at the user section
   loupe # image viewer
-  gnome.eog
+  eog
   xorg.xf86videovboxvideo
   xorg.xkill
   anki-bin
@@ -150,14 +147,14 @@ gtk = {
     package = pkgs.papirus-icon-theme;
   };
   theme = {
-    name = "rose-pine"; # WhiteSur-dark
+    name = "rose-pine-moon"; # WhiteSur-dark
     package = pkgs.rose-pine-gtk-theme; # pkgs.whitesur-gtk-theme
   };
   font = {
     # name = "Hack";
     name = "Ubuntu Nerd Font";
     package = pkgs.hack-font;
-    size = 11;
+    size = 12;
   };
   gtk3.extraConfig = {
     gtk-application-prefer-dark-theme=1;
@@ -199,16 +196,17 @@ services.fusuma = {
     swipe = {
       "3" = {
         left = {
-          command = "\"xdotool key super+bracketleft\"";
+          # command = "xdotool key super+bracketleft";
+          command = "notify-send hi";
         };
         right = {
-          command = "\"xdotool key super+bracketright\"";
+          command = "xdotool key super+bracketright";
         };
         up = {
-          command = "\"xdotool key alt+Tab\"";
+          command = "xdotool key alt+Tab";
         };
         down = {
-          command = "\"xdotool key alt+Tab\"";
+          command = "xdotool key alt+Tab";
         };
       };
     };
@@ -313,7 +311,7 @@ programs.mangohud = {
 };
 home.sessionPath = [
   "$HOME/.myapps"
-  "$HOME/.mycmds"
+  "/bin"
   "$HOME/.local/bin"
   "$HOME/dotfiles"
 ];

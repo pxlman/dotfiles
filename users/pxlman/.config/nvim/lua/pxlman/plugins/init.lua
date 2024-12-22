@@ -118,17 +118,17 @@ plugins = {
     "voldikss/vim-floaterm",
   },
   -- Treesitter for highlighting the text more
-  {
-    'nvim-treesitter/nvim-treesitter',
-    config = function()
-      require("nvim-treesitter.configs").setup{
-        ensure_installed = {"c",'cpp','python','lua','bash','javascript','html','css','markdown','norg'},
-        highlight = {
-          enable = true,
-        },
-      }
-    end
-  },
+  -- {
+  --   'nvim-treesitter/nvim-treesitter',
+  --   config = function()
+  --     require("nvim-treesitter.configs").setup{
+  --       ensure_installed = {'python','lua','bash','javascript','html','css','markdown','norg'},
+  --       highlight = {
+  --         enable = true,
+  --       },
+  --     }
+  --   end
+  -- },
   {
     'andweeb/presence.nvim',
     config = function()

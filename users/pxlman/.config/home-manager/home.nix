@@ -22,6 +22,7 @@ home.packages = with pkgs; [
   rofi
   rofi-power-menu
   rofi-emoji
+  wofi
   htop
 ### Services
   xclip # Copy and Paste service
@@ -36,12 +37,13 @@ home.packages = with pkgs; [
   redshift # Eye comfort
   miniserve # Sharing between local devices
   syncthing # Syncing folders between phone and laptop
-  #mconnect
+  # mconnect
   yt-dlp
 ### Applications
   nemo-with-extensions
   brave
   firefox # for burp suite
+  qbittorrent # torrent
   zoom-us
   audacity
   discord
@@ -86,6 +88,7 @@ home.packages = with pkgs; [
   # retroarch
   superTux
   superTuxKart
+  ddnet
   lutris # games launcher
   ### CLI Apps
   helix # Text editor command `hx`
@@ -132,63 +135,74 @@ home.packages = with pkgs; [
   ];
 home.pointerCursor = {
   x11.enable = true;
-  name = "Bibata-Modern-Ice";
+  # name = "Bibata-Modern-Ice";
+  name = "Bibata-Modern-Classic";
   size = 10;
   package = pkgs.bibata-cursors;
 };
 gtk = {
   enable = true;
-  # cursorTheme = {
-  #   name = "Bibata-Modern-Classic";
-  #   package = pkgs.bibata-cursors;
-  # };
   iconTheme = {
     name = "Papirus-Dark";
     package = pkgs.papirus-icon-theme;
   };
   theme = {
-    name = "rose-pine-moon"; # WhiteSur-dark
+    name = "rose-pine"; # WhiteSur-dark
+    # name = "WhiteSur-Dark";
     package = pkgs.rose-pine-gtk-theme; # pkgs.whitesur-gtk-theme
+    # package = pkgs.whitesur-gtk-theme;
   };
   font = {
     # name = "Hack";
     name = "Ubuntu Nerd Font";
-    package = pkgs.hack-font;
+    package = pkgs.nerdfonts;
     size = 12;
   };
-  gtk3.extraConfig = {
-    gtk-application-prefer-dark-theme=1;
-    gtk-menu-images = 1;
-    gtk-button-images = 1;
-    gtk-xft-antialias = 1;
-    gtk-xft-hinting = 1;
-    gtk-xft-hintstyle = "hintfull";
-#gtk-xft-rgba = "rgb";
-  };
+#   gtk3.extraConfig = {
+#     gtk-application-prefer-dark-theme=1;
+#     gtk-menu-images = 1;
+#     gtk-button-images = 1;
+#     gtk-xft-antialias = 1;
+#     gtk-xft-hinting = 1;
+#     gtk-xft-hintstyle = "hintfull";
+# #gtk-xft-rgba = "rgb";
+#   };
   gtk3.bookmarks = [
     "file:///home/pxlman/Documents Documents"
     "file:///home/pxlman/Downloads Downloads"
     "file:///home/pxlman/Music Music"
     "file:///home/pxlman/Videos Videos"
     "file:///home/pxlman/Pictures Pictures"
-    "file:///mnt/Files Files"
-    "file:///mnt/Files/%D8%A7%D9%84%D8%A7%D9%83%D8%A7%D8%AF%D9%8A%D9%85%D9%8A%D8%A9 الاكاديمية"
-    "file:///mnt/Files/Resources/University University"
-    "file:///mnt/Files/Learn/Cyber%20Security Cyber Security"
-    "file:///mnt/myssd myssd"
+    "file:///mnt/files Files"
+    "file:///mnt/files/%D8%A7%D9%84%D8%A7%D9%83%D8%A7%D8%AF%D9%8A%D9%85%D9%8A%D8%A9 الاكاديمية"
+    "file:///mnt/files/Resources/University University"
+    "file:///mnt/files/Learn/Cyber%20Security Cyber Security"
   ];
 };
 qt = {
   enable = true;
   platformTheme.name = "gtk3";
 };
+xdg.desktopEntries = {
+  tlauncher = {
+    name = "TLauncher";
+    genericName = "Minecraft Launcher";
+    exec = "steam-run java -jar /home/pxlman/Downloads/Tlauncher/TLauncher.jar";
+    terminal = false;
+    categories = [ "Application" "Game" ];
+    icon = "minecraft-launcher";
+    # mimeType = [ "text/html" "text/xml" ];
+  };
+};
+
+
 # Fusuma is for touchpad gestures
 services.fusuma = {
   enable = true;
   package = pkgs.fusuma;
   settings = {
     threshold = {
-      swipe = 0.1;
+      swipe = 0.05;
     };
     interval = {
       swipe = 0.7;
@@ -197,7 +211,7 @@ services.fusuma = {
       "3" = {
         left = {
           # command = "xdotool key super+bracketleft";
-          command = "notify-send hi";
+          command = "xdotool key super+bracketleft";
         };
         right = {
           command = "xdotool key super+bracketright";
@@ -206,7 +220,22 @@ services.fusuma = {
           command = "xdotool key alt+Tab";
         };
         down = {
-          command = "xdotool key alt+Tab";
+          command = "xdotool key alt+shift+Tab";
+        };
+      };
+      "4" = {
+        left = {
+          # command = "xdotool key super+bracketleft";
+          command = "xdotool key XF86MonBrightnessDown";
+        };
+        right = {
+          command = "xdotool key XF86MonBrightnessUp";
+        };
+        up = {
+          command = "xdotool key XF86AudioRaiseVolume";
+        };
+        down = {
+          command = "xdotool key XF86AudioLowerVolume";
         };
       };
     };

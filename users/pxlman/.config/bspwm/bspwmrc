@@ -9,21 +9,20 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 # Set cursor name as blabla to make lxapprarance change cursor
 #xsetroot -cursor_name left_ptr &
 cmds="$HOME/.mycmds"
-pkill polybar
-polybar &
+pkill polybar; polybar &
 # /usr/lib/notification-daemon-1.0/notification-daemon &
 dunst&
 miniserve -u -p 7777 $HOME &
 miniserve -u -p 7778 /mnt/Files &
-mconnect&
-$cmds/touchSettings
-pkill graySleep lowBattery saw fridayMaghribDuaa conky
+fusuma -d # Makes linix understand the multi finger touchpad usages
+#$cmds/touchSettings
+#pkill graySleep lowBattery saw fridayMaghribDuaa conky
 $cmds/graySleep&
 $cmds/lowBattery&
 $cmds/saw&
 #$cmds/fridayMaghribDuaa&
 export PATH=/bin:$PATH
-~/.conky/conky-startup.sh&
+pkill conky; ~/.conky/conky-startup.sh&
 wmname "LG3D"
 
 # Workspaces
@@ -41,6 +40,7 @@ bspc rule -a "*:*:floating" state=floating center=on
 
 # Bindings
 bspc rule -a loupe state=floating
+bspc rule -a "steamwebhelper" state=floating
 bspc rule -a Alacritty desktop='^1' state=tiled follow=on
 bspc rule -a firefox desktop='^2' follow=on
 bspc rule -a Brave-browser desktop='^2' follow=on

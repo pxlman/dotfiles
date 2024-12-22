@@ -28,7 +28,7 @@ return {
         "gopls",
         "eslint"
       },
-      automatic_installation = true,
+      automatic_installation = false,
     },
   },
   -- To config each lsp server individually

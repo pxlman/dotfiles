@@ -1,9 +1,9 @@
 {
   description = "My First Flake Ever";
   inputs = {
-    nixpkgs.url = "github:NixOs/nixpkgs/nixos-24.05";
+    nixpkgs.url = "github:NixOs/nixpkgs/nixos-24.11";
     nixpkgs-unstable.url = "github:NixOs/nixpkgs/nixos-unstable";
-    home-manager.url = "https://github.com/nix-community/home-manager/archive/release-24.05.tar.gz";
+    home-manager.url = "https://github.com/nix-community/home-manager/archive/release-24.11.tar.gz";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     stylix.url = "github:danth/stylix";
 #nur.url = "github:nix-community/NUR";

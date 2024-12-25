@@ -148,9 +148,9 @@ gtk = {
   };
   theme = {
     name = "rose-pine"; # WhiteSur-dark
-    # name = "WhiteSur-Dark";
+    # name = "Ayu-Darker";
     package = pkgs.rose-pine-gtk-theme; # pkgs.whitesur-gtk-theme
-    # package = pkgs.whitesur-gtk-theme;
+    # package = pkgs.ayu-theme-gtk;
   };
   font = {
     # name = "Hack";
@@ -158,15 +158,22 @@ gtk = {
     package = pkgs.nerdfonts;
     size = 12;
   };
-#   gtk3.extraConfig = {
-#     gtk-application-prefer-dark-theme=1;
-#     gtk-menu-images = 1;
-#     gtk-button-images = 1;
-#     gtk-xft-antialias = 1;
-#     gtk-xft-hinting = 1;
-#     gtk-xft-hintstyle = "hintfull";
-# #gtk-xft-rgba = "rgb";
-#   };
+  gtk3.extraConfig = {
+    gtk-application-prefer-dark-theme=1;
+    gtk-menu-images = 1;
+    gtk-button-images = 1;
+    gtk-xft-antialias = 1;
+    gtk-xft-hinting = 1;
+    gtk-xft-hintstyle = "hintfull";
+    gtk-xft-rgba = "rgb";
+  };
+  gtk4.extraConfig = {
+    gtk-application-prefer-dark-theme=true;
+    gtk-xft-antialias = 1;
+    gtk-xft-hinting = 1;
+    gtk-xft-hintstyle = "hintfull";
+    gtk-xft-rgba = "rgb";
+  };
   gtk3.bookmarks = [
     "file:///home/pxlman/Documents Documents"
     "file:///home/pxlman/Downloads Downloads"
@@ -308,6 +315,8 @@ programs.zsh = {
     hdmi = "xrandr --output HDMI-1 --output eDP-1  --auto";
     juice-shop = "docker run --rm -p 127.0.0.1:3000:3000 bkimminich/juice-shop";
     webgoat = "docker run -it -p 127.0.0.1:8080:8080 -p 127.0.0.1:9090:9090 webgoat/webgoat";
+    free-steam = "curl \"https://store.steampowered.com/search/?maxprice=free&supportedlang=english&specials=1&ndl=1\" -s | grep -oP '(?<=class=\"title\">)(?:(?!Add-On).)*(?=<.*)'";
+    steam-free = "free-steam";
   };
   initExtra = ''
     export _JAVA_AWT_WM_NONREPARENTING=1
@@ -353,7 +362,8 @@ home.sessionVariables = {
   LIBVA_DRIVER_NAME = "x86_64 VDPAU_DRIVER=va_gl";
   #LIBVA_DRIVERS_PATH="/usr/lib/dri/iHD_drv_video.so";
   #VK_DRIVER_FILES="/usr/share/vulkan/icd.d/intel_icd.i686.json:/usr/share/vulkan/icd.d/intel_icd.x86_64.json";
-  GTK_THEME = "rose-pine"; # WhiteSur-dark
+  GTK_THEME = "rose-pine-moon"; # WhiteSur-dark
+  # GTK_THEME = "Ayu-Darker";
   NIXPKGS_ALLOW_UNFREE=1;
   PYTHONPATH = "${pkgs.python312}/lib/python3.12/site-packages";
 };

@@ -42,6 +42,9 @@ XF86AudioLowerVolume
 XF86AudioMute
   pamixer --toggle-mute
 
+super + z
+  xdotool mousedown 1
+
 super + F1
   nemo
 super + F2

@@ -55,6 +55,7 @@ bspc rule -a libreoffice desktop='^4' state=tiled follow=on
 bspc rule -a "VirtualBox Manager" desktop='^6' state=tiled follow=on
 bspc rule -a "steam" desktop='^6' state=tiled follow=off
 bspc rule -a "Lutris" desktop='^6' state=tiled follow=off
+bspc rule -a "Heroic" desktop='^6' state=tiled follow=off
 bspc rule -a "Rare" desktop='^6' state=tiled follow=off
 bspc rule -a vlc desktop='^7' state=pseudo_tiled follow=on
 bspc rule -a Zathura desktop='^7' state=tiled follow=on

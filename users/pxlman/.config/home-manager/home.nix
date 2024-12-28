@@ -27,7 +27,9 @@ home.packages = with pkgs; [
 ### Services
   xclip # Copy and Paste service
   xdotool # make me able to use shortcuts with commmands
-  bat
+  mimeo # open files using mimeopen
+  bat # cat like
+  lf # ranger like (terminal file manager for quick purposes)
   kalker
   pulseaudio # audio driver
   pamixer # Modifing audio from terminal
@@ -181,9 +183,8 @@ gtk = {
     "file:///home/pxlman/Videos Videos"
     "file:///home/pxlman/Pictures Pictures"
     "file:///mnt/files Files"
-    "file:///mnt/files/%D8%A7%D9%84%D8%A7%D9%83%D8%A7%D8%AF%D9%8A%D9%85%D9%8A%D8%A9 الاكاديمية"
+    "file:///mnt/files/الاكاديمية الاكاديمية"
     "file:///mnt/files/Resources/University University"
-    "file:///mnt/files/Learn/Cyber%20Security Cyber Security"
   ];
 };
 qt = {

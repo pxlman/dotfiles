@@ -30,6 +30,7 @@ home.packages = with pkgs; [
   mimeo # open files using mimeopen
   bat # cat like
   lf # ranger like (terminal file manager for quick purposes)
+  mpv # video player
   kalker
   pulseaudio # audio driver
   pamixer # Modifing audio from terminal
@@ -45,6 +46,9 @@ home.packages = with pkgs; [
   nemo-with-extensions
   brave
   firefox # for burp suite
+  zathura # pdf reader
+  okular # pdf reader
+  pdfmixtool # pdf editor
   qbittorrent # torrent
   zoom-us
   audacity
@@ -52,9 +56,9 @@ home.packages = with pkgs; [
   openboard
   #hexchat
   gimp
-  openshot-qt
-  shotcut
-  avidemux
+  openshot-qt # video editor
+  shotcut # video editor
+  avidemux # video editor
   kdePackages.kdenlive
   # ciscoPacketTracer8 # you may need to download the debian package then add it's hash manually using nix-store --add-fixed sha256 <path>.deb with the same official name
   dynamips
@@ -74,6 +78,7 @@ home.packages = with pkgs; [
   jetbrains.clion
   jetbrains.pycharm-professional
   jetbrains.idea-ultimate
+  netbeans
   gparted
   libreoffice
   xournalpp
@@ -200,6 +205,15 @@ xdg.desktopEntries = {
     categories = [ "Application" "Game" ];
     icon = "minecraft-launcher";
     # mimeType = [ "text/html" "text/xml" ];
+  };
+  neovim = {
+    name = "neovim";
+    genericName = "Neovim";
+    exec = "alacritty nvim";
+    terminal = true;
+    categories = [ "TextEditor" "Utility" ];
+    icon = "vim";
+    mimeType = [ "text/plain" ];
   };
 };
 
@@ -329,12 +343,16 @@ programs.zsh = {
   '';
 };
 xdg.mimeApps = {
-  enable = false;
+  enable = true;
   defaultApplications = {
     "image/png" = "org.gnome.eog.desktop";
     "image/jpeg" = "org.gnome.eog.desktop";
     "video/mp4" = "org.gnome.eog.desktop";
     "video/mkv" = "org.gnome.eog.desktop";
+    "application/pdf" = "okularApplication_pdf.desktop";
+    "application/pptx" = "okularApplication_pdf.desktop";
+    "application/ppt" = "okularApplication_pdf.desktop";
+    "text/plain" = "neovim.desktop";
   };
 };
 programs.mangohud = {
@@ -367,6 +385,8 @@ home.sessionVariables = {
   # GTK_THEME = "Ayu-Darker";
   NIXPKGS_ALLOW_UNFREE=1;
   PYTHONPATH = "${pkgs.python312}/lib/python3.12/site-packages";
+  EDITOR = "nvim";
+  VISUAL = "nvim";
 };
 services.dunst = {
   enable = true;

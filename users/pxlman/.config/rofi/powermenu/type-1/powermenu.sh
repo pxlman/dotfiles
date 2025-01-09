@@ -66,9 +66,8 @@ run_cmd() {
 		elif [[ $1 == '--reboot' ]]; then
 			systemctl reboot
 		elif [[ $1 == '--suspend' ]]; then
-			mpc -q pause
-                        # pamixer -m
-			systemctl suspend
+			# mpc -q pause
+			systemctl sleep
 		elif [[ $1 == '--logout' ]]; then
                         pkill -u $USER
 		fi

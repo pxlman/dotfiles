@@ -60,7 +60,7 @@ bspc rule -a "Rare" desktop='^6' state=tiled follow=off
 bspc rule -a vlc desktop='^7' state=pseudo_tiled follow=on
 bspc rule -a Zathura desktop='^7' state=tiled follow=on
 bspc rule -a Xreader desktop='^7' state=tiled follow=on
-bspc rule -a okular desktop='^7' state=floating follow=on
+bspc rule -a okular desktop='^7' state=tiled follow=on
 bspc rule -a zoom desktop='^7' state=tiled follow=on
 bspc rule -a "jetbrains-clion" desktop='^7' state=tiled follow=on
 bspc rule -a "jetbrains-idea" desktop='^7' state=tiled follow=on

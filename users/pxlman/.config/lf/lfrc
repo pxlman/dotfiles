@@ -50,8 +50,9 @@ cmd open &{{
 # Convert ppt to pdf
 cmd topdf &{{
     file=$f
-    soffice --headless --print-to-file $file \
-    && mv $file.pdf $(echo $file|cut -d'.' -f1).pdf
+    soffice --headless --convert-to pdf $file \
+    && mv $file.pdf $(echo $file|cut -d'.' -f1).pdf \
+    && lf -remote "send $id reload"
 }}
 
 # mkdir command. See wiki if you want it to select created dir
@@ -62,15 +63,22 @@ map m mark-load
 map M mark-save
 
 # define a custom 'rename' command without prompt for overwrite
-cmd rename %[ -e $1 ] && printf "file exists" || mv $f $1
-map r push :rename<space>
+cmd rename ${{
+    set -f
+    #echo -n "$1: " >&2
+    read -e -p "Rename: " -i $f newname
+    [ -e $newname ] || mv $f $newname #&& lf -remote "send $id reload"
+}}
+#cmd rename %[ -e $1 ] && printf "file exists" || mv $f $1
+# map r push :rename<space>
+map r rename
 
 # make sure trash folder exists
 %mkdir -p ~/.trash
 
 # move current file or selected files to trash folder
 # (also see 'man mv' for backup/overwrite options)
-cmd trash %set -f; mv $fx ~/.trash
+cmd trash %mv $fx ~/.trash
 
 # define a custom 'delete' command
 # cmd delete ${{

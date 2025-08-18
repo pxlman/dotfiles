@@ -11,9 +11,10 @@
 {
 	imports =
 		[ # Include the results of the hardware scan.
-		./hardware-configuration.nix
+		# ./hardware-configuration.nix
 #		./home.nix
 #(import "${(builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/release-24.05.tar.gz")}/nixos")
+		#./nixvim.nix
 		];
 
 # Use the GRUB 2 boot loader.
@@ -26,19 +27,30 @@
 			device = "nodev";
 			efiSupport = true;
 			useOSProber = true;
+			extraConfig = "quiet splash";
+			theme = pkgs.minimal-grub-theme;
 		};
 	};
 	
-	boot.plymouth = {
+	boot.plymouth = { 
 		enable = true;
+		# for more themes check this of the adi: https://xdaforums.com/t/bootanimations-collection.3721978/
+		# opimus - cuts - hexagon_dots - liquid - loader_2 - loading - mystic - jellyfish - splash
+		theme = lib.mkForce "owl"; 
+		themePackages = [ pkgs.adi1090x-plymouth-themes ]; # This package takes 250MB if u wanted to reduce space used
+		extraConfig = "
+		[Daemon] 
+		ShowDelay=5";
 	};
-	boot.loader.grub.extraConfig = "quiet splash";
 	boot.consoleLogLevel = 0;
 	# boot.kernelParams = [ "quiet" "splash" "loglevel=0" "rd.udev.log_level=0" "plymouth.ignore-serial-consoles" ];
-	boot.kernelParams = [ "quiet" "splash" "plymouth.ignore-serial-consoles" ];
+	boot.kernelParams = [ "quiet" "splash" "plymouth.ignore-serial-consoles" "kvm.enable_virt_at_load=0" ];
 	boot.initrd.verbose = false;
 	boot.initrd.kernelModules = [ "amdgpu" ];
 
+	# boot.blacklistedKernelModules = [ "kvm" "kvm_amd" ];
+
+	services.udisks2.enable = true;
 	boot.tmp.cleanOnBoot = true; # clean /tmp dir on boot
 	boot.supportedFilesystems = [ "ntfs" ];
 # boot.loader.grub.efiInstallAsRemovable = true;
@@ -80,16 +92,17 @@
 			daemon.settings = {
 				data-root = "/home/docker";
 			};
+			storageDriver = "overlay2";
 		};
 		virtualbox= {
 			host.enable = true;
+			# host.enableExtensionPack = true;
 			guest.enable = true;
 			guest.clipboard = true;
 			guest.dragAndDrop = true;
 		};
 	};
 	users.extraGroups.vboxusers.members = [ "pxlman" ];
-#virtualisation.virtualbox.host.enableExtensionPack = true;
 # Enable the X11 windowing system.
 	services.xserver.enable = true;
 	services.xserver.videoDrivers = [ "amdgpu" ];
@@ -126,8 +139,29 @@
 		start = "$HOME/.xinitrc";
 	}
 	];
-	programs.hyprland.enable = true;
-	# programs.waybar.enable = true;
+	# programs.hyprland.enable = true;
+	programs.obs-studio = {
+		enable = true;
+		plugins = with pkgs.obs-studio-plugins; [
+			wlrobs
+			obs-backgroundremoval
+			obs-pipewire-audio-capture
+		];
+		enableVirtualCamera = true; # Enable virtual camera
+	};
+
+	programs.hyprland = {
+		enable = true;
+		package = pkgs.hyprland;
+		portalPackage = pkgs.xdg-desktop-portal-hyprland;
+		xwayland.enable = true;
+	};
+	xdg.portal = {
+		enable = true;
+		extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
+	};
+
+	programs.waybar.enable = true;
 	programs.xwayland.enable = true;
 # Repeating rate characters in the Terminal
 # equivelant to: xset r rate 400 40
@@ -169,6 +203,7 @@
 		enable = true;
 		extraPackages = with pkgs; [
 			rocmPackages.clr.icd
+			amdvlk
 		];
 		enable32Bit = true;
 	};
@@ -181,27 +216,21 @@
 	};
 	hardware.cpu.amd.updateMicrocode = true;
 ## Enable sound.
-	hardware.pulseaudio.enable = true; # Enables Audio Throught pulseaudio package
+	services.pulseaudio.enable = false; # Enables Audio Throught pulseaudio package
 ## Or use
-		services.pipewire = { # u must disable pulseaudio before use pipewire
-			enable = false;
-			alsa.enable = true;
-			alsa.support32Bit = true;
-			pulse.enable = true;
-			jack.enable = true;
-
-			wireplumber = {
-				enable = true;
-				package = pkgs.wireplumber;
-			};
-		};
+	services.pipewire = {
+		enable = true;
+		alsa.enable = true;
+		pulse.enable = true;  # provides a PulseAudio server replacement
+		wireplumber.enable = true;
+	};
 ######
 	hardware.bluetooth = {
 		enable = true; # Enables bluetooth
-			package = pkgs.bluez.overrideAttrs (oldAttrs: {
-					configureFlags = oldAttrs.configureFlags ++ [ "--enable-sixaxis" ];
-					linkInRoot = true; # default = false
-					}); # I think it will make controller work
+			# package = pkgs.bluez.overrideAttrs (oldAttrs: {
+			# 		configureFlags = oldAttrs.configureFlags ++ [ "--enable-sixaxis" ];
+			# 		linkInRoot = true; # default = false
+			# 		}); # I think it will make controller work
 		input = {
 			General = {
 				UserspaceHID=true;
@@ -226,9 +255,20 @@
 # Fonts
 	fonts.packages = with pkgs;[
 #jetbrains-mono
-		nerdfonts
+		# nerdfonts
+		nerd-fonts.jetbrains-mono
+		nerd-fonts.caskaydia-cove
+		nerd-fonts.caskaydia-cove
+		nerd-fonts.ubuntu
+		nerd-fonts.ubuntu-mono
+		nerd-fonts.hack
+		nerd-fonts.fira-code
+		source-code-pro # optional for spacemacs
+		material-icons
+		material-symbols
+
 			font-awesome
-#fira-code-nerdfont
+# fira-code-nerdfont
 #terminus-nerdfont
 #hack-font
 	];
@@ -236,11 +276,12 @@
 	programs.zsh.enable = true;
 # Define a user account. Don't forget to set a password with ‘passwd’.
 	nixpkgs.config.allowUnfree = true;
+
 	users.users.pxlman = {
 		shell = pkgs.zsh;
 		isNormalUser = true;
 		initialPassword = "1234";
-		extraGroups = [ "wheel" "networkmanager" "video" "audio" "input" "vboxusers" "kvm" ]; # "vboxsf" 
+		extraGroups = [ "wheel" "networkmanager" "video" "audio" "input" "vboxusers" ]; # "vboxsf" 
 		packages = with pkgs; [
 # Terminal packages
 			zsh
@@ -261,7 +302,7 @@
 				catppuccin-gtk
 # Applications
 				alacritty
-				obs-studio
+				# obs-studio
 # Drivers and services
 ## CPU and GPU
 # intel-media-driver
@@ -281,10 +322,15 @@
 				jdk # java
 				glib
 				glibc
+				libuinputplus # for developing a c++ app to forward gamepad buttons
+				nlohmann_json
+				fuse
+				fusePackages.fuse_2
 				ffmpeg
 				gtk2
 				gtk3
 				gtk4
+				yaml-cpp
 ## Wine and gaming
 				wineWowPackages.stable
 				winetricks
@@ -292,7 +338,6 @@
 # X11 essentials
 				xorg.libX11
 				xorg.xorgproto # essential for c++ dev
-# xorg.libX11.dev
 				xorg.libxcb
 				xorg.libXinerama
 				xorg.xinit
@@ -304,14 +349,21 @@
 				woeusb # make a bootable windows usb from windows iso
 				libsForQt5.qt5.qtbase
 				libsForQt5.qt5.qtx11extras
+				kdePackages.xwaylandvideobridge
+				xdg-desktop-portal
+				xdg-desktop-portal-gtk
+				xdg-desktop-portal-hyprland
 				usbrelay # Tool to control USB HID relays
 				ntfs3g
 				libelf
 				elfutils
+				adi1090x-plymouth-themes # plymouth theme
 # Hacking
 				httpx
 				];
 	};
+# Utils
+	programs.localsend.enable = true; # Sharing between other local devices
 # Gaming
 	programs.steam = {
 		enable = true;
@@ -325,19 +377,20 @@
 #hardware.xone.enable = true;
 # Stylix For autostyling
 	stylix = {
-		enable = true;
-		image = "/etc/nixos/files/lightdm-wallpaper";
+		enable = false;
+		# image = "/etc/nixos/files/lightdm-wallpaper";
 		base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
-		cursor = {
-			name = "Bibata-Modern-Classic";
-			package = pkgs.bibata-cursors;
-			size = 10;
-		};
-		polarity = "dark";
-		targets = {
-			gtk.enable = false; # This will make it only with others like: grub, lightdm, nixos-icons
-			nixos-icons.enable = true;
-		};
+		# cursor = {
+		# 	name = "Bibata-Modern-Classic";
+		# 	package = pkgs.bibata-cursors;
+		# 	size = 10;
+		# };
+		# polarity = "dark";
+		# targets = {
+		# 	gtk.enable = false; # This will make it only with others like: grub, lightdm, nixos-icons
+		# 	gnome.enable = false;
+		# 	nixos-icons.enable = false;
+		# };
 	};
 
 	qt = { 
@@ -371,11 +424,13 @@
 			mpc
 # cmake
 			clang
-			python39
+			python312Full
 			python312Packages.yt-dlp
 			python312Packages.sympy
 			python312Packages.requests
-			pkgs.unstable.nodejs_22
+			python312Packages.unicurses
+			python312Packages.evdev
+			python312Packages.python-uinput
 			gcc
 			gdb
 			gcc_debug
@@ -384,6 +439,7 @@
 			syncthing
 			p7zip # 7z
 			unzip
+			unrar
 			exiv2 # metadata for images
 			bc # binary calculator
 # SDL2_mixer SDL multichannel audio mixer library
@@ -483,7 +539,7 @@
 	# Firewall settings
 	networking.firewall = {
 		enable = true;
-		allowedTCPPorts = [ 22000 8384 7777 7778 9999 8888 8080 8000 80 443 12345 21 ];
+		allowedTCPPorts = [ 22000 8384 7777 7778 9999 8888 8080 8081 8000 80 443 12345 21 53317 ];
 		allowedUDPPorts = [ 22000 21027 ];
 	};
 	services.tlp = {
@@ -496,13 +552,16 @@
 			CPU_ENERGY_PERF_POLICY_ON_BAT = "power";
 			CPU_ENERGY_PERF_POLICY_ON_AC = "performance";
 
+			CPU_BOOST_ON_AC=1;
+			CPU_BOOST_ON_BAT=0;
+
 			CPU_MIN_PERF_ON_AC = 0;
 			CPU_MAX_PERF_ON_AC = 100;
 			CPU_MIN_PERF_ON_BAT = 0;
-			CPU_MAX_PERF_ON_BAT = 40;
+			CPU_MAX_PERF_ON_BAT = 30;
 
 #Optional helps save long term battery health
-			START_CHARGE_THRESH_BAT0 = 40; # 40 and bellow it starts to charge
+			START_CHARGE_THRESH_BAT0 = 60; # 40 and bellow it starts to charge
 			STOP_CHARGE_THRESH_BAT0 = 80; # 80 and above it stops charging
 		};
 	};
@@ -534,7 +593,7 @@
 		options = "--delete-older-than 2d";
 	};
 # For more information, see `man configuration.nix` or https://nixos.org/manual/nixos/stable/options#opt-system.stateVersion .
-	system.stateVersion = "24.11"; # Did you read the comment?
+	system.stateVersion = "25.05"; # Did you read the comment?
 
 #	home-manager.users.pxlman = import ./home.nix;
 }

@@ -56,12 +56,15 @@ color3 grey
 TEXT
 
 ${color2}CPU ${color0}${alignr}${cpu cpu0}%
-${cpubar cpu0 5,}
+${cpubar cpu0 8,}
 ${top name 1} $alignr ${top cpu 1}%
 ${top name 2} $alignr ${top cpu 2}%
 ${top name 3} $alignr ${top cpu 3}%
 ${top name 4} $alignr ${top cpu 4}%
 ${top name 5} $alignr ${top cpu 5}%
+${top name 6} $alignr ${top cpu 6}%
+${top name 7} $alignr ${top cpu 7}%
+${top name 8} $alignr ${top cpu 8}%
 
 ${color2}RAM ${color0}${alignr}${mem}
 ${membar 8,}

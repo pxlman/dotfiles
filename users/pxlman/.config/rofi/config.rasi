@@ -180,3 +180,5 @@ configuration {
 	me-accept-custom: "Control+MouseDPrimary";
 */
 }
+
+@theme "/nix/store/8lhy719m39rpcyydvni8xjlvbc3di65h-rofi-1.7.5+wayland3/share/rofi/themes/Arc-Dark.rasi"

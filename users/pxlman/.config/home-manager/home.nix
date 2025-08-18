@@ -1,6 +1,27 @@
-{ config,lib, pkgs, ... }: {
-nixpkgs.config = {allowUnFree = true;};
-home.stateVersion = "24.11";
+{ config,lib, pkgs, ... }: 
+  let 
+    # Import unstable nixpkgs manually
+    unstable = import <nixpkgs-unstable> {
+      config.allowUnfree = true;
+    };
+    android = pkgs.androidenv.composeAndroidPackages {
+      platformVersions = [ "33" ]; # Choose platform version you need
+      buildToolsVersions = [ "33.0.2" ];
+      abiVersions = [ "x86_64" ]; # For emulator
+    };
+    xfox = import ./my-pkgs/xfox.nix;
+    quran = import ./my-pkgs/quran.nix;
+    bongocat = import ./my-pkgs/bongocat.nix;
+    terminal = pkgs.alacritty;
+  in
+
+{
+nixpkgs.config = {
+  allowUnFree = true;
+  allowUnsupportedSystem = true;
+  android_sdk.accept_license = true;
+};
+home.stateVersion = "25.05";
 home.username = "pxlman";
 home.homeDirectory = "/home/pxlman";
 home.packages = with pkgs; [
@@ -8,25 +29,46 @@ home.packages = with pkgs; [
   dconf # I Don't know but gtk needs it
   lxappearance # Themes and Fonts manager
   font-manager # Font Manager
+  nwg-displays
   #copyq # Clipboard manager
   bibata-cursors # My cursor theme
-  mint-themes # Temporary theme
-  rose-pine-gtk-theme
+  # mint-themes # Temporary theme
+  # rose-pine-gtk-theme # errored with pavucontrol and gnome-clocks
+  # catppuccin-gtk # hidden
+  materia-theme
+  # flat-remix-gtk # bad
   # ayu-theme-gtk
-  catppuccin-gtk
-  catppuccin
+  graphite-gtk-theme
   libnotify # For the notify-send command
   nitrogen # Wallpapers
   flameshot # Screenshots
+  grim
+  slurp
   conky # Desktop Widgets
-  rofi
+  # rofi
+  rofi-wayland
+  # unstable.wayland-bongocat
+  bongocat # For the cute cat
   rofi-power-menu
   rofi-emoji
   wofi
+  hypridle
+  wl-clipboard
+  hyprpolkitagent
+  hyprswitch
+  swww
+  mpvpaper
+  waybar
+  hyprpicker # For picking colors 
+  wlogout
+  waytrogen
+  wallust
   htop
 ### Services
+  activitywatch # For tracking time
   xclip # Copy and Paste service
   xdotool # make me able to use shortcuts with commmands
+  udiskie # For mounting and unmounting
   mimeo # open files using mimeopen
   bat # cat like
   lf # ranger like (terminal file manager for quick purposes)
@@ -39,27 +81,45 @@ home.packages = with pkgs; [
   brightnessctl # For brightness
   redshift # Eye comfort
   miniserve # Sharing between local devices
+  # localsend # Sharing between local devices
   syncthing # Syncing folders between phone and laptop
   # mconnect
   yt-dlp
+  appimage-run
+  peaclock
+  gnome-clocks
+  xfox # Gamepad remapper tool
 ### Applications
   nemo-with-extensions
   brave
+  quran
+  surf
+  telegram-desktop
+  hexchat
   firefox # for burp suite
   zathura # pdf reader
-  okular # pdf reader
+  # okular # pdf reader
+  kdePackages.okular
   pdfmixtool # pdf editor
   qbittorrent # torrent
-  zoom-us
+  # zoom-us
   audacity
-  discord
+  unstable.discord
   openboard
+  zeal
+  php84Packages.composer
+  php84Extensions.sqlite3
+  php84Extensions.curl
+  php84
   #hexchat
   gimp
   openshot-qt # video editor
   shotcut # video editor
   avidemux # video editor
   kdePackages.kdenlive
+  plantuml
+  emacs
+  emacsPackages.doom
   # ciscoPacketTracer8 # you may need to download the debian package then add it's hash manually using nix-store --add-fixed sha256 <path>.deb with the same official name
   dynamips
   # pkgs.unstable.discord unstable can be put in /etc/nixos/configuration.nix at the user section
@@ -67,25 +127,43 @@ home.packages = with pkgs; [
   eog
   xorg.xf86videovboxvideo
   xorg.xkill
+  wmctrl
   anki-bin
   vlc
   zathura
-  obsidian
+  unstable.obsidian
   cherrytree # NoteTaking app
-  vscode
-  qtcreator # To make qt gui programs
-  libsForQt5.full
+  clickup
+  unstable.vscode
+  code-cursor
+  sublime3
+  jetbrains.phpstorm
   jetbrains.clion
   jetbrains.pycharm-professional
   jetbrains.idea-ultimate
+  qtcreator # To make qt gui programs
+  libsForQt5.full
   netbeans
   gparted
   libreoffice
   xournalpp
   weylus
   postman
+  dbeaver-bin
+  # beekeeper-studio
   rhythmbox
   dpkg
+### Android development
+  pkgs.android-studio #.overrideAttrs (old: { unpackPhase = "true"; })  # disable the default unpacking
+### Android development tools (without android-studio)
+  android.androidsdk
+  android.platform-tools
+  # android.cmdline-tools
+  # unstable.gradle
+  unstable.android-tools
+  sqlcmd
+  yarn
+  jdk17
 ### Gaming
   zeroad # 0ad
   gamepad-tool # Testing gamepad
@@ -97,21 +175,25 @@ home.packages = with pkgs; [
   superTuxKart
   ddnet
   lutris # games launcher
+  gamepad-tool
   ### CLI Apps
   helix # Text editor command `hx`
   nettools # ithink for ip a
   eza # ls fork
-  tmux
+  # tmux
   docker
   ascii # show ascii table
-
+### OSINT
+  sherlock
 ### Hacking
   ## Python interpreter and modules
   python312
   python312Packages.requests  # Add any required Python modules
+  unstable.nodejs_23
   ## C++ development tools and libraries
   gcc
   cmake
+  arp-scan
   gnumake # for the `make` command
   boost
   gdb
@@ -126,20 +208,30 @@ home.packages = with pkgs; [
   xxd
   ## DFIR
   exiftool
-  nuclei
+  # nuclei
   ## General
-  cvemap
+  # cvemap
   wireshark
   hash-identifier
   ## Fuzzing
+  gobuster
   ffuf
   john
   wordlists
   ## Packets
   # tshark
-  tcpdump
+  # tcpdump
   # termshark
   ];
+
+# xresources.extraConfig = ''
+#   Xft.antialias: true
+#   Xft.hinting: true
+#   Xft.hintstyle: hintfull
+#   Xft.rgba: rgb
+#   Xft.lcdfilter: lcddefault
+#   Xft.dpi: 130
+# '';
 home.pointerCursor = {
   x11.enable = true;
   # name = "Bibata-Modern-Ice";
@@ -154,15 +246,14 @@ gtk = {
     package = pkgs.papirus-icon-theme;
   };
   theme = {
-    name = "rose-pine"; # WhiteSur-dark
-    # name = "Ayu-Darker";
-    package = pkgs.rose-pine-gtk-theme; # pkgs.whitesur-gtk-theme
-    # package = pkgs.ayu-theme-gtk;
+    # name = "rose-pine";
+    name = "Materia-dark";
+    package = pkgs.materia-theme; # pkgs.whitesur-gtk-theme
   };
   font = {
     # name = "Hack";
-    name = "Ubuntu Nerd Font";
-    package = pkgs.nerdfonts;
+    name = "Ubuntu Nerd Font Mono";
+    # package = pkgs.nerdfonts;
     size = 12;
   };
   gtk3.extraConfig = {
@@ -188,7 +279,7 @@ gtk = {
     "file:///home/pxlman/Videos Videos"
     "file:///home/pxlman/Pictures Pictures"
     "file:///mnt/files Files"
-    "file:///mnt/files/الاكاديمية الاكاديمية"
+    "file:///mnt/files/Resources/الاكاديمية الاكاديمية"
     "file:///mnt/files/Resources/University University"
   ];
 };
@@ -217,6 +308,36 @@ xdg.desktopEntries = {
   };
 };
 
+# Hyprland configuration
+wayland.windowManager.hyprland = {
+  enable = false;
+  # package = pkgs.hyprland;
+  settings = {
+    # This is the default config, you can change it
+    # configFile = ./hyprland.conf;
+    theme = "Materia-dark";
+    # theme = "Ayu-Dark";
+    # bind = {
+    #   "Super+Return" = "alacritty";
+    #   "Super+e" = "nemo";
+    #   "Super+f" = "brave";
+    #   "Super+v" = "vlc";
+    #   # "Super+g" = "exec gnome-clocks";
+    #   "Super+p" = "~/.config/rofi/powermenu/type-1/powermenu.sh";
+    #   "Super+d" = "~/.config/rofi/launchers/type-1/run.sh";
+    #   "Super+F1" = "nemo";
+    #   "Super+F2" = "brave --password-store=basic";
+    # };
+    bind = [
+      "SUPER, RETURN, exec, alacritty"
+      "SUPER, F1, exec, nemo"
+      "SUPER, F2, exec, brave --password-store=basic"
+      "SUPER, d, exec, ~/.config/rofi/launchers/type-1/run.sh"
+      "SUPER, p, exec, ~/.config/rofi/powermenu/type-1/powermenu.sh"
+      "SUPER_SHIFT, d, exec, ~/.config/rofi/launchers/type-1/drun.sh"
+    ];
+  };
+};
 
 # Fusuma is for touchpad gestures
 services.fusuma = {
@@ -274,6 +395,19 @@ services.flameshot = {
     showStartupLaunchMessage = false;
   };
 };
+services.activitywatch = {
+  enable = true;
+};
+programs.freetube = {
+  enable = true;
+  package = pkgs.freetube;
+  settings = {
+    allowDashAv1Formats = true;
+    checkForUpdates     = false;
+    defaultQuality      = "480";
+    baseTheme           = "catppuccinMocha";
+  };
+};
 # Git config
 programs.git = {
   enable = true;
@@ -319,6 +453,7 @@ programs.zsh = {
     h = "helix";
     n = "nvim";
     s = "snooze";
+    d = "curl -LO";
     docker = "sudo docker";
     #nrc = "nvim ~/.config/nvim";
     copy="xclip -selection clipboard";
@@ -332,14 +467,17 @@ programs.zsh = {
     webgoat = "docker run -it -p 127.0.0.1:8080:8080 -p 127.0.0.1:9090:9090 webgoat/webgoat";
     free-steam = "curl \"https://store.steampowered.com/search/?maxprice=free&supportedlang=english&specials=1&ndl=1\" -s | grep -oP '(?<=class=\"title\">)(?:(?!Add-On).)*(?=<.*)'";
     steam-free = "free-steam";
+    clickup = "appimage-run ~/clickup.AppImage";
+    ytd = "yt-dlp --format='135+139' --embeded-chapters";
+    # pavucontrol = "GTK_THEME= pavucontrol";
   };
-  initExtra = ''
+  initContent = ''
     export _JAVA_AWT_WM_NONREPARENTING=1
     # This is to solve vulkan error in steam
     # U must make sure to install the needed vulkan drivers (these files r there)
     # packages(i think): vulkan-intel vulkan-headers vulkan-tools 
     export VK_DRIVER_FILES=/usr/share/vulkan/icd.d/intel_icd.i686.json:/usr/share/vulkan/icd.d/intel_icd.x86_64.json
-    
+    cat ~/.cache/wallust/sequences
   '';
 };
 xdg.mimeApps = {
@@ -347,12 +485,14 @@ xdg.mimeApps = {
   defaultApplications = {
     "image/png" = "org.gnome.eog.desktop";
     "image/jpeg" = "org.gnome.eog.desktop";
-    "video/mp4" = "org.gnome.eog.desktop";
-    "video/mkv" = "org.gnome.eog.desktop";
+    "video/mp4" = "vlc.desktop";
+    "video/mkv" = "vlc.desktop";
+    "audio/mp3" = "vlc.desktop";
     "application/pdf" = "okularApplication_pdf.desktop";
     "application/pptx" = "okularApplication_pdf.desktop";
     "application/ppt" = "okularApplication_pdf.desktop";
-    "text/plain" = "neovim.desktop";
+    "text/plain" = "sublime_text.desktop";
+    "inode/directory" = "nemo.desktop";
   };
 };
 programs.mangohud = {
@@ -366,11 +506,15 @@ programs.mangohud = {
     position = "top-left";
   };
 };
+# programs.distrobox
 home.sessionPath = [
+  "$HOME/.local/bin"
   "$HOME/.myapps"
   "/bin"
-  "$HOME/.local/bin"
   "$HOME/dotfiles"
+  "$HOME/.npm-global/bin"
+  "$ANDOID_HOME/emulator"
+  "$ANDROID_HOME/platform-tools"
 ];
 home.sessionVariables = {
   # PS1="[\[\033[1;32m\]\u\[\033[0m\]@\[\033[1;34m\]\h\[\033[0m\] \[\033[1;36m\]\w\[\033[0m\]]\[\033[1;31m\]\$\[\033[0m\]";
@@ -381,12 +525,15 @@ home.sessionVariables = {
   LIBVA_DRIVER_NAME = "x86_64 VDPAU_DRIVER=va_gl";
   #LIBVA_DRIVERS_PATH="/usr/lib/dri/iHD_drv_video.so";
   #VK_DRIVER_FILES="/usr/share/vulkan/icd.d/intel_icd.i686.json:/usr/share/vulkan/icd.d/intel_icd.x86_64.json";
-  GTK_THEME = "rose-pine-moon"; # WhiteSur-dark
-  # GTK_THEME = "Ayu-Darker";
+  GTK_THEME = "Materia-dark"; # WhiteSur-dark
+  # QT_SCALE_FACTOR="1.25";
+  # QT_FONT_DPI="125";
+  # GDK_DPI_SCALE = "1.25"; # This scales up gtk xwayland apps
   NIXPKGS_ALLOW_UNFREE=1;
   PYTHONPATH = "${pkgs.python312}/lib/python3.12/site-packages";
   EDITOR = "nvim";
   VISUAL = "nvim";
+  ANDROID_HOME = "$HOME/Android/Sdk";
 };
 services.dunst = {
   enable = true;

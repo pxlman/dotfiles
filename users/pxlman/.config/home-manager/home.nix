@@ -13,6 +13,11 @@
     quran = import ./my-pkgs/quran.nix;
     bongocat = import ./my-pkgs/bongocat.nix;
     terminal = pkgs.alacritty;
+    # pwndbg = builtins.fetchGit {
+    #   url = "https://github.com/pwndbg/pwndbg.git";
+    #   rev = "41c8bc734be63206f9440a73209364d905dabf3d"; # pin a specific commit
+    # };
+    pwndbg = (builtins.getFlake "github:pwndbg/pwndbg/2b928632dd437c668dea11a93190dd55a9ddd822").packages.${pkgs.system}.default;
   in
 
 {
@@ -109,6 +114,7 @@ home.packages = with pkgs; [
   zeal
   php84Packages.composer
   php84Extensions.sqlite3
+  php84Extensions.mysqli
   php84Extensions.curl
   php84
   #hexchat
@@ -135,9 +141,11 @@ home.packages = with pkgs; [
   cherrytree # NoteTaking app
   clickup
   unstable.vscode
-  code-cursor
+  # code-cursor
+  ghidra
+  binaryninja-free
   sublime3
-  jetbrains.phpstorm
+  # jetbrains.phpstorm
   jetbrains.clion
   jetbrains.pycharm-professional
   jetbrains.idea-ultimate
@@ -149,7 +157,6 @@ home.packages = with pkgs; [
   xournalpp
   weylus
   postman
-  dbeaver-bin
   # beekeeper-studio
   rhythmbox
   dpkg
@@ -186,6 +193,8 @@ home.packages = with pkgs; [
 ### OSINT
   sherlock
 ### Hacking
+  # pwndbg.packages.${pkgs.system}.default
+  pwndbg
   ## Python interpreter and modules
   python312
   python312Packages.requests  # Add any required Python modules
@@ -197,9 +206,11 @@ home.packages = with pkgs; [
   gnumake # for the `make` command
   boost
   gdb
+  radare2
   ## Recon
   nmap
   fping
+  pwntools
   # katana
   ## Web
   burpsuite
@@ -235,8 +246,8 @@ home.packages = with pkgs; [
 home.pointerCursor = {
   x11.enable = true;
   # name = "Bibata-Modern-Ice";
-  name = "Bibata-Modern-Classic";
-  size = 10;
+  name = "Bibata-Modern-Amber";
+  size = 20;
   package = pkgs.bibata-cursors;
 };
 gtk = {

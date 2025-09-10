@@ -101,7 +101,7 @@ FullScreen=false
 ColorScheme=Arc Dark
 LockSidebar=true
 Name=Arc Dark
-ShowSidebar=false
+ShowSidebar=true
 shadeSortColumn=true
 
 [KDE]
@@ -123,26 +123,26 @@ eDP=eDP
 1417x797 screen: Width=1417
 
 [Recent Files]
-File1[$e]=/run/media/pxlman/SE-9 16G/IMG_20220815_112537.jpg
-File10[$e]=$HOME/Old posts.pdf
-File2[$e]=/run/media/pxlman/SE-9 16G/IMG_20220820_105018.jpg
-File3[$e]=$HOME/Documents/تجويد/21 أسئلة على ما سبق.pdf
-File4[$e]=$HOME/Documents/تجويد/24 مراجعة على همزة الوصل و القطع.pdf
-File5[$e]=$HOME/Documents/تجويد/22 الفرق بين همزة الوصل و القطع.pdf
-File6[$e]=$HOME/Documents/تجويد/23 حركة همزة الوصل.pdf
-File7[$e]=$HOME/Downloads/Telegram Desktop/04_النكاح_والمواريث_من_منهاج_المسلم.pdf
-File8[$e]=$HOME/Downloads/Telegram Desktop/العقيدة من منهاج المسلم.pdf
-File9[$e]=$HOME/Documents/تجويد/25 أحكام المد الجزء الأول.pdf
-Name1[$e]=IMG_20220815_112537.jpg
-Name10[$e]=Old posts.pdf
-Name2[$e]=IMG_20220820_105018.jpg
-Name3[$e]=21 أسئلة على ما سبق.pdf
-Name4[$e]=24 مراجعة على همزة الوصل و القطع.pdf
-Name5[$e]=22 الفرق بين همزة الوصل و القطع.pdf
-Name6[$e]=23 حركة همزة الوصل.pdf
-Name7[$e]=04_النكاح_والمواريث_من_منهاج_المسلم.pdf
-Name8[$e]=العقيدة من منهاج المسلم.pdf
-Name9[$e]=25 أحكام المد الجزء الأول.pdf
+File1[$e]=$HOME/Old posts.pdf
+File10[$e]=$HOME/Documents/تجويد/26  أحكام المد الجزء الثانى.pdf
+File2[$e]=$HOME/Downloads/Telegram Desktop/04_النكاح_والمواريث_من_منهاج_المسلم.pdf
+File3[$e]=$HOME/Documents/Ahmed Ashraf Lotfy Abdullah.pdf
+File4[$e]=$HOME/Downloads/Telegram Desktop/الآجرومية .pdf
+File5[$e]=$HOME/Downloads/Telegram Desktop/كيف_تدوين_العلم_وحفظ_الفوائد.pdf
+File6[$e]=$HOME/Downloads/Telegram Desktop/العقيدة من منهاج المسلم.pdf
+File7[$e]=$HOME/Documents/تجويد/25 أحكام المد الجزء الأول.pdf
+File8[$e]=$HOME/Documents/تجويد/20  مراجعة على التفخيم و الترقيق كلها.pdf
+File9[$e]=$HOME/Documents/Untitled spreadsheet - Sheet1.pdf
+Name1[$e]=Old posts.pdf
+Name10[$e]=26  أحكام المد الجزء الثانى.pdf
+Name2[$e]=04_النكاح_والمواريث_من_منهاج_المسلم.pdf
+Name3[$e]=Ahmed Ashraf Lotfy Abdullah.pdf
+Name4[$e]=الآجرومية .pdf
+Name5[$e]=كيف_تدوين_العلم_وحفظ_الفوائد.pdf
+Name6[$e]=العقيدة من منهاج المسلم.pdf
+Name7[$e]=25 أحكام المد الجزء الأول.pdf
+Name8[$e]=20  مراجعة على التفخيم و الترقيق كلها.pdf
+Name9[$e]=Untitled spreadsheet - Sheet1.pdf
 
 [UiSettings]
 ColorScheme=Breeze Dark

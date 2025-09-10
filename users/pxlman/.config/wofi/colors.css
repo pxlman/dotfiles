@@ -4,28 +4,28 @@ css = { src = "wofi.css", dst = "~/.config/wofi/colors.css" }
  */
 
 :root {
-    --wallpaper: url("/home/pxlman/Pictures/Wallpapers/MuirWoods_1920x1080.jpg");
+    --wallpaper: url("Wild-Cherry");
 
     /* Special */
-    --background: #292527;
-    --foreground: #F5F7FE;
-    --cursor: #CDB47F;
+    --background: #1F1726;
+    --foreground: #DAFAFF;
+    --cursor: #DAFAFF;
 
     /* Colors */
-    --color0:  #555053;
-    --color1:  #6E6B56;
-    --color2:  #B18524;
-    --color3:  #859584;
-    --color4:  #B58F93;
-    --color5:  #C3CE3A;
-    --color6:  #E3E9FC;
-    --color7:  #E9ECF5;
-    --color8:  #A3A5AC;
-    --color9:  #6E6B56;
-    --color10: #B18524;
-    --color11: #859584;
-    --color12: #B58F93;
-    --color13: #C3CE3A;
-    --color14: #E3E9FC;
-    --color15: #E9ECF5;
+    --color0:  #000507;
+    --color1:  #D94085;
+    --color2:  #2AB250;
+    --color3:  #FFD16F;
+    --color4:  #883CDC;
+    --color5:  #ECECEC;
+    --color6:  #C1B8B7;
+    --color7:  #FFF8DE;
+    --color8:  #009CC9;
+    --color9:  #DA6BAC;
+    --color10: #F4DCA5;
+    --color11: #EAC066;
+    --color12: #308CBA;
+    --color13: #AE636B;
+    --color14: #FF919D;
+    --color15: #E4838D;
 }

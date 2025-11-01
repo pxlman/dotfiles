@@ -1,0 +1,15 @@
+<application>
+  <component name="DimensionService">
+    <location key="find.popup.0.0.1920.1080@120dpi" x="569" y="8" />
+    <size key="find.popup.0.0.1920.1080@120dpi" width="839" height="1059" />
+  </component>
+  <component name="WindowManager">
+    <frame x="0" y="42" width="1920" height="1038" />
+  </component>
+  <component name="WindowStateApplicationService">
+    <state x="690" y="262" width="530" height="568" key="FileChooserDialogImpl" timestamp="1737977680104">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="690" y="262" width="530" height="568" key="FileChooserDialogImpl/0.0.1920.1080" timestamp="1737977680104" />
+  </component>
+</application>

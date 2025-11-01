@@ -1,0 +1,6 @@
+<application>
+  <component name="DockerSettings">
+    <option name="dockerComposePath" value="$USER_HOME$/.nix-profile/bin/docker" />
+    <option name="dockerPath" value="$USER_HOME$/.nix-profile/bin/docker" />
+  </component>
+</application>

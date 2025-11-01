@@ -1,0 +1,112 @@
+<application>
+  <component name="CppNewDialogSettings">
+    <option name="addNewFilesToProject" value="false" />
+  </component>
+  <component name="FileEditorProviderManager">{}</component>
+  <component name="LangManager">
+    <option name="languageName" value="ObjectiveC" />
+  </component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontFace" value="JetBrainsMonoNL NF Medium" />
+    <option name="fontSize" value="16.0" />
+    <option name="presentationModeIdeScale" value="1.75" />
+    <option name="overrideLafFonts" value="true" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "BuildView.Splitter.Proportion": "0.23614457",
+    "Grazie.Professional.Advertisement.Invoked": "1",
+    "InstalledPluginsSearchHistory": "vim\nf\nvi\nv\nk",
+    "LAST_CALCULATED_COLOR_INDEX_KEY": "6",
+    "LAST_EXTRACTOR_SCRIPTS_CLEANUP_VERSION/data/aggregators": "CL-243.21565.238",
+    "LayoutCode.optimizeImports": "true",
+    "LayoutCode.processChangedText": "false",
+    "LayoutCode.rearrangeEntries": "true",
+    "MarketplacePluginsSearchHistory": "vim\nrose\ndiscord\ndic\nc",
+    "NewProjectWizard.generateOnboardingTips": "true",
+    "NextRunPlatformUpdateBuild": "CL-243.26053.34",
+    "NextRunPlatformUpdateSelfBuild": "CL-243.22562.225",
+    "NextRunPlatformUpdateVersion": "2024.3.5",
+    "PluginConfigurable.selectionTab": "1",
+    "RunOnceActivity.Run Grazie Token Refresher": "true",
+    "RunOnceActivity.VFSInitializationConditionsToFusReporter": "true",
+    "RunOnceActivity.cidr.test.framework.showIndexingAsTask": "true",
+    "RunOnceActivity.cidr.test.roots.only": "true",
+    "RunOnceActivity.llm.installer.activate.toolwindow": "true",
+    "SettingsSearchHistory": "vim\ntheme\nsize\nqt\nfont",
+    "build.toolwindow.Build Output.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "bundled.plugins.list.saved.version": "CL-233.14475.31",
+    "clion.initialConfigPerformed": "true",
+    "enter_selection_count": "5",
+    "evlsprt3.233": "5",
+    "evlsprt3.241": "4",
+    "evlsprt3.243": "5",
+    "experimental.ui.first.promotion.localdate": "2024-03-25",
+    "experimental.ui.on.first.startup": "true",
+    "experimental.ui.used.version": "243.22562.225",
+    "file.gist.reindex.count": "1",
+    "fileTypeChangedCounter": "1",
+    "fontSizeToResetConsole": "24.0",
+    "fontSizeToResetEditor": "24.0",
+    "got.it.tooltip.new.terminal.promotion": "1",
+    "got.it.tooltip.new.terminal.promotion.243": "1",
+    "got.it.tooltip.reader.mode.got.it": "1",
+    "gotit.previous.run": "CL-241.17890.19",
+    "ide.memory.adjusted": "true",
+    "ideavim.statistics.timestamp": "1743376205715",
+    "input.method.disabler.muted": "true",
+    "llm.installer.last.toolwindow.state": "LLM_INSTALLER_HIDDEN",
+    "migrated.non.roamable.values.from.general.settings": "true",
+    "onboarding.generation.number": "3",
+    "previousColorScheme": "_@user_Rose-pine-color-theme",
+    "qualified.names.node.provider.file.structure.state": "true",
+    "registry.to.advanced.settings.migration.build": "CL-243.22562.225",
+    "run.configuration.delete.ad": "true",
+    "structure.view.defaults.are.configured": "true",
+    "ts.lib.d.ts.version": "5.4.3",
+    "whats.new.last.shown.version": "2024-3-21565-25be1e10db1bcd967f4bcc96cae3a3e5e1d7de7a"
+  },
+  "keyToStringList": {
+    "file.chooser.recent.files": [
+      "/home/pxlman/CLionProjects/OpenEyes",
+      "/home/pxlman/CLionProjects/OpenEyes/CMakeLists.txt",
+      "/home/pxlman/Documents/OOP/notxo",
+      "/home/pxlman/Documents/OOP/vole",
+      "/home/pxlman/Documents/OOP/Vole_machine"
+    ],
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "com.intellij.docker.dockerFile.DockerFileTypeDetector",
+      "com.jetbrains.cidr.lang.OCHeaderFileTypeDetector",
+      "com.intellij.javascript.debugger.sourcemap.SourceMapFileType$MyFileTypeDetector",
+      "com.intellij.database.vfs.DbStorageFileType$Detector",
+      "com.jetbrains.nodejs.util.NodeFileTypeDetector$JavaScriptFileTypeDetector",
+      "com.jetbrains.nodejs.util.NodeFileTypeDetector$TypeScriptFileTypeDetector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ]
+  }
+}]]></component>
+  <component name="ShownTips">{
+  &quot;shownTips&quot;: {
+    &quot;SpeedSearch&quot;: 1729368762744,
+    &quot;CtrlW&quot;: 1729368755317,
+    &quot;Rename&quot;: 1729368732618,
+    &quot;FocusProjectToolWindow&quot;: 1729368742459,
+    &quot;SearchEverywhere&quot;: 1729368765183,
+    &quot;GoToDeclaration&quot;: 1729368772949,
+    &quot;CommentCode&quot;: 1729368720762,
+    &quot;QuickFix&quot;: 1729368774125,
+    &quot;FindReplaceToggle&quot;: 1729368769781,
+    &quot;FindInPath&quot;: 1729368749589
+  },
+  &quot;proposedTips&quot;: {
+    &quot;CommentCode&quot;: 1729368720602
+  },
+  &quot;tipsOrderSeed&quot;: 1729368720577
+}</component>
+  <component name="TerminalCommandHistoryManager">
+    <command-history-files>
+      <command-history-file filename="OpenEyes-history" project-path="/home/pxlman/CLionProjects/OpenEyes" last-access-time="1737315442968" />
+    </command-history-files>
+  </component>
+</application>

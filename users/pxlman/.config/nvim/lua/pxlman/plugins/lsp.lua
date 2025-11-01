@@ -10,7 +10,8 @@ return {
         linter = {
         },
         formatter = {
-          "prettier"
+          "prettier",
+          "nixfmt"
         }
       },
       automatic_installation = true,
@@ -62,5 +63,11 @@ return {
   },
   {
     "jose-elias-alvarez/null-ls.nvim",
+    config = function()
+        vim.null_ls.config.sources = {
+            null_ls.builtins.formatting.prettier,
+            null_ls.builtins.formatting.nixfmt,
+        };
+        end,
   },
 }

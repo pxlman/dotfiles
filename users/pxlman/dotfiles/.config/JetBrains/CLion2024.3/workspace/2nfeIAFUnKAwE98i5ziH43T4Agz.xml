@@ -1,0 +1,178 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="VoleMachine" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="3dqqdataux1n3" SIDE_TABS_SIZE_LIMIT_KEY="-1" />
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "ObjectiveC": {
+      "usageCount": 12,
+      "lastUsed": 1730017384236
+    },
+    "CMakeLists.txt": {
+      "usageCount": 2,
+      "lastUsed": 1729368549065
+    }
+  }
+}]]></component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find />
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
+  <component name="FindInProjectScope">
+    <option name="isProjectScope" value="true" />
+  </component>
+  <component name="GitSEFilterConfiguration">{}</component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Book.h" />
+      <option value="$PROJECT_DIR$/main.cpp" />
+    </changedPaths>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="CMake">
+      <summary usageCount="2" lastUsage="1729368549065" />
+    </language>
+    <language id="ObjectiveC">
+      <summary usageCount="12" lastUsage="1730017384236" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="ReaderModeSettings">
+    <option name="enableVisualFormatting" value="false" />
+  </component>
+  <component name="RunConfigurationStartHistory">
+    <history>
+      <element setting="CMake Application.VoleMachine" />
+    </history>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",QUALIFIED_NAMES" />
+  </component>
+  <component name="TerminalArrangementManager">
+    <option name="myTabStates">
+      <TerminalTabState tabName="Local">
+        <shellCommand>
+          <arg value="/run/current-system/sw/bin/zsh" />
+          <arg value="-i" />
+        </shellCommand>
+      </TerminalTabState>
+    </option>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3923000" />
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.044289898" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.1943631" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.23974541" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.23974541" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="bottom" id="Messages" order="5" weight="0.44557822" />
+      <window_info anchor="bottom" id="CMake" order="6" />
+      <window_info anchor="bottom" id="Run" order="7" show_stripe_button="false" weight="0.44013605" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info active="true" anchor="right" id="AIAssistant" order="1" visible="true" weight="0.29758418" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Meson" order="5" />
+      <window_info anchor="right" id="Meet New UI" order="6" />
+      <unified_weights bottom="0.44013605" left="0.044289898" right="0.29758418" />
+    </layoutV2>
+    <recentWindows>
+      <value>Run</value>
+      <value>Messages</value>
+      <value>Problems View</value>
+      <value>Terminal</value>
+      <value>Project</value>
+      <value>AIAssistant</value>
+      <value>Structure</value>
+      <value>Meet New UI</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="283" y="59" key="#Plugins" timestamp="1729368704167">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="283" y="59" key="#Plugins/0.0.1366.768@0.0.1366.768" timestamp="1729368704167" />
+    <state width="1284" height="281" key="GridCell.Tab.0.bottom" timestamp="1730019206769">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1284" height="281" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1730019206769" />
+    <state width="1284" height="281" key="GridCell.Tab.0.center" timestamp="1730019206769">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1284" height="281" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1730019206769" />
+    <state width="1284" height="281" key="GridCell.Tab.0.left" timestamp="1730019206769">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1284" height="281" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1730019206769" />
+    <state width="1284" height="281" key="GridCell.Tab.0.right" timestamp="1730019206769">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1284" height="281" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1730019206769" />
+    <state x="0" y="33" width="1366" height="735" key="SettingsEditor" timestamp="1730017518321">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="0" y="33" width="1366" height="735" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1730017518321" />
+    <state x="396" y="0" width="645" height="768" key="find.popup" timestamp="1729368784728">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="396" y="0" width="645" height="768" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1729368784728" />
+    <state x="344" y="83" width="675" height="684" key="search.everywhere.popup" timestamp="1729414809073">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="344" y="83" width="675" height="684" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1729414809073" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Book.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

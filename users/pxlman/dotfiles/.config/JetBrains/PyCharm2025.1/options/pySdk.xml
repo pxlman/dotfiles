@@ -1,0 +1,5 @@
+<application>
+  <component name="PySdkSettings">
+    <option name="PREFERRED_VIRTUALENV_BASE_SDK" value="$USER_HOME$/.nix-profile/bin/python" />
+  </component>
+</application>

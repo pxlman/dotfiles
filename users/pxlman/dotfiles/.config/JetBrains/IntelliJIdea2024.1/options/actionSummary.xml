@@ -1,0 +1,19 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="$SelectAll">
+      <i c="1" l="1729367806637" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="1" l="1729367807754" />
+    </e>
+    <e n="EditorPaste">
+      <i c="2" l="1729367809716" />
+    </e>
+    <e n="com.intellij.ide.U.r.V">
+      <i c="1" l="1729367195489" />
+    </e>
+    <e n="com.intellij.ui.dsl.builder.components.SegmentedButtonAction">
+      <i c="4" l="1729367822888" />
+    </e>
+  </component>
+</application>

@@ -1,0 +1,76 @@
+#! /bin/sh
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+# Auto run section
+#$HOME/.mycmds/touchSettings
+# Set layouts us,ara
+#setxkbmap -option grp:alt_space_toggle us,ara
+# Set cursor name as blabla to make lxapprarance change cursor
+#xsetroot -cursor_name left_ptr &
+cmds="$HOME/.mycmds"
+pkill polybar;
+polybar &
+
+pkill udiskie
+udiskie --automount --notify & # must have udisks2 installed and enabled in nixos-configuration
+
+dunst&
+miniserve -u -p 7777 $HOME &
+miniserve -u -p 7778 /mnt/Files &
+fusuma -d # Makes linix understand the multi finger touchpad usages
+#$cmds/touchSettings
+#pkill graySleep lowBattery saw fridayMaghribDuaa conky
+$cmds/graySleep&
+$cmds/lowBattery&
+$cmds/saw&
+#$cmds/fridayMaghribDuaa&
+export PATH=/bin:$PATH
+pkill conky; ~/.conky/conky-startup.sh&
+wmname "LG3D"
+
+# Workspaces
+bspc monitor -d " " " " "󱥂 " " " "I" " " " "
+
+bspc config border_width         2
+bspc config window_gap          12
+
+bspc config split_ratio          0.5
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+# Scratchpad
+# transform all windows with title "floating" into floating windows 
+bspc rule -a "*:*:floating" state=floating center=on
+
+# Bindings
+bspc rule -a loupe state=floating
+bspc rule -a "steamwebhelper" state=floating
+bspc rule -a Alacritty desktop='^1' state=tiled follow=on
+bspc rule -a firefox desktop='^2' follow=on
+bspc rule -a Brave-browser desktop='^2' follow=on
+bspc rule -a Brave-browser-nightly desktop='^2' follow=on
+bspc rule -a Microsoft-edge desktop='^2' follow=on
+bspc rule -a discord desktop='^3' follow=on
+bspc rule -a "TelegramDesktop" desktop='^3' state=pseudo_tiled follow=on
+bspc rule -a obsidian desktop='^4' follow=on
+bspc rule -a Gimp desktop='^4' state=pseudo_tiled follow=on
+bspc rule -a Anki desktop='^4' state=pseudo_tiled follow=on
+bspc rule -a "ONLYOFFICE Desktop Editors" desktop='^4' state=tiled follow=on
+bspc rule -a libreoffice desktop='^4' state=tiled follow=on
+bspc rule -a "VirtualBox Manager" desktop='^6' state=tiled follow=on
+bspc rule -a "steam" desktop='^6' state=tiled follow=off
+bspc rule -a "Lutris" desktop='^6' state=tiled follow=off
+bspc rule -a "Cursor" desktop='^6' state=tiled follow=off
+bspc rule -a "Code" desktop='^6' state=tiled follow=off
+bspc rule -a "Heroic" desktop='^6' state=tiled follow=off
+bspc rule -a "Rare" desktop='^6' state=tiled follow=off
+bspc rule -a vlc desktop='^7' state=pseudo_tiled follow=on
+bspc rule -a "Emulator" desktop='^7' state=floating follow=off
+bspc rule -a Zathura desktop='^7' state=tiled follow=on
+bspc rule -a Xreader desktop='^7' state=tiled follow=on
+bspc rule -a okular desktop='^7' state=tiled follow=on
+bspc rule -a zoom desktop='^7' state=tiled follow=on
+bspc rule -a "jetbrains-clion" desktop='^7' state=tiled follow=on
+bspc rule -a "jetbrains-idea" desktop='^7' state=tiled follow=on
+ # nsalah="python ~/Documents/Next-Salah/main.py"
+export PATH=$PATH:$HOME/.mycmds

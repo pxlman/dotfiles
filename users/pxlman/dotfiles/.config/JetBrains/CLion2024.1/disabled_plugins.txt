@@ -1,0 +1,4 @@
+color.scheme.Ayu Dark
+com.markskelton.one-dark-theme
+intellij.rider.cpp.debugger
+org.jetbrains.plugins.clion.radler

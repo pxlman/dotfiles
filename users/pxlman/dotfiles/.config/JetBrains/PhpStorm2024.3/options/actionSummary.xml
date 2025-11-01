@@ -1,0 +1,88 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="$Delete">
+      <i c="1" l="1738002602546" />
+    </e>
+    <e n="AutoIndentLines">
+      <i c="3" l="1738002543240" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="30" l="1738002664833" />
+    </e>
+    <e n="EditorChooseLookupItem">
+      <i c="1" l="1738002658438" />
+    </e>
+    <e n="EditorDown">
+      <i c="2" l="1738002657949" />
+    </e>
+    <e n="EditorEnter">
+      <i c="2" l="1738002648118" />
+    </e>
+    <e n="EditorEscape">
+      <i c="11" l="1738005167154" />
+    </e>
+    <e n="EditorPaste">
+      <i c="1" l="1738003818805" />
+    </e>
+    <e n="EditorRight">
+      <i c="1" l="1738002635947" />
+    </e>
+    <e n="ExpandLiveTemplateByTab">
+      <i c="1" l="1738002649681" />
+    </e>
+    <e n="FindInPath">
+      <i c="1" l="1738003810224" />
+    </e>
+    <e n="NewHtmlFile">
+      <i c="1" l="1738002588341" />
+    </e>
+    <e n="NextTemplateVariable">
+      <i c="1" l="1738002658833" />
+    </e>
+    <e n="PhpNewFile">
+      <i c="1" l="1738002615558" />
+    </e>
+    <e n="RenameElement">
+      <i c="1" l="1738002635197" />
+    </e>
+    <e n="Run">
+      <i c="1" l="1737978068579" />
+    </e>
+    <e n="SaveAll">
+      <i c="7" l="1738005167823" />
+    </e>
+    <e n="WelcomeScreen.OpenDirectoryProject">
+      <i c="1" l="1737977665948" />
+    </e>
+    <e n="com.intellij.find.impl.FindPopupPanel$MySelectScopeToggleAction">
+      <i c="3" l="1738003824886" />
+    </e>
+    <e n="com.intellij.ide.startup.importSettings.chooser.productChooser.JbChooserAction">
+      <i c="1" l="1737977391761" />
+    </e>
+    <e n="com.intellij.ide.startup.importSettings.chooser.settingChooser.SettingChooserItemAction">
+      <i c="1" l="1737977395993" />
+    </e>
+    <e n="com.intellij.notification.NotificationAction$Simple">
+      <i c="1" l="1737977712226" />
+    </e>
+    <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
+      <i c="28" l="1738002664831" />
+    </e>
+    <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
+      <i c="2" l="1737977703250" />
+    </e>
+    <e n="com.intellij.openapi.project.DumbAwareAction$SimpleDumbAwareAction">
+      <i c="1" l="1738003827991" />
+    </e>
+    <e n="com.intellij.toolWindow.ToolWindowHeader$HideAction">
+      <i c="1" l="1738002066440" />
+    </e>
+    <e n="com.intellij.ui.dsl.builder.components.SegmentedButtonAction">
+      <i c="3" l="1737977650779" />
+    </e>
+    <e n="com.maddyhome.idea.vim.ui.ex.ExShortcutKeyAction">
+      <i c="8" l="1738005167816" />
+    </e>
+  </component>
+</application>

@@ -1,0 +1,91 @@
+[global]
+# Monitor and positioning
+monitor = 0
+follow = keyboard
+origin = top-right
+scale = 0
+
+# Dimensions and spacing
+width = (300, 800)
+height = (100, 400)
+gap_size = 10
+padding = 12
+horizontal_padding = 12
+
+# Visual appearance
+corner_radius = 9
+frame_width = 0
+separator_height = 2
+transparency = 20
+
+# Typography
+font = Liga SFMono Nerd Font 11
+line_height = 0
+text_icon_padding = 8
+alignment = left
+
+# Behavior
+indicate_hidden = yes
+stack_duplicates = true
+hide_duplicate_count = false
+ignore_dbusclose = false
+sticky_history = yes
+history_length = 20
+always_run_script = true
+startup_notification = false
+enable_posix_regex = true
+
+# Content formatting
+markup = full
+format = "<b>%a</b>\n%s\n%b"
+word_wrap = yes
+ellipsize = middle
+ignore_newline = no
+show_age_threshold = 60
+idle_threshold = 120
+
+# Icons
+icon_position = left
+min_icon_size = 16
+max_icon_size = 64
+icon_path = /usr/share/icons/Papirus-Dark/24x24/apps/:/home/saatvik333/.icons/
+
+# Progress bar
+progress_bar = true
+progress_bar_height = 10
+progress_bar_frame_width = 1
+progress_bar_min_width = 150
+progress_bar_max_width = 300
+progress_bar_corner_radius = 4
+
+# Mouse interaction
+mouse_left_click = close_current
+mouse_middle_click = do_action, close_current
+mouse_right_click = close_all
+
+# Colors
+frame_color = "{{color4}}"
+highlight = "{{color5}}"
+separator_color = "{{foreground}}"
+
+[experimental]
+per_monitor_dpi = false
+
+[urgency_low]
+timeout = 4
+background = "{{background | darken(0.1)}}ee"
+foreground = "{{foreground}}"
+frame_color = "{{color4}}"
+
+[urgency_normal]
+timeout = 6
+background = "{{background | darken(0.1)}}80"
+foreground = "{{foreground}}"
+frame_color = "{{color6}}"
+
+[urgency_critical]
+timeout = 0
+background = "{{background | darken(0.1)}}ee"
+foreground = "{{foreground}}"
+frame_color = "{{color9}}"
+new_icon = /usr/share/icons/Papirus-Dark/24x24/status/dialog-warning.svg

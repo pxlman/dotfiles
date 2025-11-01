@@ -1,0 +1,976 @@
+<application>
+  <component name="VimHistorySettings">
+    <history>
+      <history-search>
+        <entry encoding="base64">Z2V0Q2VsbA==</entry>
+        <entry encoding="base64">Q1U=</entry>
+        <entry encoding="base64">bWVtb3J5</entry>
+        <entry encoding="base64">bWVt</entry>
+        <entry encoding="base64">XCo=</entry>
+        <entry encoding="base64">YWx1</entry>
+        <entry encoding="base64">dHdvcw==</entry>
+        <entry encoding="base64">VHdvcw==</entry>
+        <entry encoding="base64">ZmlsZQ==</entry>
+        <entry encoding="base64">RmlsZQ==</entry>
+        <entry encoding="base64">Q1BVOjo=</entry>
+        <entry encoding="base64">ZmV0Y2g=</entry>
+        <entry encoding="base64">cHJvZ3JhbQ==</entry>
+        <entry encoding="base64">Y291bnRlcg==</entry>
+        <entry encoding="base64">aGFsdA==</entry>
+        <entry encoding="base64">Qw==</entry>
+        <entry encoding="base64">MA==</entry>
+        <entry encoding="base64">cHJvZ3JhbV9jb3VudGVy</entry>
+        <entry encoding="base64">b3BlcmF0b3I=</entry>
+        <entry encoding="base64">dG9w</entry>
+        <entry encoding="base64">bG9hZHBybw==</entry>
+        <entry encoding="base64">bGludXg=</entry>
+        <entry encoding="base64">TGludXg=</entry>
+        <entry encoding="base64">ZnJlZQ==</entry>
+        <entry encoding="base64">ZGVsZXRl</entry>
+        <entry encoding="base64">Z2V0TW92ZQ==</entry>
+        <entry encoding="base64">bWFyaw==</entry>
+        <entry encoding="base64">ZGlzcGxheQ==</entry>
+        <entry encoding="base64">c2V0dw==</entry>
+        <entry encoding="base64">aW5jbHVkZQ==</entry>
+        <entry encoding="base64">aXNfd2lu</entry>
+        <entry encoding="base64">ZHJhdw==</entry>
+        <entry encoding="base64">Z2V0bW92ZQ==</entry>
+        <entry encoding="base64">bmFtZQ==</entry>
+        <entry encoding="base64">dmlydHVhbA==</entry>
+        <entry encoding="base64">Z2V0X21vdmU=</entry>
+        <entry encoding="base64">bW92ZQ==</entry>
+        <entry encoding="base64">aWY=</entry>
+        <entry encoding="base64" />
+        <entry encoding="base64">dmFsaWQ=</entry>
+        <entry encoding="base64">dXBkYXRl</entry>
+        <entry encoding="base64">cHlyYW1pYw==</entry>
+        <entry encoding="base64">UHlyYQ==</entry>
+        <entry encoding="base64">cGxheWVy</entry>
+        <entry encoding="base64">d2lu</entry>
+        <entry encoding="base64">cmFuZG9t</entry>
+        <entry encoding="base64">UGxheWVy</entry>
+        <entry encoding="base64">UmFuZG9t</entry>
+        <entry encoding="base64">Y2xhc3M=</entry>
+        <entry encoding="base64">Vml0ZQ==</entry>
+      </history-search>
+      <history-cmd>
+        <entry encoding="base64">cQ==</entry>
+        <entry encoding="base64">2LU=</entry>
+        <entry encoding="base64">JXMvQ1BVOjovLw==</entry>
+        <entry encoding="base64">Vw==</entry>
+        <entry encoding="base64">JzwsJz53</entry>
+        <entry encoding="base64">d3E=</entry>
+        <entry encoding="base64" />
+        <entry encoding="base64">dw==</entry>
+      </history-cmd>
+      <history-expr />
+      <history-input />
+    </history>
+  </component>
+  <component name="VimJumpsSettings">
+    <project id="VoleMachine-9f918067">
+      <jump line="3" column="18" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="4" column="3" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="5" column="0" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="6" column="0" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/VoleMachine/Book.h" protocol="file" />
+      <jump line="7" column="10" filename="$USER_HOME$/CLionProjects/VoleMachine/Book.h" protocol="file" />
+      <jump line="1" column="4" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="7" column="5" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="8" column="4" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="25" column="12" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="36" column="22" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="33" column="24" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="20" column="12" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="43" column="15" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="38" column="0" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="32" column="15" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="42" column="17" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="40" column="12" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="39" column="20" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="53" column="0" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="47" column="15" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="48" column="15" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="9" column="15" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="16" column="16" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="15" column="1" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="17" column="0" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="14" column="3" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="12" column="12" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="22" column="13" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="23" column="13" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="50" column="21" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="49" column="24" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="51" column="18" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="2" column="0" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="10" column="15" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="28" column="67" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="44" column="21" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="58" column="0" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="63" column="24" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+      <jump line="60" column="4" filename="$USER_HOME$/CLionProjects/VoleMachine/main.cpp" protocol="file" />
+    </project>
+    <project id="Vole_machine-f64c1a04">
+      <jump line="53" column="16" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Machine.h" protocol="file" />
+      <jump line="33" column="4" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Machine.h" protocol="file" />
+      <jump line="19" column="0" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CU.h" protocol="file" />
+      <jump line="31" column="0" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CU.h" protocol="file" />
+      <jump line="19" column="37" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Machine.h" protocol="file" />
+      <jump line="0" column="0" filename="7" protocol="cidr-memory-view" />
+      <jump line="15" column="5" filename="7" protocol="cidr-memory-view" />
+      <jump line="4" column="5" filename="7" protocol="cidr-memory-view" />
+      <jump line="6" column="5" filename="7" protocol="cidr-memory-view" />
+      <jump line="19" column="12" filename="7" protocol="cidr-memory-view" />
+      <jump line="45" column="18" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CU.h" protocol="file" />
+      <jump line="60" column="27" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Machine.h" protocol="file" />
+      <jump line="0" column="0" filename="9" protocol="cidr-memory-view" />
+      <jump line="30" column="17" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Register.h" protocol="file" />
+      <jump line="11" column="45" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/main.cpp" protocol="file" />
+      <jump line="57" column="26" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="16" column="44" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Machine.h" protocol="file" />
+      <jump line="44" column="23" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Memory.h" protocol="file" />
+      <jump line="45" column="0" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Memory.h" protocol="file" />
+      <jump line="43" column="24" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Memory.h" protocol="file" />
+      <jump line="46" column="22" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Memory.h" protocol="file" />
+      <jump line="35" column="17" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Memory.h" protocol="file" />
+      <jump line="48" column="4" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Memory.h" protocol="file" />
+      <jump line="15" column="19" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Memory.h" protocol="file" />
+      <jump line="5" column="17" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Memory.h" protocol="file" />
+      <jump line="32" column="8" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Memory.h" protocol="file" />
+      <jump line="33" column="4" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Memory.h" protocol="file" />
+      <jump line="30" column="22" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Memory.h" protocol="file" />
+      <jump line="23" column="21" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Memory.h" protocol="file" />
+      <jump line="29" column="26" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Register.h" protocol="file" />
+      <jump line="16" column="29" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Register.h" protocol="file" />
+      <jump line="17" column="0" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Register.h" protocol="file" />
+      <jump line="15" column="9" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/ALU.h" protocol="file" />
+      <jump line="20" column="19" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Memory.h" protocol="file" />
+      <jump line="16" column="52" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Memory.h" protocol="file" />
+      <jump line="32" column="0" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Register.h" protocol="file" />
+      <jump line="19" column="4" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/ALU.h" protocol="file" />
+      <jump line="15" column="0" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CU.h" protocol="file" />
+      <jump line="39" column="0" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="33" column="9" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="58" column="9" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="62" column="17" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="38" column="4" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="59" column="63" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="60" column="58" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="17" column="15" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Memory.h" protocol="file" />
+      <jump line="53" column="23" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Memory.h" protocol="file" />
+      <jump line="25" column="26" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Machine.h" protocol="file" />
+      <jump line="86" column="20" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="71" column="34" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="72" column="38" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="75" column="21" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="73" column="8" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="89" column="12" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="77" column="20" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="76" column="30" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="70" column="16" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="69" column="16" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="113" column="4" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="68" column="29" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="67" column="24" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="66" column="8" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="115" column="35" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="65" column="13" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="44" column="4" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="94" column="24" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="92" column="18" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="78" column="34" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="32" column="6" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CU.h" protocol="file" />
+      <jump line="21" column="17" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CU.h" protocol="file" />
+      <jump line="107" column="20" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="110" column="21" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="109" column="31" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="98" column="25" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="101" column="28" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="95" column="34" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="67" column="4" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Memory.h" protocol="file" />
+      <jump line="114" column="20" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="116" column="20" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="18" column="10" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="19" column="7" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="27" column="8" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="117" column="16" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="121" column="8" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="126" column="35" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="132" column="4" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="108" column="36" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="37" column="4" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="36" column="35" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="35" column="36" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="130" column="16" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+      <jump line="12" column="23" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/main.cpp" protocol="file" />
+      <jump line="9" column="13" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/main.cpp" protocol="file" />
+      <jump line="5" column="0" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/main.cpp" protocol="file" />
+      <jump line="8" column="11" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/main.cpp" protocol="file" />
+      <jump line="22" column="30" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CU.h" protocol="file" />
+      <jump line="61" column="22" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Memory.h" protocol="file" />
+      <jump line="25" column="2" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/Memory.h" protocol="file" />
+      <jump line="10" column="0" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/main.cpp" protocol="file" />
+      <jump line="41" column="0" filename="$USER_HOME$/Documents/OOP/oop_assign1/Vole_machine/CPU.h" protocol="file" />
+    </project>
+    <project id="To_Player-edf655b7">
+      <jump line="0" column="0" filename="$USER_HOME$/HACK/tmp/To_Player/check_integrity.php" protocol="file" />
+      <jump line="12" column="47" filename="$USER_HOME$/HACK/tmp/To_Player/check_integrity.php" protocol="file" />
+      <jump line="22" column="41" filename="$USER_HOME$/HACK/tmp/To_Player/check_integrity.php" protocol="file" />
+      <jump line="21" column="55" filename="$USER_HOME$/HACK/tmp/To_Player/check_integrity.php" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/HACK/tmp/To_Player/dashboard.php" protocol="file" />
+      <jump line="2" column="0" filename="$USER_HOME$/HACK/tmp/To_Player/dashboard.php" protocol="file" />
+      <jump line="13" column="0" filename="$USER_HOME$/HACK/tmp/To_Player/dashboard.php" protocol="file" />
+      <jump line="91" column="7" filename="$USER_HOME$/HACK/tmp/To_Player/dashboard.php" protocol="file" />
+      <jump line="93" column="11" filename="$USER_HOME$/HACK/tmp/To_Player/dashboard.php" protocol="file" />
+      <jump line="101" column="27" filename="$USER_HOME$/HACK/tmp/To_Player/dashboard.php" protocol="file" />
+      <jump line="24" column="41" filename="$USER_HOME$/HACK/tmp/To_Player/dashboard.php" protocol="file" />
+      <jump line="11" column="39" filename="$USER_HOME$/HACK/tmp/To_Player/dashboard.php" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/HACK/tmp/To_Player/login.php" protocol="file" />
+      <jump line="9" column="9" filename="$USER_HOME$/HACK/tmp/To_Player/login.php" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/HACK/tmp/To_Player/forgot_password.php" protocol="file" />
+      <jump line="18" column="55" filename="$USER_HOME$/HACK/tmp/To_Player/forgot_password.php" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/HACK/tmp/To_Player/feedback.php" protocol="file" />
+      <jump line="14" column="1" filename="$USER_HOME$/HACK/tmp/To_Player/dashboard.php" protocol="file" />
+      <jump line="31" column="27" filename="$USER_HOME$/HACK/tmp/To_Player/dashboard.php" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/HACK/tmp/To_Player/index.php" protocol="file" />
+      <jump line="14" column="34" filename="$USER_HOME$/HACK/tmp/To_Player/login.php" protocol="file" />
+      <jump line="10" column="26" filename="$USER_HOME$/HACK/tmp/To_Player/login.php" protocol="file" />
+      <jump line="19" column="4" filename="$USER_HOME$/HACK/tmp/To_Player/login.php" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/HACK/tmp/To_Player/submit_feedback.php" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/HACK/tmp/To_Player/upload.php" protocol="file" />
+      <jump line="53" column="13" filename="$USER_HOME$/HACK/tmp/To_Player/upload.php" protocol="file" />
+      <jump line="54" column="25" filename="$USER_HOME$/HACK/tmp/To_Player/upload.php" protocol="file" />
+      <jump line="11" column="0" filename="$USER_HOME$/HACK/tmp/To_Player/check_integrity.php" protocol="file" />
+      <jump line="24" column="22" filename="$USER_HOME$/HACK/tmp/To_Player/check_integrity.php" protocol="file" />
+      <jump line="15" column="51" filename="$USER_HOME$/HACK/tmp/To_Player/check_integrity.php" protocol="file" />
+      <jump line="12" column="0" filename="$USER_HOME$/HACK/tmp/To_Player/feedback.php" protocol="file" />
+      <jump line="35" column="31" filename="$USER_HOME$/HACK/tmp/To_Player/dashboard.php" protocol="file" />
+      <jump line="36" column="49" filename="$USER_HOME$/HACK/tmp/To_Player/dashboard.php" protocol="file" />
+      <jump line="73" column="70" filename="$USER_HOME$/HACK/tmp/To_Player/dashboard.php" protocol="file" />
+      <jump line="44" column="29" filename="$USER_HOME$/HACK/tmp/To_Player/dashboard.php" protocol="file" />
+      <jump line="32" column="51" filename="$USER_HOME$/HACK/tmp/To_Player/dashboard.php" protocol="file" />
+      <jump line="106" column="0" filename="$USER_HOME$/HACK/tmp/To_Player/dashboard.php" protocol="file" />
+      <jump line="75" column="29" filename="$USER_HOME$/HACK/tmp/To_Player/dashboard.php" protocol="file" />
+      <jump line="88" column="0" filename="$USER_HOME$/HACK/tmp/To_Player/dashboard.php" protocol="file" />
+      <jump line="86" column="58" filename="$USER_HOME$/HACK/tmp/To_Player/dashboard.php" protocol="file" />
+      <jump line="66" column="13" filename="$USER_HOME$/HACK/tmp/To_Player/dashboard.php" protocol="file" />
+      <jump line="70" column="15" filename="$USER_HOME$/HACK/tmp/To_Player/dashboard.php" protocol="file" />
+      <jump line="71" column="31" filename="$USER_HOME$/HACK/tmp/To_Player/dashboard.php" protocol="file" />
+      <jump line="72" column="30" filename="$USER_HOME$/HACK/tmp/To_Player/dashboard.php" protocol="file" />
+      <jump line="98" column="28" filename="$USER_HOME$/HACK/tmp/To_Player/dashboard.php" protocol="file" />
+      <jump line="15" column="23" filename="$USER_HOME$/HACK/tmp/To_Player/login.php" protocol="file" />
+      <jump line="8" column="65" filename="$USER_HOME$/HACK/tmp/To_Player/login.php" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/HACK/tmp/To_Player/reset.php" protocol="file" />
+      <jump line="25" column="15" filename="$USER_HOME$/HACK/tmp/To_Player/forgot_password.php" protocol="file" />
+      <jump line="12" column="45" filename="$USER_HOME$/HACK/tmp/To_Player/forgot_password.php" protocol="file" />
+      <jump line="16" column="51" filename="$USER_HOME$/HACK/tmp/To_Player/check_integrity.php" protocol="file" />
+      <jump line="65" column="32" filename="$USER_HOME$/HACK/tmp/To_Player/upload.php" protocol="file" />
+      <jump line="36" column="30" filename="$USER_HOME$/HACK/tmp/To_Player/upload.php" protocol="file" />
+      <jump line="35" column="28" filename="$USER_HOME$/HACK/tmp/To_Player/upload.php" protocol="file" />
+      <jump line="8" column="21" filename="$USER_HOME$/HACK/tmp/To_Player/upload.php" protocol="file" />
+      <jump line="6" column="20" filename="$USER_HOME$/HACK/tmp/To_Player/upload.php" protocol="file" />
+      <jump line="5" column="13" filename="$USER_HOME$/HACK/tmp/To_Player/upload.php" protocol="file" />
+      <jump line="7" column="16" filename="$USER_HOME$/HACK/tmp/To_Player/upload.php" protocol="file" />
+      <jump line="3" column="5" filename="$USER_HOME$/HACK/tmp/To_Player/upload.php" protocol="file" />
+      <jump line="4" column="10" filename="$USER_HOME$/HACK/tmp/To_Player/upload.php" protocol="file" />
+    </project>
+    <project id="Vole_machine-50d2bce8">
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/OOP/Vole_machine/main.cpp" protocol="file" />
+      <jump line="2" column="11" filename="$USER_HOME$/Documents/OOP/Vole_machine/main.cpp" protocol="file" />
+    </project>
+    <project id="untitled-cac87793">
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/untitled/main.cpp" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/untitled/MyVector.h" protocol="file" />
+      <jump line="36" column="0" filename="$USER_HOME$/CLionProjects/untitled/MyVector.h" protocol="file" />
+      <jump line="16" column="0" filename="$USER_HOME$/CLionProjects/untitled/MyVector.h" protocol="file" />
+      <jump line="25" column="0" filename="$USER_HOME$/CLionProjects/untitled/MyVector.h" protocol="file" />
+      <jump line="32" column="0" filename="$USER_HOME$/CLionProjects/untitled/MyVector.h" protocol="file" />
+      <jump line="7" column="16" filename="$USER_HOME$/CLionProjects/untitled/main.cpp" protocol="file" />
+      <jump line="33" column="8" filename="$USER_HOME$/CLionProjects/untitled/MyVector.h" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/untitled/CMakeLists.txt" protocol="file" />
+      <jump line="60" column="7" filename="$USER_HOME$/CLionProjects/untitled/MyVector.h" protocol="file" />
+      <jump line="8" column="15" filename="$USER_HOME$/CLionProjects/untitled/main.cpp" protocol="file" />
+      <jump line="53" column="4" filename="$USER_HOME$/CLionProjects/untitled/MyVector.h" protocol="file" />
+      <jump line="48" column="4" filename="$USER_HOME$/CLionProjects/untitled/MyVector.h" protocol="file" />
+      <jump line="52" column="0" filename="$USER_HOME$/CLionProjects/untitled/MyVector.h" protocol="file" />
+      <jump line="11" column="18" filename="$USER_HOME$/CLionProjects/untitled/main.cpp" protocol="file" />
+      <jump line="59" column="8" filename="$USER_HOME$/CLionProjects/untitled/MyVector.h" protocol="file" />
+      <jump line="50" column="8" filename="$USER_HOME$/CLionProjects/untitled/MyVector.h" protocol="file" />
+      <jump line="10" column="9" filename="$USER_HOME$/CLionProjects/untitled/main.cpp" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/untitled/algorithm" protocol="file" />
+      <jump line="81" column="0" filename="$USER_HOME$/CLionProjects/untitled/algorithm" protocol="file" />
+      <jump line="13" column="32" filename="$USER_HOME$/CLionProjects/untitled/main.cpp" protocol="file" />
+      <jump line="36" column="0" filename="$USER_HOME$/CLionProjects/untitled/main.cpp" protocol="file" />
+      <jump line="8" column="0" filename="$USER_HOME$/CLionProjects/untitled/MyVector.h" protocol="file" />
+      <jump line="9" column="0" filename="$USER_HOME$/CLionProjects/untitled/MyVector.h" protocol="file" />
+    </project>
+    <project id="untitled1-8e467afe">
+      <jump line="10" column="0" filename="$USER_HOME$/CLionProjects/untitled1/main.cpp" protocol="file" />
+      <jump line="7" column="16" filename="$USER_HOME$/CLionProjects/untitled1/main.cpp" protocol="file" />
+      <jump line="1" column="8" filename="$USER_HOME$/CLionProjects/untitled1/CMakeLists.txt" protocol="file" />
+      <jump line="15" column="24" filename="$USER_HOME$/CLionProjects/untitled1/CMakeLists.txt" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/untitled1/CMakeLists.txt" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/untitled1/main.cpp" protocol="file" />
+      <jump line="5" column="0" filename="$USER_HOME$/CLionProjects/untitled1/main.cpp" protocol="file" />
+    </project>
+    <project id="untitled2-8e467aff">
+      <jump line="15" column="3" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="10" column="10" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="13" column="0" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="33" column="4" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="47" column="12" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="84" column="18" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="28" column="0" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="37" column="0" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="57" column="31" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="40" column="0" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="61" column="16" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="89" column="0" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="53" column="9" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="65" column="45" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="92" column="18" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="5" column="18" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="94" column="0" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="64" column="1" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="68" column="0" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="1" column="4" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="3" column="6" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="50" column="11" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="14" column="46" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="18" column="6" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="23" column="20" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="26" column="20" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="22" column="48" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="51" column="4" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="55" column="4" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="1" column="16" filename="$USER_HOME$/CLionProjects/untitled2/labels.txt" protocol="file" />
+      <jump line="54" column="45" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="29" column="28" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="25" column="4" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="27" column="23" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="56" column="21" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="34" column="21" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="44" column="16" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="32" column="19" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="10" column="36" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="45" column="0" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="43" column="14" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="26" column="22" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="20" column="15" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="30" column="23" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="13" column="8" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="11" column="18" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="47" column="0" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="41" column="20" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="38" column="4" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="39" column="25" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="37" column="19" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="52" column="12" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="54" column="16" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="57" column="15" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="60" column="9" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="58" column="4" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="56" column="0" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="75" column="29" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="74" column="0" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="73" column="0" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="66" column="14" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="71" column="25" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="72" column="31" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="64" column="14" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="65" column="14" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="69" column="14" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="67" column="14" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="81" column="29" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="34" column="18" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="4" column="7" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="32" column="37" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="3" column="0" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="63" column="0" filename="$USER_HOME$/CLionProjects/untitled2/problem4.cpp" protocol="file" />
+      <jump line="6" column="0" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="98" column="15" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="63" column="11" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="67" column="13" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="131" column="19" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="143" column="20" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="122" column="14" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="145" column="0" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="7" column="7" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="46" column="13" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="4" column="11" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/untitled2/main.cpp" protocol="file" />
+      <jump line="2" column="9" filename="$USER_HOME$/CLionProjects/untitled2/main.c" protocol="file" />
+      <jump line="0" column="9" filename="$USER_HOME$/CLionProjects/untitled2/main.c" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/untitled2/CMakeLists.txt" protocol="file" />
+      <jump line="4" column="0" filename="$USER_HOME$/CLionProjects/untitled2/CMakeLists.txt" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/untitled2/cmake-build-debug/build.ninja" protocol="file" />
+      <jump line="4" column="9" filename="$USER_HOME$/CLionProjects/untitled2/cmake-build-debug/build.ninja" protocol="file" />
+      <jump line="6" column="9" filename="$USER_HOME$/CLionProjects/untitled2/cmake-build-debug/build.ninja" protocol="file" />
+      <jump line="5" column="0" filename="$USER_HOME$/CLionProjects/untitled2/cmake-build-debug/build.ninja" protocol="file" />
+      <jump line="1" column="0" filename="$USER_HOME$/CLionProjects/untitled2/main.c" protocol="file" />
+      <jump line="4" column="12" filename="$USER_HOME$/CLionProjects/untitled2/main.c" protocol="file" />
+      <jump line="6" column="0" filename="$USER_HOME$/CLionProjects/untitled2/main.c" protocol="file" />
+      <jump line="3" column="29" filename="$USER_HOME$/CLionProjects/untitled2/main.c" protocol="file" />
+      <jump line="5" column="0" filename="$USER_HOME$/CLionProjects/untitled2/main.c" protocol="file" />
+    </project>
+    <project id="tmp-171e88">
+      <jump line="8" column="19" filename="/tmp/A2_S8_20230381_SheetPb5.cpp" protocol="file" />
+      <jump line="2" column="16" filename="/tmp/A2_S8_20230381_SheetPb5.cpp" protocol="file" />
+      <jump line="357" column="9" filename="/tmp/A2_S8_20230381_SheetPb5.cpp" protocol="file" />
+      <jump line="0" column="0" filename="/tmp/A2_S8_20230381_SheetPb5.cpp" protocol="file" />
+      <jump line="40" column="0" filename="/tmp/A2_S8_20230381_SheetPb5.cpp" protocol="file" />
+      <jump line="194" column="4" filename="/tmp/A2_S8_20230381_SheetPb5.cpp" protocol="file" />
+      <jump line="59" column="18" filename="/tmp/A2_S8_20230381_SheetPb5.cpp" protocol="file" />
+      <jump line="309" column="4" filename="/tmp/A2_S8_20230381_SheetPb5.cpp" protocol="file" />
+      <jump line="58" column="0" filename="/tmp/A2_S8_20230381_SheetPb5.cpp" protocol="file" />
+      <jump line="55" column="20" filename="/tmp/A2_S8_20230381_SheetPb5.cpp" protocol="file" />
+      <jump line="298" column="31" filename="/tmp/A2_S8_20230381_SheetPb5.cpp" protocol="file" />
+      <jump line="153" column="108" filename="/tmp/A2_S8_20230381_SheetPb5.cpp" protocol="file" />
+      <jump line="193" column="0" filename="/tmp/A2_S8_20230381_SheetPb5.cpp" protocol="file" />
+      <jump line="288" column="56" filename="/tmp/A2_S8_20230381_SheetPb5.cpp" protocol="file" />
+      <jump line="312" column="55" filename="/tmp/A2_S8_20230381_SheetPb5.cpp" protocol="file" />
+      <jump line="10" column="36" filename="/tmp/A2_S8_20230381_SheetPb5.cpp" protocol="file" />
+      <jump line="120" column="59" filename="/tmp/A2_S8_20230381_SheetPb5.cpp" protocol="file" />
+      <jump line="131" column="28" filename="/tmp/A2_S8_20230381_SheetPb5.cpp" protocol="file" />
+      <jump line="133" column="53" filename="/tmp/A2_S8_20230381_SheetPb5.cpp" protocol="file" />
+      <jump line="135" column="53" filename="/tmp/A2_S8_20230381_SheetPb5.cpp" protocol="file" />
+      <jump line="136" column="24" filename="/tmp/A2_S8_20230381_SheetPb5.cpp" protocol="file" />
+      <jump line="119" column="60" filename="/tmp/A2_S8_20230381_SheetPb5.cpp" protocol="file" />
+      <jump line="116" column="24" filename="/tmp/A2_S8_20230381_SheetPb5.cpp" protocol="file" />
+    </project>
+    <project id="XOgame-737133b7">
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/OOP/XOgame/modules/Board Game Classes.html" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/OOP/XOgame/modules/main.cpp" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/OOP/XOgame/modules/dic.txt" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/OOP/XOgame/modules/BoardGame_Classes.h" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="8" column="6" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="22" column="9" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="30" column="9" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="129" column="20" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="54" column="8" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="57" column="0" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="58" column="0" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="7" column="0" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="8" column="33" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="12" column="24" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="11" column="17" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="14" column="8" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="2" column="16" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="23" column="8" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="61" column="0" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="63" column="12" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="69" column="40" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="62" column="96" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="24" column="105" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="31" column="19" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="41" column="8" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="30" column="23" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="28" column="4" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="29" column="31" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="44" column="20" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="25" column="17" filename="$USER_HOME$/Documents/OOP/XOgame/modules/BoardGame_Classes.h" protocol="file" />
+      <jump line="102" column="30" filename="$USER_HOME$/Documents/OOP/XOgame/modules/BoardGame_Classes.h" protocol="file" />
+      <jump line="60" column="54" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="49" column="21" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="80" column="0" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="5" column="0" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="84" column="20" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="4" column="1" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="48" column="21" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="66" column="7" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="40" column="0" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="47" column="25" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="94" column="0" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="68" column="0" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="70" column="27" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="76" column="31" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="77" column="23" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="78" column="8" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="79" column="0" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="80" column="20" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="82" column="18" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="84" column="1" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="81" column="4" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="108" column="0" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="83" column="8" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="110" column="0" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="113" column="22" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="114" column="26" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="119" column="25" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="86" column="8" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="49" column="17" filename="$USER_HOME$/Documents/OOP/XOgame/modules/main.cpp" protocol="file" />
+      <jump line="1" column="29" filename="$USER_HOME$/Documents/OOP/XOgame/modules/main.cpp" protocol="file" />
+      <jump line="22" column="25" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="128" column="20" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="50" column="33" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="25" column="50" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="16" column="28" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="33" column="37" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="32" column="28" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="57" column="12" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="56" column="42" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="34" column="27" filename="$USER_HOME$/Documents/OOP/XOgame/modules/pyramic.h" protocol="file" />
+      <jump line="20" column="17" filename="$USER_HOME$/Documents/OOP/XOgame/modules/BoardGame_Classes.h" protocol="file" />
+      <jump line="42" column="37" filename="$USER_HOME$/Documents/OOP/XOgame/modules/BoardGame_Classes.h" protocol="file" />
+      <jump line="43" column="17" filename="$USER_HOME$/Documents/OOP/XOgame/modules/BoardGame_Classes.h" protocol="file" />
+      <jump line="66" column="17" filename="$USER_HOME$/Documents/OOP/XOgame/modules/BoardGame_Classes.h" protocol="file" />
+      <jump line="101" column="24" filename="$USER_HOME$/Documents/OOP/XOgame/modules/BoardGame_Classes.h" protocol="file" />
+      <jump line="103" column="28" filename="$USER_HOME$/Documents/OOP/XOgame/modules/BoardGame_Classes.h" protocol="file" />
+      <jump line="49" column="17" filename="$USER_HOME$/Documents/OOP/XOgame/modules/BoardGame_Classes.h" protocol="file" />
+      <jump line="49" column="35" filename="$USER_HOME$/Documents/OOP/XOgame/modules/3x3X_O.h" protocol="file" />
+      <jump line="11" column="26" filename="$USER_HOME$/Documents/OOP/XOgame/modules/main.cpp" protocol="file" />
+      <jump line="3" column="0" filename="$USER_HOME$/Documents/OOP/XOgame/main.cpp" protocol="file" />
+      <jump line="5" column="0" filename="$USER_HOME$/Documents/OOP/XOgame/main.cpp" protocol="file" />
+      <jump line="4" column="23" filename="$USER_HOME$/Documents/OOP/XOgame/main.cpp" protocol="file" />
+      <jump line="10" column="0" filename="$USER_HOME$/Documents/OOP/XOgame/main.cpp" protocol="file" />
+      <jump line="8" column="12" filename="$USER_HOME$/Documents/OOP/XOgame/main.cpp" protocol="file" />
+      <jump line="6" column="18" filename="$USER_HOME$/Documents/OOP/XOgame/main.cpp" protocol="file" />
+    </project>
+    <project id="notxo-6816defc">
+      <jump line="45" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+      <jump line="15" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+      <jump line="13" column="27" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+      <jump line="33" column="23" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+      <jump line="41" column="51" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+      <jump line="40" column="31" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+      <jump line="39" column="17" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+      <jump line="37" column="37" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+      <jump line="36" column="25" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+      <jump line="48" column="43" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+      <jump line="23" column="34" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+      <jump line="30" column="24" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+      <jump line="35" column="12" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+      <jump line="34" column="37" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+      <jump line="85" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/BoardGame_Classes.h" protocol="file" />
+      <jump line="76" column="36" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+      <jump line="29" column="8" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+      <jump line="31" column="4" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+      <jump line="24" column="37" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+      <jump line="26" column="44" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+      <jump line="27" column="38" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+      <jump line="68" column="107" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+      <jump line="52" column="58" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+      <jump line="64" column="7" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+      <jump line="49" column="25" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+      <jump line="53" column="13" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+      <jump line="56" column="45" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+      <jump line="82" column="1" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="65" column="19" filename="$USER_HOME$/Documents/OOP/notxo/modules/3x3X_O.h" protocol="file" />
+      <jump line="124" column="23" filename="$USER_HOME$/Documents/OOP/notxo/modules/3x3X_O.h" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="79" column="16" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="81" column="4" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="125" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/3x3X_O.h" protocol="file" />
+      <jump line="24" column="1" filename="$USER_HOME$/Documents/OOP/notxo/modules/3x3X_O.h" protocol="file" />
+      <jump line="18" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/3x3X_O.h" protocol="file" />
+      <jump line="26" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/3x3X_O.h" protocol="file" />
+      <jump line="29" column="15" filename="$USER_HOME$/Documents/OOP/notxo/modules/3x3X_O.h" protocol="file" />
+      <jump line="126" column="23" filename="$USER_HOME$/Documents/OOP/notxo/modules/3x3X_O.h" protocol="file" />
+      <jump line="65" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/main.cpp" protocol="file" />
+      <jump line="11" column="41" filename="$USER_HOME$/Documents/OOP/notxo/modules/main.cpp" protocol="file" />
+      <jump line="4" column="20" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="6" column="10" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="12" column="18" filename="$USER_HOME$/Documents/OOP/notxo/modules/main.cpp" protocol="file" />
+      <jump line="24" column="9" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="43" column="26" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/dic.txt" protocol="file" />
+      <jump line="20" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="32" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="130" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/3x3X_O.h" protocol="file" />
+      <jump line="48" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/3x3X_O.h" protocol="file" />
+      <jump line="45" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="4" column="2" filename="$USER_HOME$/Documents/OOP/notxo/modules/dic.txt" protocol="file" />
+      <jump line="61" column="14" filename="$USER_HOME$/Documents/OOP/notxo/modules/main.cpp" protocol="file" />
+      <jump line="15" column="39" filename="$USER_HOME$/Documents/OOP/notxo/modules/main.cpp" protocol="file" />
+      <jump line="129" column="2" filename="$USER_HOME$/Documents/OOP/notxo/modules/dic.txt" protocol="file" />
+      <jump line="23" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="22" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="18" column="4" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="31" column="19" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="112" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="110" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/BoardGame_Classes.h" protocol="file" />
+      <jump line="106" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="14" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="13" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="102" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="83" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="97" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="98" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="80" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/3x3X_O.h" protocol="file" />
+      <jump line="79" column="33" filename="$USER_HOME$/Documents/OOP/notxo/modules/3x3X_O.h" protocol="file" />
+      <jump line="139" column="60" filename="$USER_HOME$/Documents/OOP/notxo/modules/3x3X_O.h" protocol="file" />
+      <jump line="103" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="19" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="135" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/3x3X_O.h" protocol="file" />
+      <jump line="30" column="19" filename="$USER_HOME$/Documents/OOP/notxo/modules/3x3X_O.h" protocol="file" />
+      <jump line="106" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/BoardGame_Classes.h" protocol="file" />
+      <jump line="123" column="18" filename="$USER_HOME$/Documents/OOP/notxo/modules/BoardGame_Classes.h" protocol="file" />
+      <jump line="64" column="4" filename="$USER_HOME$/Documents/OOP/notxo/modules/BoardGame_Classes.h" protocol="file" />
+      <jump line="134" column="19" filename="$USER_HOME$/Documents/OOP/notxo/modules/BoardGame_Classes.h" protocol="file" />
+      <jump line="136" column="17" filename="$USER_HOME$/Documents/OOP/notxo/modules/BoardGame_Classes.h" protocol="file" />
+      <jump line="59" column="6" filename="$USER_HOME$/Documents/OOP/notxo/modules/BoardGame_Classes.h" protocol="file" />
+      <jump line="41" column="22" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="42" column="4" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="27" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/3x3X_O.h" protocol="file" />
+      <jump line="145" column="20" filename="$USER_HOME$/Documents/OOP/notxo/modules/3x3X_O.h" protocol="file" />
+      <jump line="146" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/3x3X_O.h" protocol="file" />
+      <jump line="143" column="27" filename="$USER_HOME$/Documents/OOP/notxo/modules/3x3X_O.h" protocol="file" />
+      <jump line="50" column="12" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="38" column="11" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="27" column="10" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="58" column="10" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="36" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="51" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="18" column="34" filename="$USER_HOME$/Documents/OOP/notxo/modules/main.cpp" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/lab.cpp" protocol="file" />
+      <jump line="54" column="33" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+      <jump line="25" column="0" filename="$USER_HOME$/Documents/OOP/notxo/modules/wordic.h" protocol="file" />
+      <jump line="14" column="23" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+      <jump line="12" column="7" filename="$USER_HOME$/Documents/OOP/notxo/modules/pyramic.h" protocol="file" />
+    </project>
+    <project id="OOPlab-dc7df284">
+      <jump line="6" column="0" filename="/tmp/OOPlab/main.cpp" protocol="file" />
+      <jump line="5" column="0" filename="/tmp/OOPlab/main.cpp" protocol="file" />
+      <jump line="0" column="0" filename="/tmp/OOPlab/MyVector.h" protocol="file" />
+      <jump line="10" column="20" filename="/tmp/OOPlab/MyVector.h" protocol="file" />
+      <jump line="4" column="0" filename="/tmp/OOPlab/main.cpp" protocol="file" />
+      <jump line="13" column="5" filename="/tmp/OOPlab/MyVector.h" protocol="file" />
+      <jump line="13" column="5" filename="/tmp/OOPlab/MyVector.hpp" protocol="file" />
+      <jump line="10" column="20" filename="/tmp/OOPlab/MyVector.hpp" protocol="file" />
+      <jump line="10" column="20" filename="/tmp/OOPlab/MyVector.cpp" protocol="file" />
+      <jump line="16" column="45" filename="/tmp/OOPlab/MyVector.h" protocol="file" />
+      <jump line="11" column="7" filename="/tmp/OOPlab/MyVector.h" protocol="file" />
+      <jump line="31" column="4" filename="/tmp/OOPlab/MyVector.h" protocol="file" />
+      <jump line="1" column="19" filename="/tmp/OOPlab/main.cpp" protocol="file" />
+      <jump line="7" column="14" filename="/tmp/OOPlab/main.cpp" protocol="file" />
+    </project>
+    <project id="untitled3-8e467b00">
+      <jump line="5" column="0" filename="$USER_HOME$/CLionProjects/untitled3/main.cpp" protocol="file" />
+      <jump line="15" column="21" filename="$USER_HOME$/CLionProjects/untitled3/main.cpp" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/untitled3/main.cpp" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/untitled3/CMakeLists.txt" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/untitled3/Parser.cpp" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/untitled3/Parser.h" protocol="file" />
+      <jump line="13" column="0" filename="$USER_HOME$/CLionProjects/untitled3/modules/Parser.h" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/untitled3/modules/Parser.cpp" protocol="file" />
+      <jump line="6" column="6" filename="$USER_HOME$/CLionProjects/untitled3/modules/Parser.cpp" protocol="file" />
+      <jump line="12" column="28" filename="$USER_HOME$/CLionProjects/untitled3/modules/Parser.h" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/untitled3/IParser.ixx" protocol="file" />
+      <jump line="3" column="0" filename="$USER_HOME$/CLionProjects/untitled3/IParser.ixx" protocol="file" />
+      <jump line="4" column="3" filename="$USER_HOME$/CLionProjects/untitled3/modules/Parser.cpp" protocol="file" />
+      <jump line="7" column="0" filename="$USER_HOME$/CLionProjects/untitled3/main.cpp" protocol="file" />
+      <jump line="7" column="0" filename="$USER_HOME$/CLionProjects/untitled3/modules/Parser.h" protocol="file" />
+      <jump line="17" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/Parser.h" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/CMakeLists.txt" protocol="file" />
+    </project>
+    <project id="OpenEyes-afc0dc9a">
+      <jump line="8" column="28" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/ConfigParser.cpp" protocol="file" />
+      <jump line="3" column="10" filename="$USER_HOME$/CLionProjects/OpenEyes/main.cpp" protocol="file" />
+      <jump line="10" column="12" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/ConfigParser.cpp" protocol="file" />
+      <jump line="16" column="13" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/Parser.h" protocol="file" />
+      <jump line="17" column="27" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/Parser.h" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.h" protocol="file" />
+      <jump line="13" column="100" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/ConfigParser.cpp" protocol="file" />
+      <jump line="7" column="4" filename="$USER_HOME$/CLionProjects/OpenEyes/main.cpp" protocol="file" />
+      <jump line="14" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.h" protocol="file" />
+      <jump line="9" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.h" protocol="file" />
+      <jump line="21" column="15" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.h" protocol="file" />
+      <jump line="6" column="31" filename="$USER_HOME$/CLionProjects/OpenEyes/CMakeLists.txt" protocol="file" />
+      <jump line="5" column="32" filename="$USER_HOME$/CLionProjects/OpenEyes/CMakeLists.txt" protocol="file" />
+      <jump line="20" column="9" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.h" protocol="file" />
+      <jump line="5" column="32" filename="$USER_HOME$/CLionProjects/OpenEyes/main.cpp" protocol="file" />
+      <jump line="16" column="8" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.h" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/Data.h" protocol="file" />
+      <jump line="9" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/Data.h" protocol="file" />
+      <jump line="6" column="13" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.h" protocol="file" />
+      <jump line="10" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.h" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.cpp" protocol="file" />
+      <jump line="13" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.cpp" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/Data.cpp" protocol="file" />
+      <jump line="2" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.cpp" protocol="file" />
+      <jump line="9" column="8" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/SnoozeConfig.h" protocol="file" />
+      <jump line="13" column="15" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.h" protocol="file" />
+      <jump line="11" column="6" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.h" protocol="file" />
+      <jump line="12" column="33" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.h" protocol="file" />
+      <jump line="6" column="18" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/Data.cpp" protocol="file" />
+      <jump line="15" column="21" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/Data.h" protocol="file" />
+      <jump line="6" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/main.cpp" protocol="file" />
+      <jump line="9" column="25" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/Data.cpp" protocol="file" />
+      <jump line="5" column="17" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.cpp" protocol="file" />
+      <jump line="20" column="27" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.cpp" protocol="file" />
+      <jump line="10" column="18" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/Data.cpp" protocol="file" />
+      <jump line="13" column="7" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/Data.h" protocol="file" />
+      <jump line="14" column="16" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/Data.h" protocol="file" />
+      <jump line="12" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/Data.cpp" protocol="file" />
+      <jump line="18" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/Data.h" protocol="file" />
+      <jump line="16" column="19" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/Data.h" protocol="file" />
+      <jump line="15" column="3" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.cpp" protocol="file" />
+      <jump line="17" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.h" protocol="file" />
+      <jump line="18" column="39" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.cpp" protocol="file" />
+      <jump line="19" column="15" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.h" protocol="file" />
+      <jump line="22" column="14" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.cpp" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/App.cpp" protocol="file" />
+      <jump line="10" column="20" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/App.h" protocol="file" />
+      <jump line="10" column="8" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/Config.h" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DomainApp.cpp" protocol="file" />
+      <jump line="10" column="15" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DomainApp.h" protocol="file" />
+      <jump line="13" column="48" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/App.h" protocol="file" />
+      <jump line="6" column="23" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DomainApp.cpp" protocol="file" />
+      <jump line="7" column="30" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DomainApp.cpp" protocol="file" />
+      <jump line="9" column="6" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DomainApp.h" protocol="file" />
+      <jump line="11" column="24" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DesktopApp.h" protocol="file" />
+      <jump line="11" column="23" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DomainApp.h" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DesktopApp.cpp" protocol="file" />
+      <jump line="5" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DesktopApp.cpp" protocol="file" />
+      <jump line="4" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DomainApp.cpp" protocol="file" />
+      <jump line="10" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DesktopApp.cpp" protocol="file" />
+      <jump line="8" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/main.cpp" protocol="file" />
+      <jump line="9" column="8" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/App.h" protocol="file" />
+      <jump line="13" column="3" filename="$USER_HOME$/CLionProjects/OpenEyes/main.cpp" protocol="file" />
+      <jump line="10" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DesktopApp.h" protocol="file" />
+      <jump line="8" column="7" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/SnoozeConfig.h" protocol="file" />
+      <jump line="17" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/LimitConfig.h" protocol="file" />
+      <jump line="12" column="11" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/LimitConfig.h" protocol="file" />
+      <jump line="11" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/FreeTime.h" protocol="file" />
+      <jump line="16" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/SnoozeConfig.h" protocol="file" />
+      <jump line="14" column="10" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/App.h" protocol="file" />
+      <jump line="8" column="10" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/App.h" protocol="file" />
+      <jump line="8" column="31" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/App.cpp" protocol="file" />
+      <jump line="19" column="8" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/App.h" protocol="file" />
+      <jump line="7" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/App.cpp" protocol="file" />
+      <jump line="23" column="20" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.cpp" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/2025-01-19.yml" protocol="file" />
+      <jump line="26" column="20" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.cpp" protocol="file" />
+      <jump line="3" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.cpp" protocol="file" />
+      <jump line="20" column="21" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/App.h" protocol="file" />
+      <jump line="21" column="13" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.cpp" protocol="file" />
+      <jump line="12" column="35" filename="$USER_HOME$/CLionProjects/OpenEyes/main.cpp" protocol="file" />
+      <jump line="9" column="13" filename="$USER_HOME$/CLionProjects/OpenEyes/main.cpp" protocol="file" />
+      <jump line="15" column="4" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/Parser.h" protocol="file" />
+      <jump line="13" column="16" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/Parser.h" protocol="file" />
+      <jump line="3" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/Parser.h" protocol="file" />
+      <jump line="15" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.h" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/RWParser.h" protocol="file" />
+      <jump line="9" column="13" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/RWParser.h" protocol="file" />
+      <jump line="10" column="57" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/RWParser.h" protocol="file" />
+      <jump line="13" column="15" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/Data.cpp" protocol="file" />
+      <jump line="17" column="20" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/ConfigParser.h" protocol="file" />
+      <jump line="13" column="6" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/ConfigParser.h" protocol="file" />
+      <jump line="16" column="4" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/ConfigParser.h" protocol="file" />
+      <jump line="3" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/RParser.h" protocol="file" />
+      <jump line="12" column="18" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/ConfigParser.h" protocol="file" />
+      <jump line="8" column="18" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.h" protocol="file" />
+      <jump line="7" column="19" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/ConfigParser.cpp" protocol="file" />
+      <jump line="27" column="10" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.cpp" protocol="file" />
+      <jump line="8" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.cpp" protocol="file" />
+      <jump line="6" column="0" filename="$USER_HOME$/CLionProjects/OpenEyes/modules/ConfigParser.cpp" protocol="file" />
+    </project>
+    <project id="first-app-deec0eff">
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/laravel/first-app/artisan" protocol="file" />
+      <jump line="7" column="10" filename="$USER_HOME$/Documents/laravel/first-app/artisan" protocol="file" />
+      <jump line="10" column="10" filename="$USER_HOME$/Documents/laravel/first-app/artisan" protocol="file" />
+      <jump line="13" column="0" filename="$USER_HOME$/Documents/laravel/first-app/artisan" protocol="file" />
+      <jump line="7" column="0" filename="$USER_HOME$/Documents/laravel/first-app/routes/web.php" protocol="file" />
+      <jump line="6" column="2" filename="$USER_HOME$/Documents/laravel/first-app/routes/web.php" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/laravel/first-app/README.md" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/laravel/first-app/routes/web.php" protocol="file" />
+      <jump line="4" column="14" filename="$USER_HOME$/Documents/laravel/first-app/resources/views/calculator.html" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/laravel/first-app/resources/views/calculator.blade.php" protocol="file" />
+      <jump line="6" column="18" filename="$USER_HOME$/Documents/laravel/first-app/resources/views/welcome.blade.php" protocol="file" />
+      <jump line="9" column="6" filename="$USER_HOME$/Documents/laravel/first-app/resources/views/calculator.blade.php" protocol="file" />
+      <jump line="8" column="0" filename="$USER_HOME$/Documents/laravel/first-app/routes/web.php" protocol="file" />
+      <jump line="0" column="14" filename="$USER_HOME$/Documents/laravel/first-app/resources/views/welcome.blade.php" protocol="file" />
+      <jump line="4" column="0" filename="$USER_HOME$/Documents/laravel/first-app/routes/web.php" protocol="file" />
+      <jump line="9" column="9" filename="$USER_HOME$/Documents/laravel/first-app/routes/web.php" protocol="file" />
+    </project>
+  </component>
+  <component name="VimMarksSettings">
+    <globalmarks />
+    <localmarks>
+      <file name="$USER_HOME$/CLionProjects/OpenEyes/modules/RWParser.h" timestamp="1737323341464">
+        <mark key="&quot;" line="8" column="4" />
+        <mark key="[" line="9" column="0" />
+        <mark key="]" line="9" column="0" />
+        <mark key="^" line="6" column="20" />
+        <mark key="." line="9" column="0" />
+      </file>
+      <file name="$USER_HOME$/CLionProjects/OpenEyes/CMakeLists.txt" timestamp="1737323236418">
+        <mark key="&quot;" line="5" column="0" />
+        <mark key="[" line="6" column="22" />
+        <mark key="]" line="6" column="31" />
+        <mark key="." line="6" column="30" />
+        <mark key="^" line="6" column="31" />
+      </file>
+      <file name="$USER_HOME$/CLionProjects/OpenEyes/modules/App.h" timestamp="1737322631709">
+        <mark key="&quot;" line="20" column="21" />
+        <mark key="[" line="14" column="0" />
+        <mark key="]" line="14" column="0" />
+        <mark key="." line="14" column="0" />
+      </file>
+      <file name="$USER_HOME$/CLionProjects/OpenEyes/modules/SnoozeConfig.h" timestamp="1737321912057">
+        <mark key="[" line="9" column="7" />
+        <mark key="]" line="9" column="8" />
+        <mark key="^" line="9" column="8" />
+        <mark key="." line="9" column="7" />
+      </file>
+      <file name="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.h" timestamp="1737323472302">
+        <mark key="&quot;" line="8" column="18" />
+        <mark key="'" line="6" column="18" />
+        <mark key="[" line="15" column="58" />
+        <mark key="]" line="15" column="59" />
+        <mark key="." line="15" column="58" />
+        <mark key="^" line="15" column="59" />
+      </file>
+      <file name="$USER_HOME$/CLionProjects/OpenEyes/modules/App.cpp" timestamp="1737322300380">
+        <mark key="&quot;" line="7" column="0" />
+        <mark key="[" line="7" column="0" />
+        <mark key="]" line="7" column="0" />
+        <mark key="." line="7" column="0" />
+      </file>
+      <file name="$USER_HOME$/CLionProjects/OpenEyes/2025-01-19.yml" timestamp="1737322630554">
+        <mark key="&quot;" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/CLionProjects/OpenEyes/modules/DataParser.cpp" timestamp="1737323487863">
+        <mark key="&quot;" line="8" column="0" />
+        <mark key="'" line="6" column="17" />
+        <mark key="[" line="5" column="13" />
+        <mark key="]" line="5" column="15" />
+        <mark key="." line="5" column="14" />
+        <mark key="^" line="5" column="15" />
+      </file>
+      <file name="$USER_HOME$/Documents/laravel/first-app/routes/web.php" timestamp="1738002556824">
+        <mark key="[" line="9" column="17" />
+        <mark key="]" line="9" column="27" />
+        <mark key="." line="9" column="26" />
+        <mark key="^" line="9" column="27" />
+      </file>
+      <file name="$USER_HOME$/Documents/laravel/first-app/resources/views/calculator.blade.php" timestamp="1738005167158">
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="0" column="12" />
+        <mark key="." line="0" column="11" />
+        <mark key="^" line="0" column="12" />
+      </file>
+      <file name="$USER_HOME$/CLionProjects/OpenEyes/modules/ConfigParser.h" timestamp="1737323406375">
+        <mark key="[" line="14" column="57" />
+        <mark key="]" line="14" column="58" />
+        <mark key="." line="14" column="57" />
+        <mark key="^" line="14" column="58" />
+      </file>
+      <file name="$USER_HOME$/CLionProjects/OpenEyes/modules/Data.cpp" timestamp="1737323382647">
+        <mark key="&quot;" line="13" column="15" />
+        <mark key="[" line="13" column="15" />
+        <mark key="]" line="13" column="16" />
+        <mark key="." line="13" column="15" />
+        <mark key="^" line="13" column="16" />
+      </file>
+      <file name="$USER_HOME$/Documents/laravel/first-app/README.md" timestamp="1737977703272">
+        <mark key="&quot;" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/laravel/first-app/resources/views/welcome.blade.php" timestamp="1738003658474">
+        <mark key="[" line="6" column="15" />
+        <mark key="]" line="6" column="19" />
+        <mark key="." line="6" column="18" />
+        <mark key="^" line="6" column="19" />
+      </file>
+      <file name="$USER_HOME$/CLionProjects/OpenEyes/modules/Data.h" timestamp="1737323385719">
+        <mark key="&quot;" line="16" column="19" />
+        <mark key="[" line="16" column="19" />
+        <mark key="]" line="16" column="20" />
+        <mark key="^" line="16" column="20" />
+        <mark key="." line="16" column="19" />
+      </file>
+      <file name="$USER_HOME$/CLionProjects/OpenEyes/modules/LimitConfig.h" timestamp="1737321923285">
+        <mark key="[" line="10" column="14" />
+        <mark key="]" line="10" column="12" />
+        <mark key="^" line="10" column="12" />
+        <mark key="." line="10" column="11" />
+      </file>
+      <file name="$USER_HOME$/Documents/laravel/first-app/resources/views/calculator.html" timestamp="1738002603908">
+        <mark key="&quot;" line="4" column="16" />
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/CLionProjects/OpenEyes/modules/Parser.h" timestamp="1737323194155">
+        <mark key="&quot;" line="19" column="0" />
+        <mark key="[" line="15" column="5" />
+        <mark key="]" line="15" column="6" />
+        <mark key="." line="15" column="5" />
+        <mark key="^" line="15" column="6" />
+      </file>
+      <file name="$USER_HOME$/CLionProjects/OpenEyes/modules/ConfigParser.cpp" timestamp="1737323507153">
+        <mark key="[" line="10" column="30" />
+        <mark key="]" line="10" column="35" />
+        <mark key="." line="10" column="34" />
+        <mark key="^" line="10" column="35" />
+      </file>
+    </localmarks>
+  </component>
+  <component name="VimRegisterSettings">
+    <registers>
+      <register name="&quot;" type="LINE_WISE">
+        <text encoding="base64">PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KPGhlYWQ+CiAgICA8bWV0YSBjaGFyc2V0PSJVVEYtOCI+CiAgICA8bWV0YSBuYW1lPSJ2aWV3cG9ydCIgY29udGVudD0id2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEiPgogICAgPHRpdGxlPkRvY3VtZW50PC90aXRsZT4KPC9oZWFkPgo8Ym9keT4KIEhlbGxvIGJvZHkKPC9ib2R5Pgo8L2h0bWw+Cg==</text>
+      </register>
+      <register name="+" type="LINE_WISE">
+        <text encoding="base64">ICAgIEFwcCBhcHAgPSBuZXcgRGVza3RvcEFwcCgiYnJhdmUiKTsK</text>
+      </register>
+      <register name="-" type="CHARACTER_WISE">
+        <text encoding="base64">TGFyYXZlbA==</text>
+      </register>
+      <register name="." type="CHARACTER_WISE">
+        <text encoding="base64">SGVsbG8gd29ybGQh</text>
+      </register>
+      <register name="/" type="CHARACTER_WISE">
+        <text encoding="base64">Vml0ZQ==</text>
+      </register>
+      <register name="0" type="LINE_WISE">
+        <text encoding="base64">Um91dGU6OmdldCgnLycsIGZ1bmN0aW9uICgpIHsKICAgIHJldHVybiB2aWV3KCd3ZWxjb21lJyk7Cn0pOwo=</text>
+      </register>
+      <register name="1" type="LINE_WISE">
+        <text encoding="base64">PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KPGhlYWQ+CiAgICA8bWV0YSBjaGFyc2V0PSJVVEYtOCI+CiAgICA8bWV0YSBuYW1lPSJ2aWV3cG9ydCIgY29udGVudD0id2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEiPgogICAgPHRpdGxlPkRvY3VtZW50PC90aXRsZT4KPC9oZWFkPgo8Ym9keT4KIEhlbGxvIGJvZHkKPC9ib2R5Pgo8L2h0bWw+Cg==</text>
+      </register>
+      <register name="2" type="LINE_WISE">
+        <text encoding="base64">PD9waHAK</text>
+      </register>
+      <register name="3" type="LINE_WISE">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="4" type="LINE_WISE">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="5" type="LINE_WISE">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="6" type="LINE_WISE">
+        <text encoding="base64">ICAgIHRoaXMtPm5hbWUgPSBuYW1lOwogICAgdGhpcy0+dHlwZV9uYW1lID0gdHlwZV9uYW1lOwo=</text>
+      </register>
+      <register name="7" type="LINE_WISE">
+        <text encoding="base64">ICAgIGRlbGV0ZSBhcHA7Cg==</text>
+      </register>
+      <register name="8" type="LINE_WISE">
+        <text encoding="base64">ICAgIGRlbGV0ZSBhcHA7Cg==</text>
+      </register>
+      <register name="9" type="LINE_WISE">
+        <text encoding="base64">ICAgIHZvaWQgaGkoKXtzdGQ6OmNvdXQgPDwgIkhpIVxuIjt9Cg==</text>
+      </register>
+      <register name=":" type="CHARACTER_WISE">
+        <text encoding="base64">dw==</text>
+      </register>
+    </registers>
+  </component>
+  <component name="VimSearchSettings">
+    <search>
+      <last-search encoding="base64">Vml0ZQ==</last-search>
+      <last-substitute encoding="base64">Q1BVOjo=</last-substitute>
+      <last-offset encoding="base64" />
+      <last-replace encoding="base64" />
+      <last-pattern encoding="base64">Vml0ZQ==</last-pattern>
+      <last-dir encoding="base64">MQ==</last-dir>
+      <show-last encoding="base64">ZmFsc2U=</show-last>
+    </search>
+  </component>
+  <component name="VimVariables">
+    <vim-variables />
+  </component>
+</application>

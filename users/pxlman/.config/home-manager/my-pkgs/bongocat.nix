@@ -1,5 +1,6 @@
+{pkgs}:
 let
-  pkgs = import <nixpkgs> {};
+  # pkgs = import <nixpkgs> {};
   inherit (pkgs) lib fetchFromGitHub stdenv pkg-config wayland wayland-protocols wayland-scanner;
 in
 stdenv.mkDerivation (finalAttrs: {

@@ -1,6 +1,6 @@
 # import = ["./ayu_dark.yml"]
 [font]
-size = 14.0
+size = 17.0
 
 [font.normal]
 family = "Hack Nerd Font"

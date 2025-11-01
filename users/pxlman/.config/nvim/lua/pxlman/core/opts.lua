@@ -11,4 +11,4 @@ o.cursorline = true -- The dark line at the cursor line
 -- Indentings
 o.autoindent = true -- auto indent when new line is there
 o.smarttab = true -- Use shift width when <Tab>
-o.shiftwidth = 2 -- Tab width spaces
+o.shiftwidth = 4 -- Tab width spaces

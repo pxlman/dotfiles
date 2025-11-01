@@ -26,9 +26,10 @@ return {
         "marksman",
         "html",
         "gopls",
-        "eslint"
+        "eslint",
+        "jdtls"
       },
-      automatic_installation = false,
+      automatic_installation = true,
     },
   },
   -- To config each lsp server individually
@@ -37,19 +38,24 @@ return {
     config = function()
       -- The nvim-cmp almost supports LSP's capabilities so You should advertise it to LSP servers..
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
-      require("lspconfig").clangd.setup{
+      vim.lsp.config.clangd = {
         capabilities = capabilities
       }
-      require("lspconfig").pyright.setup{
+      vim.lsp.config.nil_ls = {
+        capabilities = capabilities,
+        autoArchive = true,
+      }
+      vim.lsp.config.pyright = {
         capabilities = capabilities
       }
-      require("lspconfig").html.setup{
+      vim.lsp.config('jdtls',{ capabilities = capabilities, cmd = { 'jdtls' } })
+      vim.lsp.config.html = {
         capabilities = capabilities
       }
-      require("lspconfig").gopls.setup{
+      vim.lsp.config.gopls = {
         capabilities = capabilities
       }
-      require("lspconfig").eslint.setup{
+      vim.lsp.config.eslint = {
         capabilities = capabilities
       }
     end,

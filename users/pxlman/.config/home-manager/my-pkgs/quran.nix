@@ -1,5 +1,6 @@
+{pkgs, ...}:
 let
-  pkgs = import <nixpkgs> {};
+  # pkgs = import <nixpkgs> {};
   inherit (pkgs) stdenv cmake git makeWrapper lib fetchgit mesa imagemagick;
   oldpkgs = import (fetchTarball {
     url = "https://github.com/NixOS/nixpkgs/archive/5be55538137a57aa946e56a04c2795668dbdbe21.tar.gz";

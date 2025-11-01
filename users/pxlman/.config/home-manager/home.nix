@@ -9,15 +9,34 @@
       buildToolsVersions = [ "33.0.2" ];
       abiVersions = [ "x86_64" ]; # For emulator
     };
-    xfox = import ./my-pkgs/xfox.nix;
-    quran = import ./my-pkgs/quran.nix;
-    bongocat = import ./my-pkgs/bongocat.nix;
+    cursor-theme = "Bibata-Modern-Ice";
+    importPkg = path: import path {inherit pkgs; };
+    xfox = importPkg ./my-pkgs/xfox.nix;
+    quran = importPkg ./my-pkgs/quran.nix;
+    bongocat = importPkg ./my-pkgs/bongocat.nix;
+    nsalah = importPkg ./my-pkgs/nsalah.nix;
     terminal = pkgs.alacritty;
-    # pwndbg = builtins.fetchGit {
-    #   url = "https://github.com/pwndbg/pwndbg.git";
-    #   rev = "41c8bc734be63206f9440a73209364d905dabf3d"; # pin a specific commit
-    # };
+    burpsuitepro = (builtins.getFlake "github:xiv3r/Burpsuite-Professional/9689f4ab41bddc9f7bce0f95ecf68e2c2a1e065d").packages.${pkgs.system}.default;
     pwndbg = (builtins.getFlake "github:pwndbg/pwndbg/2b928632dd437c668dea11a93190dd55a9ddd822").packages.${pkgs.system}.default;
+    mycenv = pkgs.buildEnv {
+      name = "my-c-env";
+      paths = with pkgs; [
+        gdb
+        glib.dev
+        glibc.dev
+        gtk3.dev
+        gtk4.dev
+        zlib.dev
+        ncurses.dev
+        libgcrypt.dev
+        libevent
+        curl.dev
+        jsoncpp.dev
+        imgui
+        freetype
+        ffmpeg-full.dev # for video encoding and decoding in some tools like ghidra 
+      ];
+  };
   in
 
 {
@@ -49,11 +68,13 @@ home.packages = with pkgs; [
   flameshot # Screenshots
   grim
   slurp
+  evtest
   conky # Desktop Widgets
   # rofi
   rofi-wayland
   # unstable.wayland-bongocat
   bongocat # For the cute cat
+  nsalah # For the prayer times
   rofi-power-menu
   rofi-emoji
   wofi
@@ -146,12 +167,12 @@ home.packages = with pkgs; [
   binaryninja-free
   sublime3
   # jetbrains.phpstorm
-  jetbrains.clion
-  jetbrains.pycharm-professional
-  jetbrains.idea-ultimate
+  # jetbrains.clion
+  # jetbrains.pycharm-professional
+  # jetbrains.idea-ultimate
   qtcreator # To make qt gui programs
   libsForQt5.full
-  netbeans
+  # netbeans
   gparted
   libreoffice
   xournalpp
@@ -160,6 +181,7 @@ home.packages = with pkgs; [
   # beekeeper-studio
   rhythmbox
   dpkg
+  pkg-config
 ### Android development
   pkgs.android-studio #.overrideAttrs (old: { unpackPhase = "true"; })  # disable the default unpacking
 ### Android development tools (without android-studio)
@@ -170,11 +192,11 @@ home.packages = with pkgs; [
   unstable.android-tools
   sqlcmd
   yarn
-  jdk17
+  # jdk17
 ### Gaming
   zeroad # 0ad
   gamepad-tool # Testing gamepad
-  legendary-gl # CLI tool for epic games 
+  unstable.legendary-gl # CLI tool for epic games 
   rare # legendary GUI client
   heroic # Epic games launcher
   # retroarch
@@ -194,13 +216,30 @@ home.packages = with pkgs; [
   sherlock
 ### Hacking
   # pwndbg.packages.${pkgs.system}.default
+  burpsuitepro
   pwndbg
+  tmux
+  openvpn
+  cutter # RE platform
+  binutils
   ## Python interpreter and modules
-  python312
-  python312Packages.requests  # Add any required Python modules
+  # python312
+  (python312.withPackages (python-pkgs: with python-pkgs; [
+      ipython
+      pwntools
+      requests
+      sympy
+      unicurses
+      evdev
+      python-uinput
+      pip
+  ]))
+  iverilog # Verilog simulator
+  mycenv
   unstable.nodejs_23
   ## C++ development tools and libraries
-  gcc
+  # gcc
+  # gcc_debug
   cmake
   arp-scan
   gnumake # for the `make` command
@@ -210,10 +249,9 @@ home.packages = with pkgs; [
   ## Recon
   nmap
   fping
-  pwntools
   # katana
   ## Web
-  burpsuite
+  # burpsuite
   zap
   ## Crypto
   xxd
@@ -246,7 +284,7 @@ home.packages = with pkgs; [
 home.pointerCursor = {
   x11.enable = true;
   # name = "Bibata-Modern-Ice";
-  name = "Bibata-Modern-Amber";
+  name = cursor-theme;
   size = 20;
   package = pkgs.bibata-cursors;
 };
@@ -311,7 +349,7 @@ xdg.desktopEntries = {
   neovim = {
     name = "neovim";
     genericName = "Neovim";
-    exec = "alacritty nvim";
+    exec = "${terminal} nvim";
     terminal = true;
     categories = [ "TextEditor" "Utility" ];
     icon = "vim";
@@ -428,6 +466,9 @@ programs.git = {
     safe.directory = "/etc/nixos";
   };
 };
+programs.direnv.enable = true;
+programs.direnv.nix-direnv.enable = true;
+
 # ZSH configuration
 programs.eza.enableZshIntegration = true;
 programs.zsh = {
@@ -469,7 +510,7 @@ programs.zsh = {
     #nrc = "nvim ~/.config/nvim";
     copy="xclip -selection clipboard";
     rc = "nvim ~/.config/home-manager/home.nix";
-    nrc = "sudo nvim /etc/nixos/configuration.nix";
+    nrc = "sudo -E nvim /etc/nixos/configuration.nix";
     gitdone="git add .; git commit -m '[+]'; git push; echo '[*] Files Saved'"; # git done
     home = "home-manager switch -f ~/dotfiles/users/pxlman/.config/home-manager/home.nix";
     switch = "sudo nixos-rebuild switch --verbose";
@@ -480,6 +521,7 @@ programs.zsh = {
     steam-free = "free-steam";
     clickup = "appimage-run ~/clickup.AppImage";
     ytd = "yt-dlp --format='135+139' --embeded-chapters";
+    hack = "nix-shell ${./devshell/hack.nix}";
     # pavucontrol = "GTK_THEME= pavucontrol";
   };
   initContent = ''
@@ -545,6 +587,10 @@ home.sessionVariables = {
   EDITOR = "nvim";
   VISUAL = "nvim";
   ANDROID_HOME = "$HOME/Android/Sdk";
+  # C_INCLUDE_PATH = "${pkgs.glibc.dev}/include";
+  # CPLUS_INCLUDE_PATH = "${pkgs.gcc.cc}/include/c++/${pkgs.gcc.version}:${pkgs.gcc.cc}/include/c++/${pkgs.gcc.version}/${pkgs.stdenv.hostPlatform.linuxArch}-unknown-linux-gnu:${pkgs.glibc.dev}/include";
+  C_INCLUDE_PATH = "${mycenv}/include";
+  CPLUS_INCLUDE_PATH = "${pkgs.gcc.cc}/include/c++/${pkgs.gcc.version}:${pkgs.gcc.cc}/include/c++/${pkgs.gcc.version}/${pkgs.stdenv.hostPlatform.linuxArch}-unknown-linux-gnu:${mycenv}/include";
 };
 services.dunst = {
   enable = true;

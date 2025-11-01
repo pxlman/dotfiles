@@ -8,6 +8,11 @@ return {
       local dap = require("dap")
       map("n","<Leader>db",":DapToggleBreakpoint<CR>","[D]ebugger [B]reakPoint")
       map("n","<Leader>dk",":DapContinue<CR>","[D]ebugger [C]ontinue")
+      -- dap.adapters.python = {
+      --   type = "executable",
+      --   command = "python",
+      --   args = { "-i", "dap" }
+      -- }
       dap.adapters.gdb = {
         type = "executable",
         command = "gdb",

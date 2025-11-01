@@ -1,5 +1,6 @@
+{pkgs, ...}:
 let
-pkgs = import <nixpkgs> {};
+  # pkgs = import <nixpkgs> {};
 inherit (pkgs) fetchFromGitHub;
 lib = pkgs.lib;
 in

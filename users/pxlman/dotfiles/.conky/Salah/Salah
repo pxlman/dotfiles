@@ -55,15 +55,15 @@ color3 grey
 TEXT
 
 $alignc  ${color2}ﺓﻼ﻿ﺼﻟﺍ ﺖﻗﻭ ${color0}
-${voffset 10}${color1}${font ComicShannsMono Nerd Font:pixelsize=60}$alignc${execi 1 nsalah --timedelta +3}${font}${color1}
+${voffset 10}${color1}${font ComicShannsMono Nerd Font:pixelsize=60}$alignc${execi 1 nsalah --timedelta +2}${font}${color1}
 ${hr}
 # $alignc ${color2} ${execi 1 "nsalah"}${color1} ﻰﻘﺒﺗ   
-${execi 1 nsalah --timedelta +3 fajr} $alignc  		     ﺮﺠﻔﻟﺍ
-${execi 1 nsalah --timedelta +3 sunrise} $alignc 		  ﻕﻭﺮﺸﻟﺍ
-${execi 1 nsalah --timedelta +3 dhuhr} $alignc 		     ﺮﻬﻈﻟﺍ
-${execi 1 nsalah --timedelta +3 asr} $alignc	 	   ﺮﺼﻌﻟﺍ
-${execi 1 nsalah --timedelta +3 maghrib} $alignc 		 ﺏﺮﻐﻤﻟﺍ
-${execi 1 nsalah --timedelta +3 isha} $alignc	 	   ءﺎﺸﻌﻟﺍ
+${execi 1 nsalah --timedelta +2 fajr} $alignc  		     ﺮﺠﻔﻟﺍ
+${execi 1 nsalah --timedelta +2 sunrise} $alignc 		  ﻕﻭﺮﺸﻟﺍ
+${execi 1 nsalah --timedelta +2 dhuhr} $alignc 		     ﺮﻬﻈﻟﺍ
+${execi 1 nsalah --timedelta +2 asr} $alignc	 	   ﺮﺼﻌﻟﺍ
+${execi 1 nsalah --timedelta +2 maghrib} $alignc 		 ﺏﺮﻐﻤﻟﺍ
+${execi 1 nsalah --timedelta +2 isha} $alignc	 	   ءﺎﺸﻌﻟﺍ
 
 
 

@@ -10,6 +10,9 @@
         stylix.url = "github:danth/stylix";
         oldnixpkgs.url = "https://github.com/NixOS/nixpkgs/archive/5be55538137a57aa946e56a04c2795668dbdbe21.tar.gz";
         mypkgs.url = "path:./users/pxlman/home/my-pkgs";
+        burpsuitepro.url ="github:xiv3r/Burpsuite-Professional/9689f4ab41bddc9f7bce0f95ecf68e2c2a1e065d";
+        pwndbg.url = "github:pwndbg/pwndbg/2b928632dd437c668dea11a93190dd55a9ddd822";
+        nixvim.url = "github:nix-community/nixvim";
     };
     outputs = inputs@{self, nixpkgs,nixpkgs-unstable,home-manager, mypkgs, ...}:
         let 
@@ -23,8 +26,14 @@
         overlays = pkgsoverlays;
     };
     pkgsoverlays = [
-        (final: prev:
+        (final: prev: 
             (mypkgs.packages.${system})
+        )
+        (final: prev: 
+            {
+                burpsuitepro = (inputs.burpsuitepro.packages.${system}.default);
+                pwndbg = (inputs.pwndbg.packages.${system}.default);
+            }
         )
     ];
     unstable = import nixpkgs-unstable {
@@ -45,7 +54,7 @@
         homeConfigurations = {
             pxlman = home-manager.lib.homeManagerConfiguration {
                 inherit pkgs;
-                modules = [ ./users/pxlman/home/home.nix ];
+                modules = [ ./users/pxlman/home/home.nix inputs.nixvim.homeModules.nixvim ];
                 extraSpecialArgs = { 
                     inherit unstable inputs;
                     oldpkgs = import inputs.oldnixpkgs { inherit system;};

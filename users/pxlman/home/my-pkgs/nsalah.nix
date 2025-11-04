@@ -7,11 +7,11 @@ let
 
   salat = pyPkgs.buildPythonPackage rec {
     pname = "salat";
-    version = "0.1.0";
+    version = "1.1.0";
     pyproject = true;
     src = pyPkgs.fetchPypi {
       inherit pname version;
-      sha256 = "sha256-OQ+bB8hQp2O1ZINXM3+OsqJKYxJDg6y2fyVhYxrdLFQ=";
+      sha256 = "sha256-vJxpSDzPGs8TA179TXNyJW3A9CWPfnFub7uU55UjFB8=";
     };
 
     propagatedBuildInputs = with pyPkgs; [ setuptools ];

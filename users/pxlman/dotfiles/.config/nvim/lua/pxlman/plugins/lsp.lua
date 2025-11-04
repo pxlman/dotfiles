@@ -48,6 +48,8 @@ return {
         capabilities = capabilities,
         autoArchive = true,
       }
+      -- vim.lsp.servers.nixd.settings.nil_ls.nix.autoArchive = true;
+      -- vim.lsp.servers.nixd.settings.nil_ls.autoArchive = true; -- To auto fetch inputs for nix files
       vim.lsp.config.pyright = {
         capabilities = capabilities
       }

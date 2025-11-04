@@ -95,7 +95,7 @@
     "on-click": "swaync-client -op"
   },
   "custom/salah":{
-    "exec": "nsalah --timedelta +3",
+    "exec": "nsalah --timedelta +2",
     "format": "   {}",
     "tooltip": true,
     "tooltip-format": "",

@@ -95,6 +95,24 @@
 # 		'';
 # };
 	services.xserver.desktopManager.retroarch.enable = true;
+	services.xserver.desktopManager.retroarch.package = (
+        pkgs.retroarch.withCores (cores: with cores; [
+              genesis-plus-gx # Sega MS/GG/MD/CD
+              snes9x # snes
+              snes9x2010 # snes improved
+              ppsspp # psp
+              pcsx2 # PS 2
+              pcsx-rearmed # PS
+              play # PS 2
+              sameboy # gameboy
+              blastem # sega
+              swanstation # PS
+              beetle-saturn # Sega saturn
+              beetle-wswan #
+              beetle-psx-hw # PS
+              dosbox-pure # DOSBOX with auto mapping
+              dolphin # wii
+        ]));
 # Enable the OpenSSH daemon.
 	services.openssh.enable = true;
 

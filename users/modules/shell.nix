@@ -61,6 +61,12 @@ programs.zsh = {
     # packages(i think): vulkan-intel vulkan-headers vulkan-tools 
     export VK_DRIVER_FILES=/usr/share/vulkan/icd.d/intel_icd.i686.json:/usr/share/vulkan/icd.d/intel_icd.x86_64.json
     cat ~/.cache/wallust/sequences
+    nix-cleanup() {
+      sudo nix-collect-garbage -d
+      nix-collect-garbage -d
+      sudo nix-store --gc
+      echo "🧹 System and user garbage cleaned!"
+    }
   '';
 };
 }

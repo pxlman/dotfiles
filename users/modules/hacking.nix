@@ -1,51 +1,58 @@
 { lib, config, pkgs, ... }:
 {
-config.development.enable = true;
-config = {
+    config.development.enable = true;
+    config = {
 
-    home.packages = with pkgs; [
+        home.packages = with pkgs; [
 ### OSINT
-        sherlock
+                sherlock # find usernames across social networks
 ### Hacking
 # pwndbg.packages.${pkgs.system}.default
-  docker
-  postman
-  ghidra
-  binaryninja-free
-            burpsuitepro
-            pwndbg
-            tmux
-            openvpn
-            cutter # RE platform
-            binutils
-            arp-scan
-            boost
-            radare2
+                docker # containerization platform
+                amass # subdomain enumeration tool
+                waybackurls # fetches URLs from the Wayback Machine
+                theharvester # email and domain harvester
+                postman # API testing tool
+                ghidra # reverse engineering tool
+                frida-tools # dynamic analysis tool
+                binaryninja-free # reverse engineering platform
+                burpsuitepro # web vulnerability scanner
+                pwndbg # gdb plugin for exploit development
+                rr # lightweight tool for recording and replaying program executions
+                tmux # terminal multiplexer
+                openvpn # VPN software
+                cutter # RE platform
+                binutils # binary utilities like objdump, objcopy, nm, etc.
+                arp-scan # network scanning tool
+                boost
+                radare2 # reverse engineering framework
 ## Recon
-            nmap
-            fping
+                nmap # network scanner
+                fping # ping multiple hosts
+                nuclei # vulnerability scanner
 # katana
 ## Web
 # burpsuite
-            zap
+                zap # OWASP ZAP web vulnerability scanner
 ## Crypto
-            xxd
+                xxd # hex dump tool
 ## DFIR
-            exiftool
+                exiftool # metadata extraction tool
 # nuclei
 ## General
 # cvemap
-            wireshark
-            hash-identifier
+                wireshark # network protocol analyzer
+                hash-identifier # identify types of hashes
 ## Fuzzing
-            gobuster
-            ffuf
-            john
-            wordlists
+                gobuster # directory/file brute-forcer
+                ffuf # fast web fuzzer
+                john # password cracker
+                wordlists # common wordlists for password cracking and fuzzing
 ## Packets
 # tshark
 # tcpdump
 # termshark
-            ];
-};
+                ];
+                programs.tmux.enable = true;
+    };
 }

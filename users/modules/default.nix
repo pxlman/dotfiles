@@ -6,7 +6,7 @@
         ./programs.nix
         ./shell.nix
         # ./packages.nix
-        # ./gaming.nix
+        ./gaming.nix
         ./hacking.nix
         ./development.nix
     ];

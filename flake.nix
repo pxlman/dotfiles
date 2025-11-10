@@ -45,6 +45,7 @@
             inherit system;
             specialArgs = { inherit unstable inputs; };
             modules = [
+            {nixpkgs.config.allowUnfree = true;}
                 ./system/configuration.nix
                     ./system/hardware-configuration.nix
                     inputs.stylix.nixosModules.stylix
@@ -54,7 +55,11 @@
         homeConfigurations = {
             pxlman = home-manager.lib.homeManagerConfiguration {
                 inherit pkgs;
-                modules = [ ./users/pxlman/home/home.nix inputs.nixvim.homeModules.nixvim ];
+                modules = [ 
+                    {nixpkgs.config.allowUnfree = true;}
+                    ./users/pxlman/home/home.nix 
+                    inputs.nixvim.homeModules.nixvim
+                ];
                 extraSpecialArgs = { 
                     inherit unstable inputs;
                     oldpkgs = import inputs.oldnixpkgs { inherit system;};

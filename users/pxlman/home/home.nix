@@ -9,6 +9,7 @@
     imports = [
       ../../modules/default.nix
     ]; 
+    gaming.enable = true;
 home.stateVersion = "25.05";
 home.username = "pxlman";
 home.homeDirectory = "/home/pxlman";
@@ -128,18 +129,6 @@ home.packages = with pkgs; [
   # rhythmbox
   dpkg
   pkg-config
-### Gaming
-  zeroad # 0ad
-  gamepad-tool # Testing gamepad
-  unstable.legendary-gl # CLI tool for epic games 
-  # rare # legendary GUI client
-  heroic # Epic games launcher
-  # retroarch
-  superTux
-  superTuxKart
-  ddnet
-  lutris # games launcher
-  gamepad-tool
   ### CLI Apps
   helix # Text editor command `hx`
   nettools # ithink for ip a

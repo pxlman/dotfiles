@@ -10,13 +10,14 @@
       ../../modules/default.nix
     ]; 
     gaming.enable = true;
-home.stateVersion = "25.05";
+home.stateVersion = "25.11";
 home.username = "pxlman";
 home.homeDirectory = "/home/pxlman";
 home.packages = with pkgs; [
 ### THEMES and Styles
   dconf # I Don't know but gtk needs it
   lxappearance # Themes and Fonts manager
+  nwg-look # Themes and Icons manager for wayland
   font-manager # Font Manager
   nwg-displays
   #copyq # Clipboard manager
@@ -35,8 +36,8 @@ home.packages = with pkgs; [
   slurp
   evtest
   conky # Desktop Widgets
-  # rofi
-  rofi-wayland
+  rofi
+  # rofi-wayland deprecated
   # unstable.wayland-bongocat
   bongocat # For the cute cat
   nsalah # For the prayer times
@@ -46,7 +47,7 @@ home.packages = with pkgs; [
   hypridle
   wl-clipboard
   hyprpolkitagent
-  hyprswitch
+  # hyprswitch deprecated
   swww
   mpvpaper
   waybar
@@ -83,7 +84,7 @@ home.packages = with pkgs; [
 ### Applications
   nemo-with-extensions
   quran
-  surf
+  # surf deprecated
   telegram-desktop
   hexchat
   firefox # for burp suite
@@ -99,7 +100,7 @@ home.packages = with pkgs; [
   zeal
   #hexchat
   gimp
-  openshot-qt # video editor
+  # openshot-qt # video editor
   shotcut # video editor
   avidemux # video editor
   kdePackages.kdenlive
@@ -183,6 +184,7 @@ home.sessionVariables = {
   # U must make sure to install the needed vulkan drivers (these files r there)
   # packages(i think): vulkan-intel vulkan-headers vulkan-tools 
   LIBVA_DRIVER_NAME = "x86_64 VDPAU_DRIVER=va_gl";
+  VK_DRIVER_FILES = "/run/opengl-driver/share/vulkan/icd.d/radeon_icd.x86_64.json:/run/opengl-driver-32/share/vulkan/icd.d/radeon_icd.i686.json";
   #LIBVA_DRIVERS_PATH="/usr/lib/dri/iHD_drv_video.so";
   #VK_DRIVER_FILES="/usr/share/vulkan/icd.d/intel_icd.i686.json:/usr/share/vulkan/icd.d/intel_icd.x86_64.json";
   GTK_THEME = "Materia-dark"; # WhiteSur-dark

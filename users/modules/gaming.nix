@@ -27,6 +27,10 @@
                 lutris # games launcher
                 gamepad-tool # Testing gamepad
                 dolphin-emu
+                mesa
+                vulkan-loader
+                vulkan-tools
+                # driversi686Linux.mesa
         ];
         programs.mangohud = {
             enable = true;
@@ -34,6 +38,7 @@
                 fps = true;
                 cpu_stats = true;
                 cpu_load_change = true;
+                ram = true;
                 text_outline = true;
                 position = "top-left";
             };

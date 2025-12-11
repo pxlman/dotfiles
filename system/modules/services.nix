@@ -7,6 +7,7 @@
 		services.dbus.enable = true;
 # Enable the X11 windowing system.
 	services.xserver.enable = true;
+        services.xserver.autorun  = false; # new to me
 	services.xserver.videoDrivers = [ "amdgpu" ];
 	services.xserver.windowManager.bspwm.enable = true;
 
@@ -17,7 +18,7 @@
 		options = "grp:alt_space_toggle";
 	};
 # Changing the dpi to make things bigger
-	services.xserver.dpi = 130; # Default is null
+	# services.xserver.dpi = 130; # Default is null
 # Enable the GDM display manager
 	services.xserver.displayManager.startx.enable = true; # Adding xinitrc to the
 	services.xserver.displayManager.lightdm.enable = false;
@@ -66,9 +67,6 @@
 	services.logind = {
 		lidSwitch = "suspend";
 		lidSwitchExternalPower = "suspend";
-		extraConfig = ''
-			
-		'';
 	};
 
 # Enable ssh service
@@ -168,7 +166,7 @@
 			CPU_MIN_PERF_ON_AC = 0;
 			CPU_MAX_PERF_ON_AC = 100;
 			CPU_MIN_PERF_ON_BAT = 0;
-			CPU_MAX_PERF_ON_BAT = 30;
+			CPU_MAX_PERF_ON_BAT = 100;
 
 #Optional helps save long term battery health
 			START_CHARGE_THRESH_BAT0 = 60; # 40 and bellow it starts to charge

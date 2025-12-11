@@ -1,9 +1,0 @@
-<application>
-  <component name="TerminalFontOptions">
-    <option name="VERSION" value="1" />
-    <option name="FONT_SIZE" value="18" />
-    <option name="FONT_SIZE_2D" value="18.0" />
-    <option name="FONT_REGULAR_SUB_FAMILY" />
-    <option name="FONT_BOLD_SUB_FAMILY" />
-  </component>
-</application>

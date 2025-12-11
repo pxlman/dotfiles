@@ -50,9 +50,10 @@
 # intel-gpu-tools
 # intel-vaapi-driver
 				mesa
-				amdvlk # AMD driver for vulkan
+				# amdvlk # AMD driver for vulkan
 				vulkan-headers
 				vulkan-tools
+                                # pkgsi686Linux.vulkan-tools
 				vulkan-loader
 				vulkan-utility-libraries
 				xorg.xf86videoamdgpu
@@ -60,10 +61,12 @@
 				xorg.xf86inputjoystick
 				xorg.xf86videosisusb # For usb audio i think
 				linuxKernel.packages.linux_6_6.v4l2loopback # make virtual camera work in obs studio
-				jdk24 # java
+				# jdk24 # java deprecated
+                                javaPackages.compiler.openjdk25
 				glib
 				glibc
-				libuinputplus # for developing a c++ app to forward gamepad buttons
+				# libuinputplus # for developing a c++ app to forward gamepad buttons deprecated
+                                libinput
 				man-pages        # section 2, 3 (system calls, libc functions)
 				man-pages-posix  # POSIX standard man pages
 				bat-extras.batman
@@ -77,7 +80,14 @@
 				gtk4
 				yaml-cpp
 ## Wine and gaming
-				wineWowPackages.stable
+                                # wineWowPackages.stable # Support both 32 and 64 bit windows apps
+                                # Don't use full or with wayland support cause it makes the games very very slow and don't work well
+				# wineWowPackages.waylandFull
+                                (wineWowPackages.stable.override {
+                                 vulkanSupport = true;
+                                 waylandSupport = true; # unless you want wine-wayland
+                                 })
+
 				winetricks
 				vkd3d
 # X11 essentials
@@ -94,7 +104,8 @@
 				woeusb # make a bootable windows usb from windows iso
 				libsForQt5.qt5.qtbase
 				libsForQt5.qt5.qtx11extras
-				kdePackages.xwaylandvideobridge
+				# kdePackages.xwaylandvideobridge deprecated
+                                kdePackages.xdg-desktop-portal-kde
 				xdg-desktop-portal
 				xdg-desktop-portal-gtk
 				xdg-desktop-portal-hyprland
@@ -148,7 +159,7 @@
 			wget
 			hyprpaper # wallpapers for wayland
 			waybar # bar for wayland
-			rofi-wayland # App drawer for wayland
+			rofi # App drawer for wayland
 			grub2
 			git
 			inetutils # contain the `ftp` command
@@ -195,7 +206,7 @@
 		options = "--delete-older-than 2d";
 	};
 # For more information, see `man configuration.nix` or https://nixos.org/manual/nixos/stable/options#opt-system.stateVersion .
-	system.stateVersion = "25.05"; # Did you read the comment?
+	system.stateVersion = "25.11"; # Did you read the comment?
 
 #	home-manager.users.pxlman = import ./home.nix;
 }

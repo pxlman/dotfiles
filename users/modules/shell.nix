@@ -43,8 +43,8 @@ programs.zsh = {
     rc = "nvim ~/dotfiles/users/pxlman/home/home.nix";
     nrc = "nvim ~/dotfiles/system/configuration.nix";
     gitdone="git add .; git commit -m '[+]'; git push; echo '[*] Files Saved'"; # git done
-    home = "home-manager switch --flake ~/dotfiles#pxlman --verbose";
-    switch = "sudo nixos-rebuild switch --flake ~/dotfiles#Ahmed --verbose";
+    home = "home-manager switch --flake ~/dotfiles#pxlman";
+    switch = "sudo nixos-rebuild switch --flake ~/dotfiles#Ahmed";
     hdmi = "xrandr --output HDMI-1 --output eDP-1  --auto";
     juice-shop = "docker run --rm -p 127.0.0.1:3000:3000 bkimminich/juice-shop";
     webgoat = "docker run -it -p 127.0.0.1:8080:8080 -p 127.0.0.1:9090:9090 webgoat/webgoat";
@@ -59,7 +59,7 @@ programs.zsh = {
     # This is to solve vulkan error in steam
     # U must make sure to install the needed vulkan drivers (these files r there)
     # packages(i think): vulkan-intel vulkan-headers vulkan-tools 
-    export VK_DRIVER_FILES=/usr/share/vulkan/icd.d/intel_icd.i686.json:/usr/share/vulkan/icd.d/intel_icd.x86_64.json
+    # export VK_DRIVER_FILES=/usr/share/vulkan/icd.d/intel_icd.i686.json:/usr/share/vulkan/icd.d/intel_icd.x86_64.json
     cat ~/.cache/wallust/sequences
     nix-cleanup() {
       sudo nix-collect-garbage -d

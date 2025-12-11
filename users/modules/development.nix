@@ -57,7 +57,18 @@ in
 # jetbrains.pycharm-professional
 # jetbrains.idea-ultimate
                 qtcreator # To make qt gui programs
-                libsForQt5.full
+                # libsForQt5.full deprecated
+                libsForQt5.qtutilities
+                libsForQt5.qtmultimedia
+                libsForQt5.qtx11extras
+                # libsForQt5.qtwebsockets
+                # libsForQt5.qtwebchannel
+                libsForQt5.qtstyleplugins
+                libsForQt5.qt5ct
+                libsForQt5.qt5.qtxmlpatterns
+                # libsForQt5.qt5.qtwebview
+                libsForQt5.qt5.qtwayland
+                libsForQt5.qt5.qttools
                 php84Packages.composer
                 php84Extensions.sqlite3
                 php84Extensions.mysqli

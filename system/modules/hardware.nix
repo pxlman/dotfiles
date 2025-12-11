@@ -3,18 +3,22 @@
 {
     hardware.graphics = {
         enable = true;
-        extraPackages = with pkgs; [
-            rocmPackages.clr.icd
-                amdvlk
-        ];
         enable32Bit = true;
+          extraPackages = with pkgs; [
+    mesa
+  ];
+
+  extraPackages32 = with pkgs.pkgsi686Linux; [
+    mesa
+  ];
+
     };
 ### AMD suff
     hardware.amdgpu = {
         initrd.enable = true;
         opencl.enable = true;
-        amdvlk.enable = true;
-        amdvlk.support32Bit.enable = true;
+        # amdvlk.enable = true; deprecated
+        # amdvlk.support32Bit.enable = true; deprecated
     };
     hardware.cpu.amd.updateMicrocode = true;
     hardware.bluetooth = {

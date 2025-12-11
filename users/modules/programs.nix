@@ -113,8 +113,10 @@
 # Git config
         programs.git = {
             enable = true;
-            userName = config.userSettings.github.username;
-            userEmail = config.userSettings.github.email;
+            settings.user = {
+                email = config.userSettings.user.email;
+                name = config.userSettings.user.name;
+            };
         };
         programs.direnv.enable = true;
         programs.direnv.nix-direnv.enable = true;

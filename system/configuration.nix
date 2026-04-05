@@ -22,7 +22,7 @@
 		shell = pkgs.zsh;
 		isNormalUser = true;
 		initialPassword = "1234";
-		extraGroups = [ "wheel" "networkmanager" "video" "audio" "input" "vboxusers" ]; # "vboxsf" 
+		extraGroups = [ "wheel" "uinput" "networkmanager" "video" "audio" "input" "vboxusers" ]; # "vboxsf" 
 		packages = with pkgs; [
 # Terminal packages
 			zsh

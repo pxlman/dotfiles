@@ -34,11 +34,16 @@ opimus - cuts - hexagon_dots - liquid - loader_2 - loading - mystic - jellyfish 
 	};
 	boot.consoleLogLevel = 0;
 	# boot.kernelParams = [ "quiet" "splash" "loglevel=0" "rd.udev.log_level=0" "plymouth.ignore-serial-consoles" ];
-	boot.kernelParams = [ "quiet" "splash" "plymouth.ignore-serial-consoles" "kvm.enable_virt_at_load=0" ];
+	boot.kernelParams = [ "quiet" "splash" "plymouth.ignore-serial-consoles" "kvm.enable_virt_at_load=0" "mem_sleep_default=deep" ];
 	boot.initrd.verbose = false;
 	boot.initrd.kernelModules = [ "amdgpu" ];
 	boot.tmp.cleanOnBoot = true; # clean /tmp dir on boot
 	boot.supportedFilesystems = [ "ntfs" ];
 	# To install the wifi adapter in ASUS vivobook 15
 	boot.extraModulePackages = [ config.boot.kernelPackages.rtl8821ce ];
+
+        # Suspend and hibernate support
+        # powerManagement = {
+        #     enable = true;
+        # };
 }

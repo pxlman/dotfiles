@@ -4,9 +4,9 @@
     hardware.graphics = {
         enable = true;
         enable32Bit = true;
-          extraPackages = with pkgs; [
-    mesa
-  ];
+        extraPackages = with pkgs; [
+            mesa
+        ];
 
   extraPackages32 = with pkgs.pkgsi686Linux; [
     mesa
@@ -33,4 +33,8 @@
         powerOnBoot = true; # Powers on the bluetooth on boot up
     };
     hardware.xpadneo.enable = true;
+# Graphic tablet support
+    hardware.opentabletdriver.enable = true;
+      hardware.uinput.enable = true;
+      boot.kernelModules = [ "uinput" ];
 }

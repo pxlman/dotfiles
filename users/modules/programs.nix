@@ -84,7 +84,7 @@
             };
             docViewer = {
                 package = pkgs.kdePackages.okular;
-                entry = "okularApplication_pdf.dekstop";
+                entry = "org.kde.okular.desktop";
             };
             textEditor = {
                 package = pkgs.gedit;
@@ -114,8 +114,8 @@
         programs.git = {
             enable = true;
             settings.user = {
-                email = config.userSettings.user.email;
-                name = config.userSettings.user.name;
+                email = config.userSettings.github.email;
+                name = config.userSettings.github.username;
             };
         };
         programs.direnv.enable = true;
@@ -193,14 +193,14 @@
                     {
                         plugin = tmuxPlugins.vim-tmux-navigator;
                     }
-            {
-                plugin = tmuxPlugins.resurrect;
-                extraConfig = ''
-                    set -g @resurrect-strategy-vim 'session'
-                    set -g @resurrect-strategy-nvim 'session'
-                    set -g @resurrect-capture-pane-contents 'on'
-                    '';
-            }
+            # {
+            #     plugin = tmuxPlugins.resurrect;
+            #     extraConfig = ''
+            #         set -g @resurrect-strategy-vim 'session'
+            #         set -g @resurrect-strategy-nvim 'session'
+            #         set -g @resurrect-capture-pane-contents 'on'
+            #         '';
+            # }
             {
                 plugin = tmuxPlugins.continuum;
                 extraConfig = ''

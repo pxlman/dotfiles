@@ -1,0 +1,93 @@
+@import "colors.css";
+
+/* ======================
+   Main OSD Window - More Compact
+   ====================== */
+window#osd {
+    border-radius: 20px;
+    border: 1px solid @outline;
+    background: alpha(@surface_container_low, 0.95);
+    /* box-shadow: 0 8px 32px rgba(0, 0, 0, 0.65), */
+    /*             0 0 25px var(--osd-glow); */
+    padding: 5px 22px;           /* Reduced vertical padding */
+    min-width: 260px;
+}
+
+/* Container - tighter spacing */
+window#osd #container {
+    margin: 4px;
+    padding: 2px;
+    background: transparent;
+}
+
+/* Icon - better size */
+window#osd image {
+    -gtk-icon-transform: scale(0.60);
+    color: @text_primary;
+    /* margin-bottom: 6px; */
+}
+
+/* Text colors */
+window#osd image,
+window#osd label {
+    color: @text_primary;
+}
+
+/* Large value (percentage) */
+window#osd label#value {
+    font-size: 28px;
+    font-weight: 600;
+    color: @text_value;
+    text-shadow: 0 0 10px rgba(167, 139, 250, 0.55);
+    /* margin: 4px 0 6px 0; */
+}
+
+/* Normal labels / indicators */
+window#osd label:not(#value) {
+    font-size: 14.5px;
+    color: @text_muted;
+    font-weight: 500;
+}
+
+/* Disabled state */
+window#osd progressbar:disabled,
+window#osd image:disabled {
+    opacity: 0.45;
+}
+
+/* ======================
+   PROGRESS BAR - Fixed color + better look
+   ====================== */
+window#osd progressbar {
+    min-height: 10px;
+    border-radius: 9999px;
+    background: transparent;
+    border: none;
+    margin-top: 2px;
+}
+
+window#osd trough {
+    min-height: 10px;
+    border-radius: 9999px;
+    background: alpha(@primary_container, 0.75);
+    border: none;
+}
+
+/* This is the key fix for the progress fill color */
+window#osd progress,
+window#osd progressbar progress,
+window#osd trough > progress {
+    min-height: 7px;
+    border-radius: 9999px;
+    /* background: linear-gradient(90deg, #a78bfa, #c4b5fd) !important; */
+    background: @accent;
+    /* background: var(@primary) !important; */
+    border: none;
+}
+
+/* Hover feedback */
+window#osd:hover {
+    border-color: #c4b5fd;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7),
+                0 0 30px rgba(167, 139, 250, 0.4);
+}

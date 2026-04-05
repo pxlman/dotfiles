@@ -3,7 +3,13 @@
     config.development.enable = true;
     config = {
 
+        home.sessionVariables.SSLKEYLOGFILE="/tmp/.sslkey.log"; # For Wireshark decryption of TLS traffic
         home.packages = with pkgs; [
+### Mobile
+                jadx # dex to java decompiler
+                apktool # tool for reverse engineering Android apk files
+                scrcpy # display and control Android devices
+                frida-tools # dynamic instrumentation toolkit
 ### OSINT
                 sherlock # find usernames across social networks
 ### Hacking

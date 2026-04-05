@@ -20,7 +20,7 @@
                 dolphin-emu
                 zeroad # 0ad
                 unstable.legendary-gl # CLI tool for epic games 
-                heroic # Epic games launcher
+                unstable.heroic # Epic games launcher
                 superTux
                 superTuxKart
                 ddnet

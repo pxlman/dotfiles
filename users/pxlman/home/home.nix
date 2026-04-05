@@ -16,6 +16,26 @@ home.homeDirectory = "/home/pxlman";
 home.packages = with pkgs; [
 ### THEMES and Styles
   dconf # I Don't know but gtk needs it
+  pkg-config
+  nix-index
+  capstone
+  qemu_full
+  linux-wifi-hotspot
+  logseq
+  krita
+  p3x-onenote
+  stirling-pdf
+  pstree
+  hexecute
+  wizer
+  distrobox # For running other distros in containers
+  gromit-mpx # For drawing on the screen
+  kiwix # For offline wikipedia
+  avizo # For visualizing data (volume and brightness)
+  swayosd # For showing volume and brightness on the screen
+  libinput # For the libinput-gestures to work
+  arduino-ide # For programming arduinos
+  mission-center # performance manager
   lxappearance # Themes and Fonts manager
   nwg-look # Themes and Icons manager for wayland
   font-manager # Font Manager
@@ -41,6 +61,7 @@ home.packages = with pkgs; [
   # unstable.wayland-bongocat
   bongocat # For the cute cat
   nsalah # For the prayer times
+  mips-gcc # takes ~= 2GB
   rofi-power-menu
   rofi-emoji
   wofi
@@ -49,7 +70,6 @@ home.packages = with pkgs; [
   hyprpolkitagent
   # hyprswitch deprecated
   swww
-  mpvpaper
   waybar
   hyprpicker # For picking colors 
   wlogout
@@ -58,6 +78,7 @@ home.packages = with pkgs; [
   htop
 ### Services
   activitywatch # For tracking time
+  aw-watcher-window-wayland
   xclip # Copy and Paste service
   xdotool # make me able to use shortcuts with commmands
   udiskie # For mounting and unmounting

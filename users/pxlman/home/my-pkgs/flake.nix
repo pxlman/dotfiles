@@ -11,11 +11,19 @@
             let 
             pkgs = import nixpkgs { inherit system; };
             oldpkgs = import oldnixpkgs { inherit system; };
+            mipsPkgs = import nixpkgs { 
+                inherit system;
+                crossSystem = { 
+                    config = "mips-linux"; 
+                }; 
+            };
+
         in {
             quran = pkgs.callPackage ./quran.nix {inherit pkgs oldpkgs; };   
             xfox = pkgs.callPackage ./xfox.nix {inherit pkgs; };
             bongocat = pkgs.callPackage ./bongocat.nix {inherit pkgs; };
             nsalah = pkgs.callPackage ./nsalah.nix {inherit pkgs; };
+            mips-gcc = pkgs.callPackage ./mips-gcc.nix {inherit pkgs mipsPkgs; };
         };
     };
 }

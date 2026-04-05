@@ -45,6 +45,7 @@ services.fusuma = {
     };
   };
 };
+# services.swayosd.enable = true; # A simple on-screen display (OSD) for lightness and volume changes notification.
 services.syncthing.enable = true;
 services.copyq = {
   enable = false;
@@ -56,9 +57,9 @@ services.flameshot = {
     showStartupLaunchMessage = false;
   };
 };
-services.activitywatch = {
-  enable = true;
-};
+# services.activitywatch = {
+#   enable = false;
+# };
 services.dunst = {
   enable = true;
   iconTheme = {

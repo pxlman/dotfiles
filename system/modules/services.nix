@@ -1,6 +1,10 @@
-{config, lib, pkgs, ...}:
+{config, lib, pkgs, unstable, ...}:
 
 {
+    services.nfs.server.enable = true;
+    services.nfs.server.exports = ''
+    /home/pxlman/Documents/adv-OS/tinysystem/nfsroot 192.168.0.100(rw,no_root_squash,no_subtree_check)
+  '';
 
 	services.udisks2.enable = true;
 # Openning dbus
@@ -64,9 +68,11 @@
 # samsung-unified-linux-driver_1_00_36
 # splix
 	];
-	services.logind = {
-		lidSwitch = "suspend";
-		lidSwitchExternalPower = "suspend";
+	services.logind.settings.Login = {
+		# lidSwitch = "suspend";
+                HandleLidSwitch = "suspend";
+		# lidSwitchExternalPower = "suspend";
+                HandleLidSwitchExternalPower = "suspend";
 	};
 
 # Enable ssh service
@@ -152,6 +158,7 @@
 	};
 	services.tlp = {
 		enable = true;
+                package = unstable.tlp;
 		settings = {
 			#TLP_DEFAULT_MODE = "BAT";
 			CPU_SCALING_GOVERNOR_ON_AC = "performance";
@@ -160,17 +167,31 @@
 			CPU_ENERGY_PERF_POLICY_ON_BAT = "power";
 			CPU_ENERGY_PERF_POLICY_ON_AC = "performance";
 
+                        # CPU_HWP_DYN_BOOST_ON_AC=1; # Enable hardware controlled boost
+                        # CPU_HWP_DYN_BOOST_ON_BAT=1; # Enable hardware controlled boost
+                        #
+                        # RADEON_DPM_PERF_LEVEL_ON_AC="auto";
+                        # RADEON_DPM_PERF_LEVEL_ON_BAT="auto"; # high - low - auto
+                        #
+                        # RADEON_DPM_STATE_ON_AC="performance";
+                        # RADEON_DPM_STATE_ON_BAT="battery";
+                        #
+                        # AMDGPU_ABM_LEVEL_ON_AC=0; # 0=off, 1=low, 2=medium, 3=high
+                        # AMDGPU_ABM_LEVEL_ON_BAT=2; # 0=off, 1=low, 2=medium, 3=high
+                        #
+                        # PLATFORM_PROFILE_ON_AC="performance"; # balanced - power-saver - performance
+                        #
 			CPU_BOOST_ON_AC=1;
 			CPU_BOOST_ON_BAT=0;
 
 			CPU_MIN_PERF_ON_AC = 0;
 			CPU_MAX_PERF_ON_AC = 100;
 			CPU_MIN_PERF_ON_BAT = 0;
-			CPU_MAX_PERF_ON_BAT = 100;
+			CPU_MAX_PERF_ON_BAT = 70;
 
 #Optional helps save long term battery health
 			START_CHARGE_THRESH_BAT0 = 60; # 40 and bellow it starts to charge
-			STOP_CHARGE_THRESH_BAT0 = 80; # 80 and above it stops charging
+			STOP_CHARGE_THRESH_BAT0 = 81; # 80 and above it stops charging
 		};
 	};
 }

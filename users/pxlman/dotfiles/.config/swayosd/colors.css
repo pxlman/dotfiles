@@ -1,0 +1,17 @@
+/* colors.css - Aura Dark for SwayOSD */
+
+@define-color surface_container_low     #1a1724;
+@define-color primary_container         #2a2438;
+@define-color primary                   #a78bfa;
+@define-color outline                   #7c6acc;
+
+@define-color text_primary              #e0d9ff;
+@define-color text_value                #d1c4ff;
+@define-color text_muted                #a5b4fc;
+@define-color accent                    #a78bfa;
+
+:root {
+    --accent-gradient-start: #a78bfa;
+    --accent-gradient-end: #c4b5fd;
+    --osd-glow: rgba(167, 139, 250, 0.28);
+}

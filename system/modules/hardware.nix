@@ -7,12 +7,12 @@
         extraPackages = with pkgs; [
             mesa
         ];
-
-  extraPackages32 = with pkgs.pkgsi686Linux; [
-    mesa
-  ];
-
+        extraPackages32 = with pkgs.pkgsi686Linux; [
+            mesa
+        ];
     };
+    hardware.opengl.enable = true;
+    hardware.opengl.extraPackages = [ pkgs.mesa.drivers ];
 ### AMD suff
     hardware.amdgpu = {
         initrd.enable = true;

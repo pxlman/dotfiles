@@ -57,6 +57,33 @@
 			"HDMI-0"
 			"HDMI-1"
 	];
+        virtualisation.waydroid.enable = true;
+        environment.systemPackages = [ pkgs.waydroid-helper ];
+        systemd = {
+            packages = [ pkgs.waydroid-helper ];
+            services.waydroid-mount.wantedBy = [ "multi-user.target" ];
+        };
+
+
+        # SwayOSD
+        # services.udev.packages = [ pkgs.swayosd ];
+        # services.dbus.packages = [ pkgs.swayosd ];
+        systemd.services.swayosd-libinput-backend = {
+            description = "SwayOSD LibInput backend for listening to certain keys like CapsLock, ScrollLock, VolumeUp, etc.";
+            documentation = [ "https://github.com/ErikReider/SwayOSD" ];
+            wantedBy = [ "graphical.target" ];
+            partOf = [ "graphical.target" ];
+            after = [ "graphical.target" ];
+
+            serviceConfig = {
+                Type = "dbus";
+                BusName = "org.erikreider.swayosd";
+                ExecStart = "${pkgs.swayosd}/bin/swayosd-libinput-backend";
+                Restart = "on-failure";
+            };
+        };
+
+
 # Enable touchpad support (enabled default in most desktopManager).
 	services.libinput.enable = true;
 	services.libinput.touchpad.naturalScrolling = true;
@@ -158,7 +185,7 @@
 	};
 	services.tlp = {
 		enable = true;
-                package = unstable.tlp;
+                package = pkgs.tlp;
 		settings = {
 			#TLP_DEFAULT_MODE = "BAT";
 			CPU_SCALING_GOVERNOR_ON_AC = "performance";

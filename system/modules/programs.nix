@@ -42,6 +42,7 @@
 	programs.nix-ld.enable = true;
 	programs.nix-ld.libraries = with pkgs; [
 # common requirement for several games
+                        glib
 			stdenv.cc.cc.lib
 # from https://github.com/NixOS/nixpkgs/blob/nixos-23.05/pkgs/games/steam/fhsenv.nix#L72-L79
 			xorg.libXcomposite
@@ -50,6 +51,7 @@
 			xorg.libXext
 			xorg.libX11
 			xorg.libXfixes
+                        xorg.libxcb
 			gcc
 			libGL
 			libva
@@ -62,7 +64,11 @@
 			libogg
 			libvorbis
 			SDL
+                        SDL2
 			SDL2_image
+                        wayland
+                        libxkbcommon
+                        wayland-protocols
 			glew110
 			libdrm
 			libidn
@@ -82,9 +88,9 @@
 		docker = {
 			enable = true;
 			enableOnBoot = false;
-			daemon.settings = {
-				data-root = "/home/docker";
-			};
+			# daemon.settings = {
+			# 	data-root = "/home/docker";
+			# };
 			storageDriver = "overlay2";
 		};
 		virtualbox= {

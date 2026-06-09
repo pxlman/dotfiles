@@ -62,7 +62,7 @@
 				xorg.xf86videosisusb # For usb audio i think
 				linuxKernel.packages.linux_6_6.v4l2loopback # make virtual camera work in obs studio
 				# jdk24 # java deprecated
-                                javaPackages.compiler.openjdk25
+                                # javaPackages.compiler.openjdk25
 				glib
 				glibc
 				# libuinputplus # for developing a c++ app to forward gamepad buttons deprecated
@@ -145,6 +145,7 @@
 # List packages installed in system profile. To search, run:
 # $ nix search wget
 	environment.systemPackages = with pkgs; [
+        swayosd
 		tldr # manuals
 			clinfo # to make sure opencl is working
 			fusuma # For touchpad configurations
@@ -169,7 +170,7 @@
 			# gdb
 			gcc_debug
 			go
-			rustup
+			# rustup
 			syncthing
 			p7zip # 7z
 			unzip

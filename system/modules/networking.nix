@@ -23,6 +23,7 @@
             2049 # nfs
             111 # rpcbind for the nfs server
             20048 # nfs server
+            55435 # retroarch
         ];
         allowedUDPPorts = [ 
             22000 # syncthing
@@ -31,6 +32,7 @@
             2049 # nfs
             111 # rpcbind for the nfs server
             20048 # nfs server
+            55435 # retroarch
         ];
     };
 # Networking Hostname

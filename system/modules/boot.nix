@@ -40,7 +40,8 @@ opimus - cuts - hexagon_dots - liquid - loader_2 - loading - mystic - jellyfish 
 	boot.tmp.cleanOnBoot = true; # clean /tmp dir on boot
 	boot.supportedFilesystems = [ "ntfs" ];
 	# To install the wifi adapter in ASUS vivobook 15
-	boot.extraModulePackages = [ config.boot.kernelPackages.rtl8821ce ];
+	# boot.extraModulePackages = [ config.boot.kernelPackages.rtl8821ce ];
+	boot.extraModulePackages = [ config.boot.kernelPackages.rtw88 ];
 
         # Suspend and hibernate support
         # powerManagement = {

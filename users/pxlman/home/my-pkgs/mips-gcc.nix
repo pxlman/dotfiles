@@ -3,7 +3,7 @@ pkgs.buildEnv {
   name = "mips-gcc-env";
   paths = [
     pkgs.mars-mips
-    mipsPkgs.buildPackages.binutilsNoLibc
+    # mipsPkgs.buildPackages.binutilsNoLibc
     # crossPkgs.bintools-unwrapped
     mipsPkgs.gcc
   ];

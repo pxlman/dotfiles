@@ -52,6 +52,7 @@ programs.zsh = {
     steam-free = "free-steam";
     clickup = "appimage-run ~/clickup.AppImage";
     ytd = "yt-dlp --format='135+139' --embeded-chapters";
+    nixpath = "nix-build 'nixpkgs' -A "; 
     # pavucontrol = "GTK_THEME= pavucontrol";
   };
   initContent = ''

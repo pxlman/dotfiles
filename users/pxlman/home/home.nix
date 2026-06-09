@@ -28,6 +28,23 @@ home.packages = with pkgs; [
   pstree
   hexecute
   wizer
+  gvfs
+  ollama
+  playerctl
+  SDL2
+  cargo # for rust
+  rustc
+  jq
+  unstable.opencode
+  # rustup
+  squashfsTools
+  libdecor
+  wayland
+  wayscriber
+  wayland-protocols
+  mesa-demos
+  localstack
+  simplescreenrecorder
   distrobox # For running other distros in containers
   gromit-mpx # For drawing on the screen
   kiwix # For offline wikipedia
@@ -61,7 +78,6 @@ home.packages = with pkgs; [
   # unstable.wayland-bongocat
   bongocat # For the cute cat
   nsalah # For the prayer times
-  mips-gcc # takes ~= 2GB
   rofi-power-menu
   rofi-emoji
   wofi
@@ -97,13 +113,14 @@ home.packages = with pkgs; [
   # localsend # Sharing between local devices
   syncthing # Syncing folders between phone and laptop
   # mconnect
-  yt-dlp
+  unstable.yt-dlp
   appimage-run
   peaclock
   gnome-clocks
   xfox # Gamepad remapper tool
 ### Applications
   nemo-with-extensions
+  xfce.thunar
   quran
   # surf deprecated
   telegram-desktop
@@ -124,6 +141,7 @@ home.packages = with pkgs; [
   # openshot-qt # video editor
   shotcut # video editor
   avidemux # video editor
+  handbrake # video transcoder
   kdePackages.kdenlive
   plantuml
   emacs

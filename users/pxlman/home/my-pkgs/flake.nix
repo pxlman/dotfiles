@@ -23,7 +23,7 @@
             xfox = pkgs.callPackage ./xfox.nix {inherit pkgs; };
             bongocat = pkgs.callPackage ./bongocat.nix {inherit pkgs; };
             nsalah = pkgs.callPackage ./nsalah.nix {inherit pkgs; };
-            mips-gcc = pkgs.callPackage ./mips-gcc.nix {inherit pkgs mipsPkgs; };
+            # mips-gcc = pkgs.callPackage ./mips-gcc.nix {inherit pkgs mipsPkgs; };
         };
     };
 }

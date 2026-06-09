@@ -42,6 +42,9 @@ in
         development = {
             enable = lib.mkEnableOption "Enable development environment configuration.";
         };
+        windows-dev = {
+            enable = lib.mkEnableOption "Enable Windows development environment configuration.";
+        };
     };
     config = lib.mkIf config.development.enable {
         nixpkgs.config.android_sdk.accept_license = true; # Accept android sdk license
@@ -59,6 +62,7 @@ in
 # android.cmdline-tools
 # unstable.gradle
                 unstable.android-tools
+                javaPackages.compiler.openjdk17
 
 ### Database Tools
                 sqlcmd
@@ -114,6 +118,8 @@ in
 
 ### C++ Development Tools and Libraries
                 # mycenv
+                gcc
+                # gcc.cc
                 gdb
                 cmake
                 gnumake
@@ -126,6 +132,7 @@ in
                 gtk4.dev
                 zlib.dev
                 ncurses.dev
+                ncurses
                 libgcrypt.dev
                 libevent.dev
                 curl.dev
@@ -137,7 +144,10 @@ in
                 freetype
                 ffmpeg-full # for video encoding and decoding in some tools like ghidra 
                 ffmpeg-full.dev
-
+                linuxHeaders
+                # mips-gcc # takes ~= 2GB
+                pkgs.pkgsCross.mips-linux-gnu.buildPackages.gcc
+                # pkgs.pkgsCross.mips-linux-gnu.gcc.cc
 # GMP Bundle
                 (buildEnv {
                  name = "gmp-with-cxx";
@@ -166,17 +176,28 @@ in
                                      pillow
                                      ttkbootstrap
             ]))
+            (pkgs.writeShellScriptBin "mingw64-g++" ''
+             C_INCLUDE_PATH="" CPLUS_INCLUDE_PATH="" CPATH="" \
+             NIX_CFLAGS_COMPILE="-isystem ${pkgs.pkgsCross.mingwW64.windows.mcfgthreads.dev}/include" \
+             ${pkgs.pkgsCross.mingwW64.stdenv.cc}/bin/x86_64-w64-mingw32-g++ "$@" \
+             -I${pkgs.pkgsCross.mingwW64.windows.pthreads}/include \
+             -I${pkgs.pkgsCross.mingwW64.windows.mcfgthreads.dev}/include \
+             -I${pkgs.pkgsCross.mingwW64.stdenv.cc}/include \
+             -L${pkgs.pkgsCross.mingwW64.windows.pthreads}/lib \
+             -L${pkgs.pkgsCross.mingwW64.windows.mcfgthreads}/lib \
+             -static -lgdi32
+             '')
             ];
         home.sessionVariables = {
             _JAVA_AWT_WM_NONREPARENTING=1;
             PYTHONPATH = "${pkgs.python312}/lib/python3.12/site-packages";
             ANDROID_HOME = "$HOME/Android/Sdk";
-            C_INCLUDE_PATH = "${mycenv}/include:$HOME/.nix-profile/include";
-            # CPLUS_INCLUDE_PATH = "${pkgs.gcc.cc}/include/c++/${pkgs.gcc.version}:${pkgs.gcc.cc}/include/c++/${pkgs.gcc.version}/${pkgs.stdenv.hostPlatform.linuxArch}-unknown-linux-gnu:${mycenv}/include:$HOME/.nix-profile/include";
-            CPLUS_INCLUDE_PATH = "$HOME/.nix-profile/include";
+            # CPLUS_INCLUDE_PATH = "$HOME/.nix-profile/include";
+            C_INCLUDE_PATH = "${pkgs.glibc.dev}/include:$HOME/.nix-profile/include";
+            CPLUS_INCLUDE_PATH = "${pkgs.gcc.cc}/include/c++/${pkgs.gcc.version}:${pkgs.gcc.cc}/include/c++/${pkgs.gcc.version}/${pkgs.stdenv.hostPlatform.linuxArch}-unknown-linux-gnu:${pkgs.glibc.dev}/include:$HOME/.nix-profile/include";
+            LD_LIBRARY_PATH = "$LD_LIBRARY_PATH:$HOME/.nix-profile/lib:/run/current-system/sw/lib:/run/opengl-driver/lib:/run/opengl-driver-32/lib:${pkgs.libdecor}/lib";
+
             NIX_LD_LIBRARY_PATH = "$NIX_LD_LIBRARY_PATH:$HOME/.nix-profile/lib:/run/current-system/sw/lib";
-# C_INCLUDE_PATH = "${pkgs.glibc.dev}/include";
-# CPLUS_INCLUDE_PATH = "${pkgs.gcc.cc}/include/c++/${pkgs.gcc.version}:${pkgs.gcc.cc}/include/c++/${pkgs.gcc.version}/${pkgs.stdenv.hostPlatform.linuxArch}-unknown-linux-gnu:${pkgs.glibc.dev}/include";
         };
         programs.tmux.enable = true;
     };
